@@ -29,6 +29,8 @@ require("prototypes.entity.lamp")
 require("prototypes.resource.ores")
 require("prototypes.resource.natural-gas")
 require("prototypes.resource.autoplace-controls")
+require("prototypes.resource.lead-tin")
+require("prototypes.resource.quartz")
 
 require("prototypes.technology.technology")
 require("prototypes.technology.circuit-packs")
