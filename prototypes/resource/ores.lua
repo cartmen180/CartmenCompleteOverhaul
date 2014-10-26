@@ -4,4 +4,16 @@ data:extend({
 	flags = { "goes-to-main-inventory" },
 	stack_size = 200,
   },
+  
+  { type = "item", name = "lead-ore",
+	icon = "__CartmenCompleteOverhaul__/graphics/icons/ore/lead-ore.png",
+	flags = { "goes-to-main-inventory" },
+	stack_size = 200,
+  },
+  
+  { type = "item", name = "quartz-ore",
+	icon = "__CartmenCompleteOverhaul__/graphics/icons/ore/quartz.png",
+	flags = { "goes-to-main-inventory" },
+	stack_size = 200,
+  },
 })

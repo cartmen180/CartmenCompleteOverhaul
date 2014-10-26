@@ -1,7 +1,5 @@
 data:extend({
-  {
-    type = "recipe",
-    name = "natural-gas-processing",
+  { type = "recipe", name = "natural-gas-processing",
     category = "gas-processing",
     enabled = "false",
     energy_required = 8,
@@ -21,9 +19,7 @@ data:extend({
     order = "a"
   },
   
-  {
-    type = "recipe",
-    name = "basic-ethane-steam-cracking",
+  { type = "recipe", name = "basic-ethane-steam-cracking",
     category = "chemistry",
     enabled = "false",
     energy_required = 8,
@@ -60,9 +56,7 @@ data:extend({
     order = "c"
   },
  
-  {
-    type = "recipe",
-    name = "LNG-conversion",
+  { type = "recipe", name = "LNG-conversion",
     category = "chemistry",
     enabled = "false",
     energy_required = 5,
@@ -79,9 +73,7 @@ data:extend({
     order = "d"
   },
   
-  {
-    type = "recipe",
-    name = "LNG-canister",
+  { type = "recipe", name = "LNG-canister",
     category = "crafting-with-fluid",
     enabled = "false",
     energy_required = 1.5,
@@ -99,9 +91,7 @@ data:extend({
     order = "b"
   },
   
-  {
-    type = "recipe",
-    name = "empty-canister",
+  { type = "recipe", name = "empty-canister",
     category = "advanced-crafting",
     enabled = "false",
     energy_required = 1.0,
@@ -116,5 +106,59 @@ data:extend({
     icon = "__CartmenCompleteOverhaul__/graphics/icons/empty-canister.png",
     subgroup = "cartmen-intermediates",
     order = "a"
+  },
+  
+  { type = "recipe", name = "bisphenol-processing",
+    icon = "__CartmenCompleteOverhaul__/graphics/icons/fluid/bisphenol.png",
+	category = "chemistry",
+	enabled = false,
+	energy_required = 3,
+	ingredients = {{type="fluid",name="petroleum-gas",amount=4}},
+	results = {{type="fluid",name="bisphenol",amount=3},{type="fluid",name="water",amount=2}},
+	subgroup = "cartmen-epoxy",
+	order = "d",
+	main_product = "bisphenol",
+  },  
+  { type = "recipe", name = "epichlorohydrin-processing",
+    icon = "__CartmenCompleteOverhaul__/graphics/icons/fluid/epichlorohydrin.png",
+	category = "chemistry",
+	enabled = false,
+	energy_required = 3,
+	ingredients = {{type="fluid",name="allyl-chloride",amount=5},{type="fluid",name="hypochlorous-acid",amount=5}},
+	results = {{type="fluid",name="epichlorohydrin",amount=5}},
+	subgroup = "cartmen-epoxy",
+	order = "c",
+  },  
+  { type = "recipe", name = "allyl-chloride-processing",
+    icon = "__CartmenCompleteOverhaul__/graphics/icons/fluid/allyl-chloride.png",
+	category = "chemistry",
+	enabled = false,
+	energy_required = 3,
+	ingredients = {{type="fluid",name="propene",amount=5},{type="fluid",name="chlorine",amount=5}},
+	results = {{type="fluid",name="allyl-chloride",amount=5},{type="fluid",name="hydrogen-chloride",amount=5}},
+	subgroup = "cartmen-epoxy",
+	order = "a",
+	main_product = "allyl-chloride",
+  },  
+  { type = "recipe", name = "hypochlorous-acid-processing",
+    icon = "__CartmenCompleteOverhaul__/graphics/icons/fluid/hypochlorous-acid.png",
+	category = "chemistry",
+	enabled = false,
+	energy_required = 3,
+	ingredients = {{type="fluid",name="water",amount=5},{type="fluid",name="chlorine",amount=5}},
+	results = {{type="fluid",name="hypochlorous-acid",amount=5},{type="fluid",name="hydrogen-chloride",amount=2}},
+	subgroup = "cartmen-epoxy",
+	order = "b",
+	main_product = "hypochlorous-acid",
+  },  
+  { type = "recipe", name = "epoxy-processing",
+    icon = "__CartmenCompleteOverhaul__/graphics/icons/fluid/epoxy.png",
+	category = "chemistry",
+	enabled = false,
+	energy_required = 2.0,
+	ingredients = {{type="fluid",name="epichlorohydrin",amount=3},{type="fluid",name="bisphenol",amount=1}},
+	results = {{type="fluid",name="epoxy",amount=1}},
+	subgroup = "cartmen-epoxy",
+	order = "e",
   },
 })

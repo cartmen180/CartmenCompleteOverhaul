@@ -16,6 +16,12 @@ data:extend({
 	stack_size = 200,
   },
   
+  { type = "item", name = "lead-plate",
+	icon = "__CartmenCompleteOverhaul__/graphics/icons/plate/lead-plate.png",
+	flags = { "goes-to-main-inventory" },
+	stack_size = 200,
+  },
+  
   { type = "item", name = "titanium-plate",
 	icon = "__CartmenCompleteOverhaul__/graphics/icons/plate/titanium-plate.png",
 	flags = { "goes-to-main-inventory" },

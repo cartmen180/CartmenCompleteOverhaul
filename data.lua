@@ -5,12 +5,16 @@ require("prototypes.item.parts")
 require("prototypes.item.plate")
 require("prototypes.item.metals")
 require("prototypes.item.item")
+require("prototypes.item.electronic")
 
 require("prototypes.recipe.hand-craft.parts")
 require("prototypes.recipe.parts")
 require("prototypes.recipe.alloys")
 require("prototypes.recipe.plates")
 require("prototypes.recipe.chemicals")
+require("prototypes.recipe.rubber")
+require("prototypes.recipe.electronics")
+require("prototypes.recipe.recipe")
 
 require("prototypes.fluid.metals")
 require("prototypes.fluid.chemicals")
@@ -20,12 +24,9 @@ require("prototypes.resource.natural-gas")
 require("prototypes.resource.autoplace-controls")
 
 require("prototypes.technology.technology")
+require("prototypes.technology.circuit-packs")
 
 data.raw["player"]["player"].crafting_categories = {"crafting","hand-craft"}
+table.insert(data.raw["assembling-machine"]["assembling-machine-1"].crafting_categories,{"crafting-2"})
 
-data.raw["technology"]["oil-processing"] = nil
-data.raw["technology"]["advanced-oil-processing"] = nil
-data.raw["technology"]["fluid-handling"].prerequisites = {"fossil-resource-processing"}
-data.raw["technology"]["sulfur-processing"].prerequisites = {"fossil-resource-processing"}
-data.raw["technology"]["plastics"].prerequisites = {"fossil-resource-processing"}
-data.raw["technology"]["flammables"].prerequisites = {"fossil-resource-processing"}
+data.raw["recipe"]["iron-axe"].ingredients = {{"iron-plate",3},{"wooden-stick",1}}

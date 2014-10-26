@@ -53,4 +53,15 @@ data:extend({
 	pressure_to_speed_ratio = 0.4,
 	flow_to_energy_ratio = 0.59,
   },
+  
+  { type = "fluid", name = "liquid-silicon",
+    default_temperature = 1200,
+	max_temperature = 1200,
+	heat_capacity = "0KJ",
+	base_color = {r=83, g=83, b=84},
+    flow_color = {r=83, g=83, b=84},
+	icon = "__CartmenCompleteOverhaul__/graphics/icons/fluid/liquid-silicon.png",
+	pressure_to_speed_ratio = 0.4,
+	flow_to_energy_ratio = 0.59,
+  },
 })

@@ -8,14 +8,28 @@ data:extend({
   {type = "item-subgroup", name = "cartmen-parts", group = "cartmen-1", order = "b-a"},
   {type = "item-subgroup", name = "cartmen-parts-2", group = "cartmen-1", order = "b-b"},
   {type = "item-subgroup", name = "cartmen-parts-3", group = "cartmen-1", order = "b-c"},
+  {type = "item-subgroup", name = "cartmen-parts-4", group = "cartmen-1", order = "b-d"},
   {type = "item-subgroup", name = "cartmen-packs", group = "cartmen-1", order = "c"},
   {type = "item-subgroup", name = "cartmen-alloy", group = "cartmen-1", order = "d"},
+  {type = "item-subgroup", name = "cartmen-silicon", group = "cartmen-1", order = "e"},
   
   { type = "item-group", name = "cartmen-2",
 	order = "b",
-	inventory_order = "a-a",
+	inventory_order = "a-b",
+	icon = "__CartmenCompleteOverhaul__/graphics/icons/electronic/computing-unit.png",
+  },
+  {type = "item-subgroup", name = "cartmen-electronics-1", group = "cartmen-2", order = "a-a"},
+  {type = "item-subgroup", name = "cartmen-electronics-2", group = "cartmen-2", order = "a-b"},
+  {type = "item-subgroup", name = "cartmen-electronics-3", group = "cartmen-2", order = "a-c"},
+  {type = "item-subgroup", name = "cartmen-cable", group = "cartmen-2", order = "b"},
+  {type = "item-subgroup", name = "cartmen-circuits", group = "cartmen-2", order = "c"},
+  
+  { type = "item-group", name = "cartmen-3",
+	order = "c",
+	inventory_order = "b-b",
 	icon = "__CartmenCompleteOverhaul__/graphics/icons/fluid/methane.png",
   },
-  {type = "item-subgroup", name = "cartmen-gas", group = "cartmen-2", order = "a"},
-  {type = "item-subgroup", name = "cartmen-intermediates", group = "cartmen-2", order = "e"}
+  {type = "item-subgroup", name = "cartmen-gas", group = "cartmen-3", order = "a"},
+  {type = "item-subgroup", name = "cartmen-epoxy", group = "cartmen-3", order = "b"},
+  {type = "item-subgroup", name = "cartmen-intermediates", group = "cartmen-3", order = "c"}
 })

@@ -1,4 +1,14 @@
 data:extend({
+  { type = "recipe", name = "wooden-stick",
+    icon = "__CartmenCompleteOverhaul__/graphics/icons/part/wooden-stick.png",
+	enabled = true,
+	energy_required = 0.5,
+	ingredients = {{"wood",1}},
+	results = {{"wooden-stick", 2}},
+	subgroup = "cartmen-parts-4",
+	order = "b[wood]-a[stick]",
+  },
+  
   { type = "recipe", name = "copper-gear-wheel",
     icon = "__CartmenCompleteOverhaul__/graphics/icons/part/copper-gear-wheel.png",
 	category = "hand-craft",
