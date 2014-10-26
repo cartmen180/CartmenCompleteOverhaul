@@ -1,6 +1,6 @@
 data:extend({
   { type = "item-group", name = "cartmen-1",
-	order = "a",
+	order = "a-a",
 	inventory_order = "a-a",
 	icon = "__CartmenCompleteOverhaul__/graphics/icons/part/parts.png",
   },
@@ -14,7 +14,7 @@ data:extend({
   {type = "item-subgroup", name = "cartmen-silicon", group = "cartmen-1", order = "e"},
   
   { type = "item-group", name = "cartmen-2",
-	order = "b",
+	order = "a-b",
 	inventory_order = "a-b",
 	icon = "__CartmenCompleteOverhaul__/graphics/icons/electronic/computing-unit.png",
   },
@@ -23,9 +23,10 @@ data:extend({
   {type = "item-subgroup", name = "cartmen-electronics-3", group = "cartmen-2", order = "a-c"},
   {type = "item-subgroup", name = "cartmen-cable", group = "cartmen-2", order = "b"},
   {type = "item-subgroup", name = "cartmen-circuits", group = "cartmen-2", order = "c"},
+  {type = "item-subgroup", name = "cartmen-energy", group = "cartmen-2", order = "f"},
   
   { type = "item-group", name = "cartmen-3",
-	order = "c",
+	order = "a-c",
 	inventory_order = "b-b",
 	icon = "__CartmenCompleteOverhaul__/graphics/icons/fluid/methane.png",
   },

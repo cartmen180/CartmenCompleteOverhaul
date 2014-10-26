@@ -14,6 +14,7 @@ data:extend({
 	  ingredients = {{"copper-plate",1}},
 	  time = 15
 	},
+	upgrade = true,
 	order = "a-a-a",
   },
   { type = "technology", name = "copper-working-2", prerequisites = {"copper-working","steel-working"},
@@ -26,10 +27,11 @@ data:extend({
 	},
 	unit =
 	{
-	  count = 10,
-	  ingredients = {{"copper-plate",1}},
-	  time = 15
+	  count = 25,
+	  ingredients = {{"copper-parts",5}},
+	  time = 60
 	},
+	upgrade = true,
 	order = "a-b-a",
   },
   { type = "technology", name = "bronze-working", prerequisites = {"bronze-alloy"},
@@ -44,9 +46,10 @@ data:extend({
 	unit =
 	{
 	  count = 10,
-	  ingredients = {{"bronze-plate",1}},
+	  ingredients = {{"bronze-plate",1},{"copper-parts",3}},
 	  time = 20
 	},
+	upgrade = true,
 	order = "a-a-b",
   },
   { type = "technology", name = "bronze-working-2", prerequisites = {"bronze-working","steel-working"},
@@ -59,10 +62,11 @@ data:extend({
 	},
 	unit =
 	{
-	  count = 10,
-	  ingredients = {{"bronze-plate",1}},
-	  time = 20
+	  count = 25,
+	  ingredients = {{"bronze-parts",5}},
+	  time = 60
 	},
+	upgrade = true,
 	order = "a-b-b",
   },
   { type = "technology", name = "iron-working", prerequisites = {"bronze-working"},
@@ -77,9 +81,10 @@ data:extend({
 	unit =
 	{
 	  count = 10,
-	  ingredients = {{"iron-plate",1}},
+	  ingredients = {{"iron-plate",1},{"bronze-parts",3}},
 	  time = 25
 	},
+	upgrade = true,
 	order = "a-a-c",
   },
   { type = "technology", name = "iron-working-2", prerequisites = {"iron-working","steel-working"},
@@ -92,26 +97,29 @@ data:extend({
 	},
 	unit =
 	{
-	  count = 10,
-	  ingredients = {{"iron-plate",1}},
-	  time = 25
+	  count = 25,
+	  ingredients = {{"iron-parts",5}},
+	  time = 60
 	},
+	upgrade = true,
 	order = "a-b-c",
   },
-  { type = "technology", name = "steel-working", prerequisites = {"steel-alloy"},
+  { type = "technology", name = "steel-working", prerequisites = {"steel-processing"},
 	icon = "__CartmenCompleteOverhaul__/graphics/icons/part/steel-parts.png",
 	effects = 
 	{
 	  {type="unlock-recipe",recipe="steel-parts"},
 	  {type="unlock-recipe",recipe="steel-gear-wheel"},
 	  {type="unlock-recipe",recipe="steel-shaft"},
-	  {type="unlock-recipe",recipe="steel-bolts-screws"}
+	  {type="unlock-recipe",recipe="steel-bolts-screws"},
+	  {type="unlock-recipe",recipe="steel-chest"},
+	  {type="unlock-recipe",recipe="steel-axe"}
 	},
 	unit =
 	{
-	  count = 10,
-	  ingredients = {{"steel-plate",1}},
-	  time = 30
+	  count = 20,
+	  ingredients = {{"steel-plate",1},{"iron-parts",5}},
+	  time = 45
 	},
 	order = "a-a-d",
   },
@@ -126,9 +134,9 @@ data:extend({
 	},
 	unit =
 	{
-	  count = 10,
-	  ingredients = {{"titanium-plate",1}},
-	  time = 30
+	  count = 30,
+	  ingredients = {{"titanium-plate",1},{"steel-parts",5}},
+	  time = 60
 	},
 	order = "a-a-e",
   },
@@ -178,7 +186,7 @@ data:extend({
 	},
 	order = "a-d-a",
   },
-  { type = "technology", name = "steel-alloy", prerequisites = {"iron-working","bronze-alloy"},
+  { type = "technology", name = "steel-processing", prerequisites = {"iron-working","bronze-alloy"},
 	icon = "__base__/graphics/icons/steel-plate.png",
 	effects = 
 	{
@@ -192,7 +200,7 @@ data:extend({
 	},
 	order = "a-d-b",
   },
-  { type = "technology", name = "titanium-alloy", prerequisites = {"steel-alloy"},
+  { type = "technology", name = "titanium-alloy", prerequisites = {"steel-processing"},
 	icon = "__CartmenCompleteOverhaul__/graphics/icons/plate/titanium-plate.png",
 	effects = 
 	{
@@ -202,7 +210,7 @@ data:extend({
 	{
 	  count = 40,
 	  ingredients = {{"steel-plate",2},{"titanium-sponge",1}},
-	  time = 60
+	  time = 90
 	},
 	order = "a-d-c",
   },
@@ -263,7 +271,7 @@ data:extend({
     unit =
     {
       count = 50,
-      ingredients = {{"steel-parts",5},{"iron-parts",3},{"bronze-parts",3}},
+      ingredients = {{"steel-parts",5},{"iron-parts",3},{"bronze-parts",3},{"circuit-pack-2",3}},
       time = 30
     },
     order = "d[resource-processing]-c[oil-processing]-a"
@@ -296,13 +304,13 @@ data:extend({
     unit =
     {
       count = 75,
-      ingredients = {{"steel-parts",5},{"iron-parts",3},{"bronze-parts",3}},
+      ingredients = {{"steel-parts",7},{"iron-parts",4},{"bronze-parts",4},{"circuit-pack-3",4}},
       time = 45
     },
     order = "d[resource-processing]-c[oil-processing]-b"
   },
   
-  { type = "technology", name = "electronics", --prerequisites = {"automation"},
+  { type = "technology", name = "electronics",
     icon = "__base__/graphics/icons/electronic-circuit.png",
     effects =
     {
@@ -340,6 +348,7 @@ data:extend({
       },
       time = 30
     },
+	upgrade = true,
     order = "b-d-b",
   },
   { type = "technology", name = "advanced-electronics-2", prerequisites = {"advanced-electronics"},
@@ -360,6 +369,7 @@ data:extend({
       },
       time = 45
     },
+	upgrade = true,
     order = "b-d-c",
   },
   { type = "technology", name = "advanced-electronics-3", prerequisites = {"advanced-electronics-2","speed-module","productivity-module"},
@@ -380,6 +390,7 @@ data:extend({
       },
       time = 60
     },
+	upgrade = true,
     order = "b-d-d",
   },
   
@@ -404,6 +415,359 @@ data:extend({
       time = 30
     },
     order = "b[chemistry]-a[epoxy]",
+  },
+  
+  { type = "technology", name = "automation", prerequisites = {"bronze-working"},
+    icon = "__base__/graphics/technology/automation.png",
+    effects =
+    {
+      {type = "unlock-recipe",recipe = "assembling-machine-1"},
+    },
+    unit =
+    {
+      count = 10,
+      ingredients = {{"copper-parts", 3},{"bronze-parts",2},{"circuit-pack-1",3}},
+      time = 10
+    },
+	upgrade = true,
+    order = "a-e-a",
+  },
+  { type = "technology", name = "automation-2", prerequisites = {"electronics","automation","steel-working"},
+    icon = "__base__/graphics/technology/automation.png",
+    effects =
+    {
+      {type = "unlock-recipe",recipe = "assembling-machine-2"},
+    },
+    unit =
+    {
+      count = 40,
+      ingredients = {{"iron-parts", 5},{"steel-parts",3},{"circuit-pack-2",4}},
+      time = 30
+    },
+	upgrade = true,
+    order = "a-e-b",
+  },
+  { type = "technology", name = "automation-3", prerequisites = {"advanced-electronics","automation-2","speed-module"},
+    icon = "__base__/graphics/technology/automation.png",
+    effects =
+    {
+      {type = "unlock-recipe",recipe = "assembling-machine-3"},
+    },
+    unit =
+    {
+      count = 100,
+      ingredients = {{"iron-parts", 7},{"steel-parts",10},{"circuit-pack-3",5}},
+      time = 60
+    },
+	upgrade = true,
+    order = "a-e-c",
+  },
+  --[[{ type = "technology", name = "automation-4", prerequisites = {"advanced-electronics-2","automation-3","speed-module-2"},
+    icon = "__base__/graphics/technology/automation.png",
+    effects =
+    {
+      {type = "unlock-recipe",recipe = "assembling-machine-4"},
+    },
+    unit =
+    {
+      count = 100,
+      ingredients = {{"steel-parts", 7},{"titanium-parts",10},{"circuit-pack-4",5}},
+      time = 60
+    },
+	upgrade = true,
+    order = "a-e-d",
+  },
+  { type = "technology", name = "automation-5", prerequisites = {"advanced-electronics-3","automation-4","speed-module-3"},
+    icon = "__base__/graphics/technology/automation.png",
+    effects =
+    {
+      {type = "unlock-recipe",recipe = "assembling-machine-5"},
+    },
+    unit =
+    {
+      count = 250,
+      ingredients = {{"steel-parts", 10},{"titanium-parts",15},{"circuit-pack-5",8}},
+      time = 120
+    },
+	upgrade = true,
+    order = "a-e-c",
+  },]]
+  
+  { type = "technology", name = "logistics", prerequisites = {"iron-working"},
+    icon = "__base__/graphics/technology/logistics.png",
+    effects =
+    {
+	  { type = "unlock-recipe",recipe = "basic-transport-belt"},
+      { type = "unlock-recipe",recipe = "basic-transport-belt-to-ground"},
+      { type = "unlock-recipe",recipe = "basic-splitter"}
+    },
+    unit =
+    {
+      count = 20,
+      ingredients = {{"bronze-parts",2},{"iron-parts", 4}},
+      time = 15
+    },
+	upgrade = true,
+    order = "a-f-a",
+  },
+  { type = "technology", name = "logistics-2", prerequisites = {"logistics","steel-working","electronics"},
+    icon = "__base__/graphics/technology/logistics.png",
+    effects =
+    {
+	  { type = "unlock-recipe",recipe = "fast-transport-belt"},
+      { type = "unlock-recipe",recipe = "fast-transport-belt-to-ground"},
+      { type = "unlock-recipe",recipe = "fast-splitter"}
+    },
+    unit =
+    {
+      count = 40,
+      ingredients = {{"iron-parts",4},{"steel-parts", 6},{"circuit-pack-2",4}},
+      time = 30
+    },
+	upgrade = true,
+    order = "a-f-b",
+  },
+  { type = "technology", name = "logistics-3", prerequisites = {"logistics-2","advanced-electronics"},
+    icon = "__base__/graphics/technology/logistics.png",
+    effects =
+    {
+	  --{ type = "unlock-recipe",recipe = "faster-transport-belt"},
+      --{ type = "unlock-recipe",recipe = "faster-transport-belt-to-ground"},
+      --{ type = "unlock-recipe",recipe = "faster-splitter"}
+    },
+    unit =
+    {
+      count = 100,
+      ingredients = {{"iron-parts",5},{"steel-parts", 10},{"circuit-pack-3",5}},
+      time = 45
+    },
+	upgrade = true,
+    order = "a-f-c",
+  },
+  { type = "technology", name = "logistics-4", prerequisites = {"logistics-3","titanium-working","advanced-electronics-3"},
+    icon = "__base__/graphics/technology/logistics.png",
+    effects =
+    {
+	  { type = "unlock-recipe",recipe = "express-transport-belt"},
+      { type = "unlock-recipe",recipe = "express-transport-belt-to-ground"},
+      { type = "unlock-recipe",recipe = "express-splitter"}
+    },
+    unit =
+    {
+      count = 100,
+      ingredients = {{"steel-parts",5},{"titanium-parts", 10},{"circuit-pack-4",5},{"circuit-pack-5",4}},
+      time = 45
+    },
+	upgrade = true,
+    order = "a-f-d",
+  },
+  
+  { type = "technology", name = "optics", prerequisites = {"copper-working"},
+    icon = "__base__/graphics/technology/optics.png",
+    effects =
+    {
+	  { type = "unlock-recipe",recipe = "small-lamp"}
+    },
+    unit =
+    {
+      count = 10,
+      ingredients = {{"copper-parts",3},{"circuit-pack-1",1}},
+      time = 15
+    },
+	upgrade = true,
+    order = "a-h-a",
+  },
+  { type = "technology", name = "optics-2", prerequisites = {"optics","electronics","steel-working"},
+    icon = "__base__/graphics/technology/optics.png",
+    effects =
+    {
+	  { type = "unlock-recipe",recipe = "medium-lamp"},
+	  { type = "unlock-recipe",recipe = "big-lamp"}
+    },
+    unit =
+    {
+      count = 20,
+      ingredients = {{"copper-parts",5},{"steel-parts",2},{"circuit-pack-2",3}},
+      time = 25
+    },
+	upgrade = true,
+    order = "a-h-b",
+  },
+  { type = "technology", name = "laser", prerequisites = {"optics-2","advanced-electronics"},
+    icon = "__base__/graphics/technology/laser.png",
+    unit =
+    {
+      count = 50,
+      ingredients = {{"circuit-pack-2",10},{"circuit-pack-3",6},{"steel-parts",8},{"iron-parts",5}},
+      time = 30
+    },
+    order = "a-h-d",
+  },
+  
+  { type = "technology", name = "solar-energy", prerequisites = {"optics","advanced-electronics","steel-working"},
+    icon = "__base__/graphics/technology/solar-energy.png",
+    effects =
+    {
+	  {type="unlock-recipe",recipe="solar-cell"},
+	  {type="unlock-recipe",recipe="silicon-nitride"},
+      {type="unlock-recipe",recipe="solar-panel"}
+    },    
+    unit =
+    {
+      count = 50,
+      ingredients =
+      {{"circuit-pack-2", 4},{"circuit-pack-3", 2},{"copper-parts",5},{"steel-parts",8}},
+      time = 30
+    },
+	upgrade = true,
+    order = "a-h-c-a",
+  },
+  { type = "technology", name = "solar-energy-2", prerequisites = {"solar-energy"},
+    icon = "__base__/graphics/technology/solar-energy.png",
+    effects =
+    {
+      {type = "unlock-recipe",recipe = "solar-panel-2"}
+    },    
+    unit =
+    {
+      count = 100,
+      ingredients =
+      {{"circuit-pack-2", 4},{"circuit-pack-3", 2},{"copper-parts",5},{"steel-parts",8}},
+      time = 45
+    },
+	upgrade = true,
+    order = "a-h-c-b",
+  },  
+  { type = "technology", name = "solar-energy-3", prerequisites = {"solar-energy-2","effectivity-module","advanced-electronics-2"},
+    icon = "__base__/graphics/technology/solar-energy.png",
+    effects =
+    {
+      {type = "unlock-recipe",recipe = "solar-panel-3"}
+    },    
+    unit =
+    {
+      count = 200,
+      ingredients =
+      {{"circuit-pack-3", 4},{"circuit-pack-4", 2},{"copper-parts",5},{"steel-parts",10}},
+      time = 60
+    },
+	upgrade = true,
+    order = "a-h-c-c",
+  },  
+  { type = "technology", name = "solar-energy-4", prerequisites = {"solar-energy-3","effectivity-module-2"},
+    icon = "__base__/graphics/technology/solar-energy.png",
+    effects =
+    {
+      {type = "unlock-recipe",recipe = "solar-panel-4"}
+    },    
+    unit =
+    {
+      count = 300,
+      ingredients =
+      {{"circuit-pack-3", 5},{"circuit-pack-4", 4},{"titanium-parts",10},{"steel-parts",15}},
+      time = 60
+    },
+	upgrade = true,
+    order = "a-h-c-d",
+  },  
+  { type = "technology", name = "solar-energy-5", prerequisites = {"solar-energy-4","effectivity-module-3","advanced-electronics-3"},
+    icon = "__base__/graphics/technology/solar-energy.png",
+    effects =
+    {
+      {type = "unlock-recipe",recipe = "solar-panel-5"}
+    },    
+    unit =
+    {
+      count = 500,
+      ingredients =
+      {{"circuit-pack-4", 6},{"circuit-pack-5", 4},{"titanium-parts",15},{"steel-parts",10}},
+      time = 90
+    },
+	upgrade = true,
+    order = "a-h-c-e",
+  },
+  
+  { type = "technology", name = "electric-energy-accumulators-1", prerequisites = {"battery","electric-energy-distribution-1"},
+    icon = "__base__/graphics/technology/electric-energy-acumulators.png",
+    effects =
+    {
+      {type = "unlock-recipe",recipe = "basic-accumulator"}
+    },   
+    unit =
+    {
+      count = 60,
+      ingredients =
+      {{"circuit-pack-2", 5},{"circuit-pack-3", 2}},
+      time = 30
+    },
+	upgrade = true,
+    order = "c-e-c",
+  },
+  { type = "technology", name = "electric-energy-accumulators-2", prerequisites = {"electric-energy-accumulators-1"},
+    icon = "__base__/graphics/technology/electric-energy-acumulators.png",
+    effects =
+    {
+      {type = "unlock-recipe",recipe = "basic-accumulator-2"}
+    },   
+    unit =
+    {
+      count = 100,
+      ingredients =
+      {{"circuit-pack-2", 5},{"circuit-pack-3", 2}},
+      time = 45
+    },
+	upgrade = true,
+    order = "c-e-d",
+  },
+  { type = "technology", name = "electric-energy-accumulators-3", prerequisites = {"electric-energy-accumulators-2"},
+    icon = "__base__/graphics/technology/electric-energy-acumulators.png",
+    effects =
+    {
+      {type = "unlock-recipe",recipe = "basic-accumulator-3"}
+    },   
+    unit =
+    {
+      count = 200,
+      ingredients =
+      {{"circuit-pack-2", 5},{"circuit-pack-3", 2}},
+      time = 30
+    },
+	upgrade = true,
+    order = "c-e-e",
+  },
+  
+  { type = "technology", name = "electric-energy-distribution-1", prerequisites = {"electronics","steel-working"},
+    icon = "__base__/graphics/technology/electric-energy-distribution.png",
+    effects =
+    {
+      {type = "unlock-recipe",recipe = "medium-electric-pole"},
+	  {type = "unlock-recipe",recipe = "big-electric-pole"}
+    },   
+    unit =
+    {
+      count = 50,
+      ingredients =
+      {{"circuit-pack-2", 3},{"steel-parts", 6}},
+      time = 30
+    },
+	upgrade = true,
+    order = "c-e-a",
+  },
+  { type = "technology", name = "electric-energy-distribution-2", prerequisites = {"electric-energy-distribution-1","advanced-electronics"},
+    icon = "__base__/graphics/technology/electric-energy-distribution.png",
+    effects =
+    {
+      {type = "unlock-recipe",recipe = "substation"}
+    },   
+    unit =
+    {
+      count = 100,
+      ingredients =
+      {{"circuit-pack-2", 4},{"circuit-pack-3",4},{"steel-parts", 10}},
+      time = 30
+    },
+	upgrade = true,
+    order = "c-e-c",
   },
   
 })
