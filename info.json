@@ -1,0 +1,10 @@
+{
+  "name": "CartmenCompleteOverhaul",
+  "version": "0.0.1",
+  "title": "Cartmen's Complete Overhaul",
+  "author": "Cartmen180",
+  "contact": "cartmen180@gmail.com",
+  "homepage": "",
+  "description": "Changes almost every recipe, item and machine in the game.",
+  "dependencies": ["base >= 0.10.0"]
+}
