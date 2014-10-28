@@ -11,4 +11,8 @@ data:extend({
     type = "recipe-category",
     name="crafting-2",
   },
+  {
+    type = "recipe-category",
+    name="advanced-crafting-2",
+  },
 })

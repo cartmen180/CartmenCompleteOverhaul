@@ -170,6 +170,37 @@ data:extend({
 	},
 	order = "a-c-a",
   },
+  { type = "technology", name = "hydraulics", prerequisites = {"rubber-working","oil-processing"},
+	icon = "__CartmenCompleteOverhaul__/graphics/icons/part/hydraulic-parts.png",
+	effects = 
+	{
+	  {type="unlock-recipe",recipe="hydraulic-fluid"},
+	  {type="unlock-recipe",recipe="hydraulic-parts"}
+	},
+	unit =
+	{
+	  count = 20,
+	  ingredients = {{"steel-parts",2},{"bronze-parts",3}},
+	  time = 30
+	},
+	order = "a-c-b",
+	upgrade = true,
+  },
+  { type = "technology", name = "hydraulics-2", prerequisites = {"hydraulics","titanium-working"},
+	icon = "__CartmenCompleteOverhaul__/graphics/icons/part/hydraulic-parts.png",
+	effects = 
+	{
+	  {type="unlock-recipe",recipe="hydraulic-parts-2"}
+	},
+	unit =
+	{
+	  count = 50,
+	  ingredients = {{"titanium-parts",2},{"bronze-parts",5}},
+	  time = 45
+	},
+	order = "a-c-c",
+	upgrade = true,
+  },
 
   { type = "technology", name = "bronze-alloy", prerequisites = {"copper-working"},
 	icon = "__CartmenCompleteOverhaul__/graphics/icons/plate/bronze-plate.png",
@@ -280,26 +311,13 @@ data:extend({
     icon = "__base__/graphics/technology/oil-processing.png",    
     effects =
     {
-      {
-        type = "unlock-recipe",
-        recipe = "advanced-oil-processing"
-      },
-      {
-        type = "unlock-recipe",
-        recipe = "heavy-oil-cracking"
-      },
-      {
-        type = "unlock-recipe",
-        recipe = "light-oil-cracking"
-      },
-	  {
-        type = "unlock-recipe",
-        recipe = "advanced-ethane-steam-cracking"
-      },
-	  {
-        type = "unlock-recipe",
-        recipe = "synthetic-rubber"
-      }
+      {type = "unlock-recipe",recipe = "advanced-oil-processing"},
+      {type = "unlock-recipe",recipe = "heavy-oil-cracking"},
+      {type = "unlock-recipe",recipe = "light-oil-cracking"},
+	  {type = "unlock-recipe",recipe = "advanced-ethane-steam-cracking"},
+	  {type = "unlock-recipe",recipe = "synthetic-rubber"},
+	  {type = "unlock-recipe",recipe = "oxidative-coupling"},
+	  {type = "unlock-recipe",recipe = "propene-processing"}
     },
     unit =
     {
@@ -318,7 +336,10 @@ data:extend({
 	  {type="unlock-recipe",recipe="silicon-casting"},
 	  {type="unlock-recipe",recipe="transistor"},
 	  {type="unlock-recipe",recipe="resistor"},
-	  {type="unlock-recipe",recipe="standard-circuit-board"}
+	  {type="unlock-recipe",recipe="standard-circuit-board"},
+	  {type="unlock-recipe",recipe="solder"},
+	  {type="unlock-recipe",recipe="electronic-circuit"},
+	  {type="unlock-recipe",recipe="circuit-pack-2"}
     },
     unit =
     {
@@ -333,10 +354,12 @@ data:extend({
     effects =
     {
       {type="unlock-recipe",recipe="advanced-circuit"},
+	  {type="unlock-recipe",recipe="electronic-circuit-2"},
 	  {type="unlock-recipe",recipe="silicon-boule"},
 	  {type="unlock-recipe",recipe="silicon-wafer"},
 	  {type="unlock-recipe",recipe="integrated-circuit"},
-	  {type="unlock-recipe",recipe="photoresist"}
+	  {type="unlock-recipe",recipe="photoresist"},
+	  {type="unlock-recipe",recipe="circuit-pack-3"}
     },
     unit =
     {
@@ -356,7 +379,8 @@ data:extend({
     effects =
     {
       {type="unlock-recipe",recipe="processing-core"},
-	  {type="unlock-recipe",recipe="processing-unit"}
+	  {type="unlock-recipe",recipe="processing-unit"},
+	  {type="unlock-recipe",recipe="circuit-pack-4"}
     },
     unit =
     {
@@ -376,7 +400,8 @@ data:extend({
     icon = "__CartmenCompleteOverhaul__/graphics/icons/electronic/computing-unit.png",
     effects =
     {
-	  {type="unlock-recipe",recipe="computing-unit"}
+	  {type="unlock-recipe",recipe="computing-unit"},
+	  {type="unlock-recipe",recipe="circuit-pack-5"}
     },
     unit =
     {
@@ -394,6 +419,113 @@ data:extend({
     order = "b-d-d",
   },
   
+  { type = "technology", name = "basic-chemistry", --prerequisites = {"oil-processing"},
+    icon = "__CartmenCompleteOverhaul__/graphics/icons/ore/salt.png",
+    effects =
+    {
+      {type="unlock-recipe",recipe="salt-electrolysis"},
+	  {type="unlock-recipe",recipe="carbon-monoxide"}
+    },
+    unit =
+    {
+      count = 30,
+      ingredients =
+      {
+        --{"chemistry-pack-1", 1},
+      },
+      time = 30
+    },
+    order = "b[chemistry]-a[basic]-a",
+  },
+  { type = "technology", name = "basic-chemistry-2", prerequisites = {"basic-chemistry"},
+    icon = "__CartmenCompleteOverhaul__/graphics/icons/fluid/chlorine.png",
+    effects =
+    {
+      {type="unlock-recipe",recipe="hydrogen-chloride"},
+	  {type="unlock-recipe",recipe="hydrochloric-acid"}
+    },
+    unit =
+    {
+      count = 30,
+      ingredients =
+      {
+        --{"chemistry-pack-1", 1},
+      },
+      time = 30
+    },
+    order = "b[chemistry]-a[basic]-b",
+  },
+  { type = "technology", name = "basic-chemistry-3", prerequisites = {"basic-chemistry-2"},
+    icon = "__CartmenCompleteOverhaul__/graphics/icons/fluid/ammonia.png",
+    effects =
+    {
+      {type="unlock-recipe",recipe="nitrogen"},
+	  {type="unlock-recipe",recipe="ammonia"}
+    },
+    unit =
+    {
+      count = 30,
+      ingredients =
+      {
+        --{"chemistry-pack-1", 1},
+      },
+      time = 30
+    },
+    order = "b[chemistry]-b[sulfur]-a",
+  },
+  { type = "technology", name = "sulfur-processing", prerequisites = {"oil-processing","basic-chemistry-2"},
+    icon = "__base__/graphics/technology/sulfur-processing.png",
+    effects =
+    {
+      {type="unlock-recipe",recipe="sulfuric-acid"},
+	  {type="unlock-recipe",recipe="sulfur-dioxide-processing"},
+	  {type="unlock-recipe",recipe="sulfur"}
+    },
+    unit =
+    {
+      count = 30,
+      ingredients =
+      {
+        --{"chemistry-pack-1", 1},
+      },
+      time = 30
+    },
+    order = "b[chemistry]-b[sulfur]-a",
+  },
+  { type = "technology", name = "battery", prerequisites = {"sulfur-processing"},
+    icon = "__base__/graphics/technology/battery.png",
+    effects =
+    {
+      {type="unlock-recipe",recipe="battery"}
+    },
+    unit =
+    {
+      count = 30,
+      ingredients =
+      {
+        --{"chemistry-pack-1", 1},
+      },
+      time = 30
+    },
+    order = "b[chemistry]-b[battery]-b",
+  },
+  { type = "technology", name = "plastics", prerequisites = {"oil-processing","basic-chemistry-2"},
+    icon = "__base__/graphics/technology/plastics.png",
+    effects =
+    {
+      {type="unlock-recipe",recipe="plastic-bar"}
+    },
+    unit =
+    {
+      count = 30,
+      ingredients =
+      {
+        --{"chemistry-pack-1", 1},
+      },
+      time = 30
+    },
+    order = "b[chemistry]-c[plastics]-a",
+  },
   { type = "technology", name = "epoxy-production", prerequisites = {"oil-processing"},
     icon = "__CartmenCompleteOverhaul__/graphics/icons/fluid/epoxy.png",
     effects =
@@ -414,7 +546,7 @@ data:extend({
       },
       time = 30
     },
-    order = "b[chemistry]-a[epoxy]",
+    order = "b[chemistry]-f[epoxy]",
   },
   
   { type = "technology", name = "automation", prerequisites = {"bronze-working"},
@@ -422,6 +554,7 @@ data:extend({
     effects =
     {
       {type = "unlock-recipe",recipe = "assembling-machine-1"},
+	  {type = "unlock-recipe",recipe = "assembling-machine-1-2"}
     },
     unit =
     {
@@ -437,6 +570,7 @@ data:extend({
     effects =
     {
       {type = "unlock-recipe",recipe = "assembling-machine-2"},
+	  {type = "unlock-recipe",recipe = "assembling-machine-2-2"}
     },
     unit =
     {
@@ -452,6 +586,7 @@ data:extend({
     effects =
     {
       {type = "unlock-recipe",recipe = "assembling-machine-3"},
+	  {type = "unlock-recipe",recipe = "assembling-machine-3-2"}
     },
     unit =
     {
@@ -462,7 +597,7 @@ data:extend({
 	upgrade = true,
     order = "a-e-c",
   },
-  --[[{ type = "technology", name = "automation-4", prerequisites = {"advanced-electronics-2","automation-3","speed-module-2"},
+  { type = "technology", name = "automation-4", prerequisites = {"advanced-electronics-2","automation-3","speed-module-2"},
     icon = "__base__/graphics/technology/automation.png",
     effects =
     {
@@ -491,15 +626,19 @@ data:extend({
     },
 	upgrade = true,
     order = "a-e-c",
-  },]]
+  },
   
   { type = "technology", name = "logistics", prerequisites = {"iron-working"},
     icon = "__base__/graphics/technology/logistics.png",
     effects =
     {
 	  { type = "unlock-recipe",recipe = "basic-transport-belt"},
+	  { type = "unlock-recipe",recipe = "basic-splitter"},
       { type = "unlock-recipe",recipe = "basic-transport-belt-to-ground"},
-      { type = "unlock-recipe",recipe = "basic-splitter"}
+      {type="unlock-recipe",recipe="2-basic-transport-belt-to-ground"},
+	  {type="unlock-recipe",recipe="3-basic-transport-belt-to-ground"},
+	  {type="unlock-recipe",recipe="4-basic-transport-belt-to-ground"},
+	  {type="unlock-recipe",recipe="5-basic-transport-belt-to-ground"}
     },
     unit =
     {
@@ -515,8 +654,12 @@ data:extend({
     effects =
     {
 	  { type = "unlock-recipe",recipe = "fast-transport-belt"},
-      { type = "unlock-recipe",recipe = "fast-transport-belt-to-ground"},
-      { type = "unlock-recipe",recipe = "fast-splitter"}
+      { type = "unlock-recipe",recipe = "fast-splitter"},
+	  { type = "unlock-recipe",recipe = "fast-transport-belt-to-ground"},
+	  { type = "unlock-recipe",recipe = "fast-transport-belt-to-ground-2"},
+	  { type = "unlock-recipe",recipe = "fast-transport-belt-to-ground-3"},
+	  { type = "unlock-recipe",recipe = "fast-transport-belt-to-ground-4"},
+	  { type = "unlock-recipe",recipe = "fast-transport-belt-to-ground-5"}
     },
     unit =
     {
@@ -531,9 +674,9 @@ data:extend({
     icon = "__base__/graphics/technology/logistics.png",
     effects =
     {
-	  --{ type = "unlock-recipe",recipe = "faster-transport-belt"},
-      --{ type = "unlock-recipe",recipe = "faster-transport-belt-to-ground"},
-      --{ type = "unlock-recipe",recipe = "faster-splitter"}
+	  { type = "unlock-recipe",recipe = "faster-transport-belt"},
+      { type = "unlock-recipe",recipe = "faster-transport-belt-to-ground"},
+      { type = "unlock-recipe",recipe = "faster-splitter"}
     },
     unit =
     {

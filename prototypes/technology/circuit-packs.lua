@@ -36,10 +36,11 @@ data:extend({
 	results = {
 	{type="item",name="circuit-pack-1",amount=1}
 	},
-	subgroup = "cartmen-packs",
+	subgroup = "cartmen-packs-2",
 	order = "b[circuit-pack]-a"
   },
   { type = "recipe", name = "circuit-pack-2",
+    enabled = false,
 	energy_required = 1,
 	icon = "__CartmenCompleteOverhaul__/graphics/icons/circuit-pack-2.png",
 	ingredients = {
@@ -50,10 +51,11 @@ data:extend({
 	results = {
 	{type="item",name="circuit-pack-2",amount=1}
 	},
-	subgroup = "cartmen-packs",
+	subgroup = "cartmen-packs-2",
 	order = "b[circuit-pack]-b"
   },
   { type = "recipe", name = "circuit-pack-3",
+    enabled = false,
 	energy_required = 1,
 	icon = "__CartmenCompleteOverhaul__/graphics/icons/circuit-pack-3.png",
 	ingredients = {
@@ -65,10 +67,11 @@ data:extend({
 	results = {
 	{type="item",name="circuit-pack-3",amount=1}
 	},
-	subgroup = "cartmen-packs",
+	subgroup = "cartmen-packs-2",
 	order = "b[circuit-pack]-c"
   },
   { type = "recipe", name = "circuit-pack-4",
+    enabled = false,
 	energy_required = 1,
 	icon = "__CartmenCompleteOverhaul__/graphics/icons/circuit-pack-4.png",
 	ingredients = {
@@ -80,10 +83,11 @@ data:extend({
 	results = {
 	{type="item",name="circuit-pack-4",amount=1}
 	},
-	subgroup = "cartmen-packs",
+	subgroup = "cartmen-packs-2",
 	order = "b[circuit-pack]-d"
   },
   { type = "recipe", name = "circuit-pack-5",
+    enabled = false,
 	energy_required = 1,
 	icon = "__CartmenCompleteOverhaul__/graphics/icons/circuit-pack-5.png",
 	ingredients = {
@@ -95,7 +99,7 @@ data:extend({
 	results = {
 	{type="item",name="circuit-pack-5",amount=1}
 	},
-	subgroup = "cartmen-packs",
+	subgroup = "cartmen-packs-2",
 	order = "b[circuit-pack]-e"
   },
 })

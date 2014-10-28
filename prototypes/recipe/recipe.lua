@@ -14,7 +14,7 @@ data:extend({
 	subgroup = "cartmen-cable",
 	order = "d[insulated-cable]"
   },
-  { type = "recipe", name = "copper-cable-1",
+  { type = "recipe", name = "copper-cable",
 	category = "hand-craft",
 	energy_required = 1,
 	icon = "__CartmenCompleteOverhaul__/graphics/icons/copper-cable-1.png",
@@ -29,7 +29,7 @@ data:extend({
   },
   { type = "recipe", name = "copper-cable-2",
 	category = "crafting-2",
-	enabled = "false",
+	--enabled = "false",
 	energy_required = 1,
 	icon = "__CartmenCompleteOverhaul__/graphics/icons/copper-cable-2.png",
 	ingredients = {
@@ -43,7 +43,7 @@ data:extend({
   },
   { type = "recipe", name = "copper-cable-3",
 	category = "advanced-crafting",
-	enabled = "false",
+	--enabled = "false",
 	energy_required = 1,
 	icon = "__CartmenCompleteOverhaul__/graphics/icons/copper-cable-3.png",
 	ingredients = {

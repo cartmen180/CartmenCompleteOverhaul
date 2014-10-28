@@ -142,4 +142,16 @@ data:extend({
 	stack_size = 50,
   },
   
+  { type = "item", name = "hydraulic-parts",
+	icon = "__CartmenCompleteOverhaul__/graphics/icons/part/hydraulic-parts.png",
+	flags = { "goes-to-main-inventory" },
+	order = "a-c-f",
+	stack_size = 50,
+  },
+  { type = "item", name = "hydraulic-parts-2",
+	icon = "__CartmenCompleteOverhaul__/graphics/icons/part/hydraulic-parts-2.png",
+	flags = { "goes-to-main-inventory" },
+	order = "a-c-g",
+	stack_size = 50,
+  },
 })

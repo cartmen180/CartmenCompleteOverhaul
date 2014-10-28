@@ -15,6 +15,7 @@ data:extend({
 	order = "a[circuit]-a[crude]"
   },
   { type = "recipe", name = "electronic-circuit",
+    enabled = false,
 	energy_required = 2.0,
 	icon = "__base__/graphics/icons/electronic-circuit.png",
 	ingredients = {
@@ -30,12 +31,14 @@ data:extend({
 	order = "a[circuit]-b[standard-1]"
   },
   { type = "recipe", name = "electronic-circuit-2",
+    enabled = false,
     category = "advanced-crafting",
 	energy_required = 2.0,
 	icon = "__base__/graphics/icons/electronic-circuit.png",
 	ingredients = {
 	{type="item",name="standard-circuit-board",amount=1},
-	{type="item",name="integrated-circuit",amount=2}
+	{type="item",name="integrated-circuit",amount=2},
+	{type="item",name="solder",amount=1}
     },
 	results = {
 	{type="item",name="electronic-circuit",amount=1}
@@ -44,6 +47,7 @@ data:extend({
 	order = "a[circuit]-b[standard-2]"
   },
   { type = "recipe", name = "advanced-circuit",
+    enabled = false,
     category = "advanced-crafting",
 	energy_required = 5.0,
 	icon = "__base__/graphics/icons/advanced-circuit.png",
@@ -60,6 +64,7 @@ data:extend({
 	order = "a[circuit]-c[advanced]"
   },
   { type = "recipe", name = "processing-unit",
+    enabled = false,
     category = "advanced-crafting",
 	energy_required = 10,
 	icon = "__base__/graphics/icons/processing-unit.png",
@@ -137,6 +142,7 @@ data:extend({
   },
   
   { type = "recipe", name = "solder",
+    enabled = false,
 	category = "advanced-crafting",
 	energy_required = 1,
 	icon = "__CartmenCompleteOverhaul__/graphics/icons/electronic/solder.png",

@@ -8,6 +8,9 @@ require("prototypes.item.item")
 require("prototypes.item.electronic")
 require("prototypes.item.power")
 require("prototypes.item.lamp")
+require("prototypes.item.logistics")
+require("prototypes.item.assembling-machine")
+require("prototypes.item.chemical")
 
 require("prototypes.recipe.hand-craft.parts")
 require("prototypes.recipe.parts")
@@ -19,12 +22,22 @@ require("prototypes.recipe.electronics")
 require("prototypes.recipe.recipe")
 require("prototypes.recipe.power")
 require("prototypes.recipe.lamp")
+require("prototypes.recipe.transport-belt")
+require("prototypes.recipe.assembling-machine")
 
 require("prototypes.fluid.metals")
 require("prototypes.fluid.chemicals")
 
 require("prototypes.entity.power")
 require("prototypes.entity.lamp")
+require("prototypes.entity.inserter.burner-inserter")
+require("prototypes.entity.inserter.basic-inserter")
+require("prototypes.entity.inserter.long-inserter")
+require("prototypes.entity.inserter.fast-inserter")
+require("prototypes.entity.inserter.smart-inserter")
+require("prototypes.entity.transport-belt")
+require("prototypes.entity.underground.belt")
+require("prototypes.entity.assembling-machine")
 
 require("prototypes.resource.ores")
 require("prototypes.resource.natural-gas")
@@ -37,7 +50,14 @@ require("prototypes.technology.circuit-packs")
 require("prototypes.technology.module")
 
 data.raw["player"]["player"].crafting_categories = {"crafting","hand-craft"}
-table.insert(data.raw["assembling-machine"]["assembling-machine-1"].crafting_categories,{"crafting-2"})
+data.raw["assembling-machine"]["assembling-machine-1"].crafting_categories = {"crafting","crafting-2"}
 
 data.raw["recipe"]["iron-axe"].ingredients = {{"iron-plate",3},{"wooden-stick",1}}
 data.raw["recipe"]["steel-axe"].ingredients = {{"steel-plate",5},{"wooden-stick",1}}
+
+data.raw["transport-belt"]["express-transport-belt"].speed = 0.125
+data.raw["transport-belt-to-ground"]["express-transport-belt-to-ground"].speed = 0.125
+data.raw["splitter"]["express-splitter"].speed = 0.125
+
+data.raw["item"]["basic-transport-belt-to-ground"].icon = "__CartmenCompleteOverhaul__/graphics/icons/logistics/basic-transport-belt-to-ground.png"
+data.raw["transport-belt-to-ground"]["basic-transport-belt-to-ground"].icon = "__CartmenCompleteOverhaul__/graphics/icons/logistics/basic-transport-belt-to-ground.png"
