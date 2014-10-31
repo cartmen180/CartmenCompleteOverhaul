@@ -48,6 +48,11 @@ require("prototypes.resource.quartz")
 require("prototypes.technology.technology")
 require("prototypes.technology.circuit-packs")
 require("prototypes.technology.module")
+require("prototypes.technology.chemical-packs")
+require("prototypes.technology.lab-1")
+require("prototypes.technology.science-packs")
+
+data.raw["technology"]["copper-working"].researched = true
 
 data.raw["player"]["player"].crafting_categories = {"crafting","hand-craft"}
 data.raw["assembling-machine"]["assembling-machine-1"].crafting_categories = {"crafting","crafting-2"}

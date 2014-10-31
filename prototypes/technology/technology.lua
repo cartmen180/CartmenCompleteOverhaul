@@ -424,54 +424,61 @@ data:extend({
     effects =
     {
       {type="unlock-recipe",recipe="salt-electrolysis"},
-	  {type="unlock-recipe",recipe="carbon-monoxide"}
+	  {type="unlock-recipe",recipe="carbon-monoxide"},
+	  {type="unlock-recipe",recipe="chemical-pack-2"}
     },
     unit =
     {
-      count = 30,
+      count = 15,
       ingredients =
       {
-        --{"chemistry-pack-1", 1},
+        {"chemical-pack-1", 5},
       },
       time = 30
     },
     order = "b[chemistry]-a[basic]-a",
+	upgrade = true
   },
   { type = "technology", name = "basic-chemistry-2", prerequisites = {"basic-chemistry"},
     icon = "__CartmenCompleteOverhaul__/graphics/icons/fluid/chlorine.png",
     effects =
     {
       {type="unlock-recipe",recipe="hydrogen-chloride"},
-	  {type="unlock-recipe",recipe="hydrochloric-acid"}
+	  {type="unlock-recipe",recipe="hydrochloric-acid"},
     },
     unit =
     {
       count = 30,
       ingredients =
       {
-        --{"chemistry-pack-1", 1},
+        {"chemical-pack-1", 5},
+		{"chemical-pack-2", 3}
       },
       time = 30
     },
     order = "b[chemistry]-a[basic]-b",
+	upgrade = true
   },
   { type = "technology", name = "basic-chemistry-3", prerequisites = {"basic-chemistry-2"},
     icon = "__CartmenCompleteOverhaul__/graphics/icons/fluid/ammonia.png",
     effects =
     {
       {type="unlock-recipe",recipe="nitrogen"},
-	  {type="unlock-recipe",recipe="ammonia"}
+	  {type="unlock-recipe",recipe="ammonia"},
+	  {type="unlock-recipe",recipe="chemical-pack-3"}
     },
     unit =
     {
       count = 30,
       ingredients =
       {
-        --{"chemistry-pack-1", 1},
+        {"chemical-pack-1", 7},
+		{"chemical-pack-2", 7}
       },
-      time = 30
+      time = 45
     },
     order = "b[chemistry]-b[sulfur]-a",
+	upgrade = true
   },
   { type = "technology", name = "sulfur-processing", prerequisites = {"oil-processing","basic-chemistry-2"},
     icon = "__base__/graphics/technology/sulfur-processing.png",
@@ -486,7 +493,7 @@ data:extend({
       count = 30,
       ingredients =
       {
-        --{"chemistry-pack-1", 1},
+        --{"chemical-pack-1", 1},
       },
       time = 30
     },
@@ -503,7 +510,7 @@ data:extend({
       count = 30,
       ingredients =
       {
-        --{"chemistry-pack-1", 1},
+        --{"chemical-pack-1", 1},
       },
       time = 30
     },
@@ -520,7 +527,7 @@ data:extend({
       count = 30,
       ingredients =
       {
-        --{"chemistry-pack-1", 1},
+        --{"chemical-pack-1", 1},
       },
       time = 30
     },
@@ -538,15 +545,79 @@ data:extend({
     },
     unit =
     {
-      count = 30,
+      count = 50,
       ingredients =
       {
-        --{"chemistry-pack-1", 1},
-        --{"chemistry-pack-2", 1}
+        {"chemical-pack-1", 10},
+        {"chemical-pack-2", 7},
+		{"chemical-pack-3", 5}
       },
-      time = 30
+      time = 60
     },
-    order = "b[chemistry]-f[epoxy]",
+    order = "b[chemistry]-f[epoxy]-a",
+  },
+  { type = "technology", name = "epoxy-hydrolysis", prerequisites = {"epoxy-production"},
+    icon = "__CartmenCompleteOverhaul__/graphics/icons/fluid/epoxy.png",
+    effects =
+    {
+      {type="unlock-recipe",recipe="epoxy-hydrolysis"},
+	  {type="unlock-recipe",recipe="chemical-pack-4"}
+    },
+    unit =
+    {
+      count = 50,
+      ingredients =
+      {
+        {"chemical-pack-1", 10},
+        {"chemical-pack-2", 7},
+		{"chemical-pack-3", 5}
+      },
+      time = 60
+    },
+    order = "b[chemistry]-f[epoxy]-b",
+  },
+  { type = "technology", name = "petro-chemistry", prerequisites = {"advanced-oil-processing","epoxy-hydrolysis"},
+    icon = "__CartmenCompleteOverhaul__/graphics/icons/fluid/benzene.png",
+    effects =
+    {
+      {type="unlock-recipe",recipe="benzene"},
+	  {type="unlock-recipe",recipe="hydrated-petroleum-gas"}
+    },
+    unit =
+    {
+      count = 50,
+      ingredients =
+      {
+        {"chemical-pack-2", 5},
+		{"chemical-pack-3", 5},
+		{"chemical-pack-4", 5}
+      },
+      time = 60
+    },
+    order = "b[chemistry]-g[petrol]-a",
+	upgrade = true
+  },
+  { type = "technology", name = "petro-chemistry-2", prerequisites = {"petro-chemistry"},
+    icon = "__CartmenCompleteOverhaul__/graphics/icons/fluid/polyvinyl-chloride.png",
+    effects =
+    {
+      {type="unlock-recipe",recipe="vinyl-chloride"},
+	  {type="unlock-recipe",recipe="polyvinyl-chloride"},
+	  {type="unlock-recipe",recipe="pvc-initiator"}
+    },
+    unit =
+    {
+      count = 50,
+      ingredients =
+      {
+        {"chemical-pack-2", 10},
+		{"chemical-pack-3", 3},
+		{"chemical-pack-4", 10}
+      },
+      time = 60
+    },
+    order = "b[chemistry]-g[petrol]-b",
+	upgrade = true
   },
   
   { type = "technology", name = "automation", prerequisites = {"bronze-working"},

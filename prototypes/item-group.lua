@@ -34,7 +34,9 @@ data:extend({
   {type = "item-subgroup", name = "cartmen-basic-chemicals", group = "cartmen-3", order = "a-a"},
   {type = "item-subgroup", name = "cartmen-gas", group = "cartmen-3", order = "b"},
   {type = "item-subgroup", name = "cartmen-epoxy", group = "cartmen-3", order = "c"},
-  {type = "item-subgroup", name = "cartmen-intermediates", group = "cartmen-3", order = "d"},
+  {type = "item-subgroup", name = "cartmen-petrolchemics", group = "cartmen-3", order = "d"},
+  {type = "item-subgroup", name = "cartmen-intermediates", group = "cartmen-3", order = "f"},
+  {type = "item-subgroup", name = "cartmen-packs-3", group = "cartmen-3", order = "z"},
   
   { type = "item-group", name = "cartmen-4",
 	order = "a-d",
@@ -54,4 +56,7 @@ data:extend({
 	icon = "__base__/graphics/technology/automation.png",
   },
   {type = "item-subgroup", name = "cartmen-assemblers", group = "cartmen-5", order = "c"},
+  {type = "item-subgroup", name = "cartmen-science-pack-1", group = "cartmen-5", order = "d-a"},
+  {type = "item-subgroup", name = "cartmen-science-pack-2", group = "cartmen-5", order = "d-b"},
+  {type = "item-subgroup", name = "cartmen-lab", group = "cartmen-5", order = "d-z"},
 })
