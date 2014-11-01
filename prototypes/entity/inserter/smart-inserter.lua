@@ -131,10 +131,13 @@ data:extend({
     },
     platform_picture =
     {
+	  sheet = 
+	  {
       priority = "extra-high",
       width = 46,
       height = 46,
-      sheet = "__base__/graphics/entity/smart-inserter/smart-inserter-platform.png"
+      filename = "__base__/graphics/entity/smart-inserter/smart-inserter-platform.png"
+	  }
     },
     programmable = true,
     rotation_speed = 0.035,
@@ -239,10 +242,13 @@ data:extend({
     },
     platform_picture =
     {
+	  sheet = 
+	  {
       priority = "extra-high",
       width = 46,
       height = 46,
-      sheet = "__base__/graphics/entity/smart-inserter/smart-inserter-platform.png"
+      filename = "__base__/graphics/entity/smart-inserter/smart-inserter-platform.png"
+	  }
     },
     programmable = true,
     rotation_speed = 0.035,
@@ -347,10 +353,13 @@ data:extend({
     },
     platform_picture =
     {
+	  sheet = 
+	  {
       priority = "extra-high",
       width = 46,
       height = 46,
-      sheet = "__base__/graphics/entity/smart-inserter/smart-inserter-platform.png"
+      filename = "__base__/graphics/entity/smart-inserter/smart-inserter-platform.png"
+	  }
     },
     programmable = true,
     rotation_speed = 0.035,

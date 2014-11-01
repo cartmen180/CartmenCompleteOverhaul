@@ -55,6 +55,7 @@ data:extend({
 	inventory_order = "c-c",
 	icon = "__base__/graphics/technology/automation.png",
   },
+  {type = "item-subgroup", name = "cartmen-miners", group = "cartmen-5", order = "b"},
   {type = "item-subgroup", name = "cartmen-assemblers", group = "cartmen-5", order = "c"},
   {type = "item-subgroup", name = "cartmen-science-pack-1", group = "cartmen-5", order = "d-a"},
   {type = "item-subgroup", name = "cartmen-science-pack-2", group = "cartmen-5", order = "d-b"},

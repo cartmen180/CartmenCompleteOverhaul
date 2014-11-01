@@ -11,8 +11,10 @@ require("prototypes.item.lamp")
 require("prototypes.item.logistics")
 require("prototypes.item.assembling-machine")
 require("prototypes.item.chemical")
+require("prototypes.item.mining-drill")
 
 require("prototypes.recipe.hand-craft.parts")
+require("prototypes.recipe.hand-craft.mining-drill")
 require("prototypes.recipe.parts")
 require("prototypes.recipe.alloys")
 require("prototypes.recipe.plates")
@@ -38,12 +40,15 @@ require("prototypes.entity.inserter.smart-inserter")
 require("prototypes.entity.transport-belt")
 require("prototypes.entity.underground.belt")
 require("prototypes.entity.assembling-machine")
+require("prototypes.entity.mining-drill")
 
 require("prototypes.resource.ores")
 require("prototypes.resource.natural-gas")
 require("prototypes.resource.autoplace-controls")
 require("prototypes.resource.lead-tin")
 require("prototypes.resource.quartz")
+require("prototypes.resource.salt")
+require("prototypes.resource.titanium")
 
 require("prototypes.technology.technology")
 require("prototypes.technology.circuit-packs")
@@ -51,8 +56,6 @@ require("prototypes.technology.module")
 require("prototypes.technology.chemical-packs")
 require("prototypes.technology.lab-1")
 require("prototypes.technology.science-packs")
-
-data.raw["technology"]["copper-working"].researched = true
 
 data.raw["player"]["player"].crafting_categories = {"crafting","hand-craft"}
 data.raw["assembling-machine"]["assembling-machine-1"].crafting_categories = {"crafting","crafting-2"}

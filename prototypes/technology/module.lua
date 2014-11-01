@@ -6,8 +6,7 @@ data:extend({
       count = 50,
       ingredients =
       {
-        {"circuit-pack-2", 1},
-        {"circuit-pack-3", 1}
+        {"science-pack-2",5}
       },
       time = 30
     },
@@ -23,8 +22,7 @@ data:extend({
     {
       count = 50,
       ingredients = {
-        {"circuit-pack-2", 3},
-        {"circuit-pack-3", 2},
+      {"science-pack-2",5}
       },
       time = 30
     },
@@ -45,9 +43,7 @@ data:extend({
       count = 75,
       ingredients =
       {
-        {"circuit-pack-2", 3},
-        {"circuit-pack-3", 2},
-        {"circuit-pack-4", 1},
+        {"science-pack-2",5}
       },
       time = 30
     },
@@ -68,10 +64,7 @@ data:extend({
       count = 300,
       ingredients =
       {
-        {"circuit-pack-2", 5},
-        {"circuit-pack-3", 3},
-        {"circuit-pack-4", 2},
-        {"circuit-pack-5", 1}
+        {"science-pack-2",5}
       },
       time = 60
     },
@@ -91,8 +84,7 @@ data:extend({
     {
       count = 50,
       ingredients = {
-        {"circuit-pack-2", 3},
-        {"circuit-pack-3", 2},
+        {"science-pack-2",5}
       },
       time = 30
     },
@@ -113,9 +105,7 @@ data:extend({
       count = 75,
       ingredients =
       {
-        {"circuit-pack-2", 4},
-        {"circuit-pack-3", 3},
-        {"circuit-pack-4", 1},
+        {"science-pack-2",5}
       },
       time = 30
     },
@@ -136,10 +126,7 @@ data:extend({
       count = 300,
       ingredients =
       {
-        {"circuit-pack-2", 5},
-        {"circuit-pack-3", 3},
-        {"circuit-pack-4", 2},
-        {"circuit-pack-5", 1}
+        {"science-pack-2",5}
       },
       time = 60
     },
@@ -159,8 +146,7 @@ data:extend({
     {
       count = 50,
       ingredients = {
-        {"circuit-pack-2", 3},
-        {"circuit-pack-3", 2},
+        {"science-pack-2",5}
       },
       time = 30
     },
@@ -181,9 +167,7 @@ data:extend({
       count = 75,
       ingredients =
       {
-        {"circuit-pack-2", 4},
-        {"circuit-pack-3", 3},
-        {"circuit-pack-4", 1},
+        {"science-pack-2",5}
       },
       time = 30
     },
@@ -204,11 +188,8 @@ data:extend({
       count = 300,
       ingredients =
       {
-        {"circuit-pack-2", 5},
-        {"circuit-pack-3", 3},
-        {"circuit-pack-4", 2},
-        {"circuit-pack-5", 1}
-      },
+        {"science-pack-2",5}
+	  },
       time = 60
     },
     upgrade = true,

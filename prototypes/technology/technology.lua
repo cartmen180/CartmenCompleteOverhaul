@@ -1,5 +1,5 @@
 data:extend({
-  { type = "technology", name = "copper-working",
+  --[[{ type = "technology", name = "copper-working",
 	icon = "__CartmenCompleteOverhaul__/graphics/icons/part/copper-parts.png",
 	effects = 
 	{
@@ -11,13 +11,15 @@ data:extend({
 	unit =
 	{
 	  count = 10,
-	  ingredients = {{"copper-plate",1}},
+	  ingredients = {
+	  {"science-pack-1",1}
+	  },
 	  time = 15
 	},
 	upgrade = true,
 	order = "a-a-a",
-  },
-  { type = "technology", name = "copper-working-2", prerequisites = {"copper-working","steel-working"},
+  },]]
+  { type = "technology", name = "copper-working-2", prerequisites = {--[["copper-working"]]"steel-working"},
 	icon = "__CartmenCompleteOverhaul__/graphics/icons/part/copper-parts.png",
 	effects = 
 	{
@@ -46,7 +48,7 @@ data:extend({
 	unit =
 	{
 	  count = 10,
-	  ingredients = {{"bronze-plate",1},{"copper-parts",3}},
+	  ingredients = {{"science-pack-1",2}},
 	  time = 20
 	},
 	upgrade = true,
@@ -63,7 +65,7 @@ data:extend({
 	unit =
 	{
 	  count = 25,
-	  ingredients = {{"bronze-parts",5}},
+	  ingredients = {{"science-pack-1",1},{"science-pack-2",1}},
 	  time = 60
 	},
 	upgrade = true,
@@ -80,8 +82,8 @@ data:extend({
 	},
 	unit =
 	{
-	  count = 10,
-	  ingredients = {{"iron-plate",1},{"bronze-parts",3}},
+	  count = 15,
+	  ingredients = {{"science-pack-1",1}},
 	  time = 25
 	},
 	upgrade = true,
@@ -98,7 +100,7 @@ data:extend({
 	unit =
 	{
 	  count = 25,
-	  ingredients = {{"iron-parts",5}},
+	  ingredients = {{"science-pack-1",1},{"science-pack-2",1}},
 	  time = 60
 	},
 	upgrade = true,
@@ -117,8 +119,8 @@ data:extend({
 	},
 	unit =
 	{
-	  count = 20,
-	  ingredients = {{"steel-plate",1},{"iron-parts",5}},
+	  count = 30,
+	  ingredients = {{"science-pack-1",2}},
 	  time = 45
 	},
 	order = "a-a-d",
@@ -135,7 +137,7 @@ data:extend({
 	unit =
 	{
 	  count = 30,
-	  ingredients = {{"titanium-plate",1},{"steel-parts",5}},
+	  ingredients = {{"science-pack-1",20},{"science-pack-2",20}},
 	  time = 60
 	},
 	order = "a-a-e",
@@ -150,8 +152,8 @@ data:extend({
 	},
 	unit =
 	{
-	  count = 30,
-	  ingredients = {{"rubber",2}},
+	  count = 15,
+	  ingredients = {{"science-pack-1",1}},
 	  time = 45
 	}
   },
@@ -165,7 +167,7 @@ data:extend({
 	unit =
 	{
 	  count = 5,
-	  ingredients = {{"raw-wood",1}},
+	  ingredients = {{"science-pack-1",1}},
 	  time = 10
 	},
 	order = "a-c-a",
@@ -180,7 +182,7 @@ data:extend({
 	unit =
 	{
 	  count = 20,
-	  ingredients = {{"steel-parts",2},{"bronze-parts",3}},
+	  ingredients = {{"science-pack-1",10},{"science-pack-2",10}},
 	  time = 30
 	},
 	order = "a-c-b",
@@ -195,14 +197,14 @@ data:extend({
 	unit =
 	{
 	  count = 50,
-	  ingredients = {{"titanium-parts",2},{"bronze-parts",5}},
+	  ingredients = {{"science-pack-1",25},{"science-pack-2",25}},
 	  time = 45
 	},
 	order = "a-c-c",
 	upgrade = true,
   },
 
-  { type = "technology", name = "bronze-alloy", prerequisites = {"copper-working"},
+  { type = "technology", name = "bronze-alloy", prerequisites = {"wood-working"},
 	icon = "__CartmenCompleteOverhaul__/graphics/icons/plate/bronze-plate.png",
 	effects = 
 	{
@@ -212,7 +214,7 @@ data:extend({
 	unit =
 	{
 	  count = 25,
-	  ingredients = {{"copper-plate",1},{"tin-plate",1}},
+	  ingredients = {{"science-pack-1",2}},
 	  time = 30
 	},
 	order = "a-d-a",
@@ -226,7 +228,7 @@ data:extend({
 	unit =
 	{
 	  count = 30,
-	  ingredients = {{"iron-plate",1},{"coal",1}},
+	  ingredients = {{"science-pack-1",3}},
 	  time = 60
 	},
 	order = "a-d-b",
@@ -240,7 +242,7 @@ data:extend({
 	unit =
 	{
 	  count = 40,
-	  ingredients = {{"steel-plate",2},{"titanium-sponge",1}},
+	  ingredients = {{"science-pack-1",6},{"science-pack-2",6}},
 	  time = 90
 	},
 	order = "a-d-c",
@@ -302,7 +304,7 @@ data:extend({
     unit =
     {
       count = 50,
-      ingredients = {{"steel-parts",5},{"iron-parts",3},{"bronze-parts",3},{"circuit-pack-2",3}},
+      ingredients = {{"science-pack-1",5},{"science-pack-2",5},{"science-pack-3",5}},
       time = 30
     },
     order = "d[resource-processing]-c[oil-processing]-a"
@@ -322,7 +324,7 @@ data:extend({
     unit =
     {
       count = 75,
-      ingredients = {{"steel-parts",7},{"iron-parts",4},{"bronze-parts",4},{"circuit-pack-3",4}},
+      ingredients = {{"science-pack-1",8},{"science-pack-2",8},{"science-pack-3",8}},
       time = 45
     },
     order = "d[resource-processing]-c[oil-processing]-b"
@@ -343,9 +345,9 @@ data:extend({
     },
     unit =
     {
-      count = 20,
-      ingredients = {{"circuit-pack-1", 1}},
-      time = 15
+      count = 5,
+      ingredients = {{"science-pack-2",1}},
+      time = 30
     },
     order = "b-d-a",
   },
@@ -363,11 +365,10 @@ data:extend({
     },
     unit =
     {
-      count = 40,
+      count = 25,
       ingredients =
       {
-        {"circuit-pack-1", 1},
-        {"circuit-pack-2", 1}
+        {"science-pack-2", 2}
       },
       time = 30
     },
@@ -387,9 +388,7 @@ data:extend({
       count = 60,
       ingredients =
       {
-        {"circuit-pack-1", 1},
-        {"circuit-pack-2", 1},
-		{"circuit-pack-3", 1}
+        {"science-pack-2", 10}
       },
       time = 45
     },
@@ -408,10 +407,7 @@ data:extend({
       count = 80,
       ingredients =
       {
-        {"circuit-pack-1", 1},
-        {"circuit-pack-2", 1},
-		{"circuit-pack-3", 1},
-		{"circuit-pack-4", 1}
+        {"science-pack-2", 25}
       },
       time = 60
     },
@@ -432,7 +428,7 @@ data:extend({
       count = 15,
       ingredients =
       {
-        {"chemical-pack-1", 5},
+        {"science-pack-3", 5},
       },
       time = 30
     },
@@ -451,8 +447,7 @@ data:extend({
       count = 30,
       ingredients =
       {
-        {"chemical-pack-1", 5},
-		{"chemical-pack-2", 3}
+        {"science-pack-3", 8}
       },
       time = 30
     },
@@ -472,8 +467,7 @@ data:extend({
       count = 30,
       ingredients =
       {
-        {"chemical-pack-1", 7},
-		{"chemical-pack-2", 7}
+        {"science-pack-3",12}
       },
       time = 45
     },
@@ -493,7 +487,8 @@ data:extend({
       count = 30,
       ingredients =
       {
-        --{"chemical-pack-1", 1},
+	    {"science-pack-2",10},
+        {"science-pack-3",10}
       },
       time = 30
     },
@@ -510,7 +505,8 @@ data:extend({
       count = 30,
       ingredients =
       {
-        --{"chemical-pack-1", 1},
+        {"science-pack-2",10},
+		{"science-pack-3",10}
       },
       time = 30
     },
@@ -524,10 +520,11 @@ data:extend({
     },
     unit =
     {
-      count = 30,
+      count = 45,
       ingredients =
       {
-        --{"chemical-pack-1", 1},
+        {"science-pack-2",15},
+		{"science-pack-3",15}
       },
       time = 30
     },
@@ -548,9 +545,8 @@ data:extend({
       count = 50,
       ingredients =
       {
-        {"chemical-pack-1", 10},
-        {"chemical-pack-2", 7},
-		{"chemical-pack-3", 5}
+        {"science-pack-2",3},
+		{"science-pack-3",3}
       },
       time = 60
     },
@@ -568,9 +564,8 @@ data:extend({
       count = 50,
       ingredients =
       {
-        {"chemical-pack-1", 10},
-        {"chemical-pack-2", 7},
-		{"chemical-pack-3", 5}
+        {"science-pack-2", 2},
+		{"science-pack-3", 7}
       },
       time = 60
     },
@@ -588,9 +583,9 @@ data:extend({
       count = 50,
       ingredients =
       {
-        {"chemical-pack-2", 5},
-		{"chemical-pack-3", 5},
-		{"chemical-pack-4", 5}
+        {"science-pack-1", 5},
+		{"science-pack-2", 5},
+		{"science-pack-3", 10}
       },
       time = 60
     },
@@ -610,9 +605,9 @@ data:extend({
       count = 50,
       ingredients =
       {
-        {"chemical-pack-2", 10},
-		{"chemical-pack-3", 3},
-		{"chemical-pack-4", 10}
+        {"science-pack-1", 10},
+		{"science-pack-2", 10},
+		{"science-pack-3", 20}
       },
       time = 60
     },
@@ -620,7 +615,7 @@ data:extend({
 	upgrade = true
   },
   
-  { type = "technology", name = "automation", prerequisites = {"bronze-working"},
+  { type = "technology", name = "automation", --prerequisites = {"bronze-working"},
     icon = "__base__/graphics/technology/automation.png",
     effects =
     {
@@ -629,9 +624,9 @@ data:extend({
     },
     unit =
     {
-      count = 10,
-      ingredients = {{"copper-parts", 3},{"bronze-parts",2},{"circuit-pack-1",3}},
-      time = 10
+      count = 4,
+      ingredients = {{"science-pack-1",1}},
+      time = 20
     },
 	upgrade = true,
     order = "a-e-a",
@@ -646,7 +641,7 @@ data:extend({
     unit =
     {
       count = 40,
-      ingredients = {{"iron-parts", 5},{"steel-parts",3},{"circuit-pack-2",4}},
+      ingredients = {{"science-pack-1",10},{"science-pack-2",10}},
       time = 30
     },
 	upgrade = true,
@@ -661,8 +656,8 @@ data:extend({
     },
     unit =
     {
-      count = 100,
-      ingredients = {{"iron-parts", 7},{"steel-parts",10},{"circuit-pack-3",5}},
+      count = 60,
+      ingredients = {{"science-pack-1",15},{"science-pack-2",15}},
       time = 60
     },
 	upgrade = true,
@@ -676,8 +671,8 @@ data:extend({
     },
     unit =
     {
-      count = 100,
-      ingredients = {{"steel-parts", 7},{"titanium-parts",10},{"circuit-pack-4",5}},
+      count = 80,
+      ingredients = {{"science-pack-1",25},{"science-pack-2",25}},
       time = 60
     },
 	upgrade = true,
@@ -691,8 +686,8 @@ data:extend({
     },
     unit =
     {
-      count = 250,
-      ingredients = {{"steel-parts", 10},{"titanium-parts",15},{"circuit-pack-5",8}},
+      count = 100,
+      ingredients = {{"science-pack-1",50},{"science-pack-2",50}},
       time = 120
     },
 	upgrade = true,
@@ -714,7 +709,7 @@ data:extend({
     unit =
     {
       count = 20,
-      ingredients = {{"bronze-parts",2},{"iron-parts", 4}},
+      ingredients = {{"science-pack-1",2}},
       time = 15
     },
 	upgrade = true,
@@ -735,7 +730,7 @@ data:extend({
     unit =
     {
       count = 40,
-      ingredients = {{"iron-parts",4},{"steel-parts", 6},{"circuit-pack-2",4}},
+      ingredients = {{"science-pack-1",5},{"science-pack-2",2}},
       time = 30
     },
 	upgrade = true,
@@ -751,8 +746,8 @@ data:extend({
     },
     unit =
     {
-      count = 100,
-      ingredients = {{"iron-parts",5},{"steel-parts", 10},{"circuit-pack-3",5}},
+      count = 70,
+      ingredients = {{"science-pack-1",10},{"science-pack-2",5},{"science-pack-3",5}},
       time = 45
     },
 	upgrade = true,
@@ -769,14 +764,14 @@ data:extend({
     unit =
     {
       count = 100,
-      ingredients = {{"steel-parts",5},{"titanium-parts", 10},{"circuit-pack-4",5},{"circuit-pack-5",4}},
+      ingredients = {{"science-pack-1",20},{"science-pack-2",10},{"science-pack-3",10}},
       time = 45
     },
 	upgrade = true,
     order = "a-f-d",
   },
   
-  { type = "technology", name = "optics", prerequisites = {"copper-working"},
+  { type = "technology", name = "optics", --prerequisites = {"copper-working"},
     icon = "__base__/graphics/technology/optics.png",
     effects =
     {
@@ -784,8 +779,8 @@ data:extend({
     },
     unit =
     {
-      count = 10,
-      ingredients = {{"copper-parts",3},{"circuit-pack-1",1}},
+      count = 2,
+      ingredients = {{"science-pack-1",1},{"science-pack-2",1}},
       time = 15
     },
 	upgrade = true,
@@ -800,8 +795,8 @@ data:extend({
     },
     unit =
     {
-      count = 20,
-      ingredients = {{"copper-parts",5},{"steel-parts",2},{"circuit-pack-2",3}},
+      count = 30,
+      ingredients = {{"science-pack-1",3},{"science-pack-2",3}},
       time = 25
     },
 	upgrade = true,
@@ -812,7 +807,7 @@ data:extend({
     unit =
     {
       count = 50,
-      ingredients = {{"circuit-pack-2",10},{"circuit-pack-3",6},{"steel-parts",8},{"iron-parts",5}},
+      ingredients = {{"science-pack-1",5},{"science-pack-2",20}},
       time = 30
     },
     order = "a-h-d",
@@ -830,7 +825,7 @@ data:extend({
     {
       count = 50,
       ingredients =
-      {{"circuit-pack-2", 4},{"circuit-pack-3", 2},{"copper-parts",5},{"steel-parts",8}},
+      {{"science-pack-1",5},{"science-pack-2",15}},
       time = 30
     },
 	upgrade = true,
@@ -846,7 +841,7 @@ data:extend({
     {
       count = 100,
       ingredients =
-      {{"circuit-pack-2", 4},{"circuit-pack-3", 2},{"copper-parts",5},{"steel-parts",8}},
+      {{"science-pack-1",5},{"science-pack-2",15}},
       time = 45
     },
 	upgrade = true,
@@ -862,7 +857,7 @@ data:extend({
     {
       count = 200,
       ingredients =
-      {{"circuit-pack-3", 4},{"circuit-pack-4", 2},{"copper-parts",5},{"steel-parts",10}},
+      {{"science-pack-1",5},{"science-pack-2",15}},
       time = 60
     },
 	upgrade = true,
@@ -878,7 +873,7 @@ data:extend({
     {
       count = 300,
       ingredients =
-      {{"circuit-pack-3", 5},{"circuit-pack-4", 4},{"titanium-parts",10},{"steel-parts",15}},
+      {{"science-pack-1",15},{"science-pack-2",15}},
       time = 60
     },
 	upgrade = true,
@@ -894,7 +889,7 @@ data:extend({
     {
       count = 500,
       ingredients =
-      {{"circuit-pack-4", 6},{"circuit-pack-5", 4},{"titanium-parts",15},{"steel-parts",10}},
+      {{"science-pack-1",15},{"science-pack-2",15}},
       time = 90
     },
 	upgrade = true,
@@ -911,7 +906,7 @@ data:extend({
     {
       count = 60,
       ingredients =
-      {{"circuit-pack-2", 5},{"circuit-pack-3", 2}},
+      {{"science-pack-1",2},{"science-pack-2",5}},
       time = 30
     },
 	upgrade = true,
@@ -927,7 +922,7 @@ data:extend({
     {
       count = 100,
       ingredients =
-      {{"circuit-pack-2", 5},{"circuit-pack-3", 2}},
+      {{"science-pack-1",2},{"science-pack-2",5}},
       time = 45
     },
 	upgrade = true,
@@ -943,7 +938,7 @@ data:extend({
     {
       count = 200,
       ingredients =
-      {{"circuit-pack-2", 5},{"circuit-pack-3", 2}},
+      {{"science-pack-1",2},{"science-pack-2",5}},
       time = 30
     },
 	upgrade = true,
@@ -961,7 +956,7 @@ data:extend({
     {
       count = 50,
       ingredients =
-      {{"circuit-pack-2", 3},{"steel-parts", 6}},
+      {{"science-pack-1",3},{"science-pack-2",3}},
       time = 30
     },
 	upgrade = true,
@@ -977,7 +972,7 @@ data:extend({
     {
       count = 100,
       ingredients =
-      {{"circuit-pack-2", 4},{"circuit-pack-3",4},{"steel-parts", 10}},
+      {{"science-pack-1",3},{"science-pack-2",3}},
       time = 30
     },
 	upgrade = true,

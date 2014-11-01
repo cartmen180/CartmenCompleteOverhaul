@@ -44,8 +44,8 @@ data:extend({
     {
       filename = "__CartmenCompleteOverhaul__/graphics/entity/assembling-machine-4/assembling-machine-4.png",
       priority = "high",
-      frame_width = 142,
-      frame_height = 113,
+      width = 142,
+      height = 113,
       frame_count = 32,
       line_length = 8,
       shift = {0.84, -0.09}
@@ -140,8 +140,8 @@ data:extend({
     {
       filename = "__CartmenCompleteOverhaul__/graphics/entity/assembling-machine-5/assembling-machine-5.png",
       priority = "high",
-      frame_width = 142,
-      frame_height = 113,
+      width = 142,
+      height = 113,
       frame_count = 32,
       line_length = 8,
       shift = {0.84, -0.09}

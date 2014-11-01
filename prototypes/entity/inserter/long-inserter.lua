@@ -132,10 +132,13 @@ data:extend({
     },
     platform_picture =
     {
+	  sheet = 
+	  {
       priority = "extra-high",
       width = 46,
       height = 46,
-      sheet = "__base__/graphics/entity/long-handed-inserter/long-handed-inserter-platform.png"
+      filename = "__base__/graphics/entity/long-handed-inserter/long-handed-inserter-platform.png"
+	  }
     }
   }, 
   { type = "inserter", name = "long-inserter-right",
@@ -238,10 +241,13 @@ data:extend({
     },
     platform_picture =
     {
+	  sheet = 
+	  {
       priority = "extra-high",
       width = 46,
       height = 46,
-      sheet = "__base__/graphics/entity/long-handed-inserter/long-handed-inserter-platform.png"
+      filename = "__base__/graphics/entity/long-handed-inserter/long-handed-inserter-platform.png"
+	  }
     }
   },
   { type = "inserter", name = "long-inserter-half",
@@ -344,10 +350,13 @@ data:extend({
     },
     platform_picture =
     {
+	  sheet = 
+	  {
       priority = "extra-high",
       width = 46,
       height = 46,
-      sheet = "__base__/graphics/entity/long-handed-inserter/long-handed-inserter-platform.png"
+      filename = "__base__/graphics/entity/long-handed-inserter/long-handed-inserter-platform.png"
+	  }
     }
   },
   

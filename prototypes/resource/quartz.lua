@@ -83,8 +83,8 @@ data:extend({
     stage_counts = {1000, 600, 400, 200, 100, 50, 20, 1},
     stages = { filename = "__CartmenCompleteOverhaul__/graphics/entity/quartz/quartz.png",
       priority = "extra-high",
-      frame_width = 38,
-      frame_height = 38,
+      width = 38,
+      height = 38,
       frame_count = 4,
       direction_count = 8
     },
@@ -99,29 +99,29 @@ data:extend({
       {
         filename = "__CartmenCompleteOverhaul__/graphics/entity/quartz/quartz-particle-1.png",
         priority = "extra-high",
-        frame_width = 5,
-        frame_height = 4,
+        width = 5,
+        height = 4,
         frame_count = 1
       },
       {
         filename = "__CartmenCompleteOverhaul__/graphics/entity/quartz/quartz-particle-2.png",
         priority = "extra-high",
-        frame_width = 4,
-        frame_height = 4,
+        width = 4,
+        height = 4,
         frame_count = 1
       },
       {
         filename = "__CartmenCompleteOverhaul__/graphics/entity/quartz/quartz-particle-3.png",
         priority = "extra-high",
-        frame_width = 5,
-        frame_height = 6,
+        width = 5,
+        height = 6,
         frame_count = 1
       },
       {
         filename = "__CartmenCompleteOverhaul__/graphics/entity/quartz/quartz-particle-4.png",
         priority = "extra-high",
-        frame_width = 7,
-        frame_height = 7,
+        width = 7,
+        height = 7,
         frame_count = 1
       }
     },
@@ -129,29 +129,29 @@ data:extend({
       {
         filename = "__CartmenCompleteOverhaul__/graphics/entity/quartz/quartz-particle-shadow-1.png",
         priority = "extra-high",
-        frame_width = 5,
-        frame_height = 4,
+        width = 5,
+        height = 4,
         frame_count = 1
       },
       {
         filename = "__CartmenCompleteOverhaul__/graphics/entity/quartz/quartz-particle-shadow-2.png",
         priority = "extra-high",
-        frame_width = 4,
-        frame_height = 4,
+        width = 4,
+        height = 4,
         frame_count = 1
       },
       {
         filename = "__CartmenCompleteOverhaul__/graphics/entity/quartz/quartz-particle-shadow-3.png",
         priority = "extra-high",
-        frame_width = 5,
-        frame_height = 6,
+        width = 5,
+        height = 6,
         frame_count = 1
       },
       {
         filename = "__CartmenCompleteOverhaul__/graphics/entity/quartz/quartz-particle-shadow-4.png",
         priority = "extra-high",
-        frame_width = 7,
-        frame_height = 7,
+        width = 7,
+        height = 7,
         frame_count = 1
       }
     }

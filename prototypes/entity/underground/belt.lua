@@ -64,20 +64,26 @@ data:extend({
     {
       direction_in =
       {
-        sheet = "__base__/graphics/entity/basic-transport-belt-to-ground/basic-transport-belt-to-ground-structure.png",
+	    sheet = 
+		{
+        filename = "__base__/graphics/entity/basic-transport-belt-to-ground/basic-transport-belt-to-ground-structure.png",
         priority = "extra-high",
         shift = {0.26, 0},
         width = 57,
         height = 43,
         y = 43
+		}
       },
       direction_out =
       {
-        sheet = "__base__/graphics/entity/basic-transport-belt-to-ground/basic-transport-belt-to-ground-structure.png",
+	    sheet =
+		{
+        filename = "__base__/graphics/entity/basic-transport-belt-to-ground/basic-transport-belt-to-ground-structure.png",
         priority = "extra-high",
         shift = {0.26, 0},
         width = 57,
         height = 43
+		}
       }
     },
     ending_patch = ending_patch_prototype
@@ -122,20 +128,26 @@ data:extend({
     {
       direction_in =
       {
-        sheet = "__base__/graphics/entity/basic-transport-belt-to-ground/basic-transport-belt-to-ground-structure.png",
+	    sheet = 
+		{
+        filename = "__base__/graphics/entity/basic-transport-belt-to-ground/basic-transport-belt-to-ground-structure.png",
         priority = "extra-high",
         shift = {0.26, 0},
         width = 57,
         height = 43,
         y = 43
+		}
       },
       direction_out =
       {
-        sheet = "__base__/graphics/entity/basic-transport-belt-to-ground/basic-transport-belt-to-ground-structure.png",
+	    sheet =
+		{
+        filename = "__base__/graphics/entity/basic-transport-belt-to-ground/basic-transport-belt-to-ground-structure.png",
         priority = "extra-high",
         shift = {0.26, 0},
         width = 57,
         height = 43
+		}
       }
     },
     ending_patch = ending_patch_prototype
@@ -180,20 +192,26 @@ data:extend({
     {
       direction_in =
       {
-        sheet = "__base__/graphics/entity/basic-transport-belt-to-ground/basic-transport-belt-to-ground-structure.png",
+	    sheet =
+		{
+        filename = "__base__/graphics/entity/basic-transport-belt-to-ground/basic-transport-belt-to-ground-structure.png",
         priority = "extra-high",
         shift = {0.26, 0},
         width = 57,
         height = 43,
         y = 43
+		}
       },
       direction_out =
       {
-        sheet = "__base__/graphics/entity/basic-transport-belt-to-ground/basic-transport-belt-to-ground-structure.png",
+	    sheet =
+		{
+        filename = "__base__/graphics/entity/basic-transport-belt-to-ground/basic-transport-belt-to-ground-structure.png",
         priority = "extra-high",
         shift = {0.26, 0},
         width = 57,
         height = 43
+		}
       }
     },
     ending_patch = ending_patch_prototype
@@ -238,20 +256,26 @@ data:extend({
     {
       direction_in =
       {
-        sheet = "__base__/graphics/entity/basic-transport-belt-to-ground/basic-transport-belt-to-ground-structure.png",
+	    sheet =
+		{
+        filename = "__base__/graphics/entity/basic-transport-belt-to-ground/basic-transport-belt-to-ground-structure.png",
         priority = "extra-high",
         shift = {0.26, 0},
         width = 57,
         height = 43,
         y = 43
+		}
       },
       direction_out =
       {
-        sheet = "__base__/graphics/entity/basic-transport-belt-to-ground/basic-transport-belt-to-ground-structure.png",
+	    sheet =
+		{
+        filename = "__base__/graphics/entity/basic-transport-belt-to-ground/basic-transport-belt-to-ground-structure.png",
         priority = "extra-high",
         shift = {0.26, 0},
         width = 57,
         height = 43
+		}
       }
     },
     ending_patch = ending_patch_prototype
@@ -374,20 +398,24 @@ data:extend({
     {
       direction_in =
       {
-        sheet = "__base__/graphics/entity/fast-transport-belt-to-ground/fast-transport-belt-to-ground-structure.png",
+	  sheet={
+        filename = "__base__/graphics/entity/fast-transport-belt-to-ground/fast-transport-belt-to-ground-structure.png",
         priority = "extra-high",
         shift = {0.26, 0},
         width = 57,
         height = 43,
         y = 43
+		}
       },
       direction_out =
       {
-        sheet = "__base__/graphics/entity/fast-transport-belt-to-ground/fast-transport-belt-to-ground-structure.png",
+	  sheet={
+        filename = "__base__/graphics/entity/fast-transport-belt-to-ground/fast-transport-belt-to-ground-structure.png",
         priority = "extra-high",
         shift = {0.26, 0},
         width = 57,
         height = 43
+		}
       }
     },
     ending_patch = ending_patch_prototype
@@ -431,20 +459,24 @@ data:extend({
     {
       direction_in =
       {
-        sheet = "__base__/graphics/entity/fast-transport-belt-to-ground/fast-transport-belt-to-ground-structure.png",
+	  sheet={
+        filename = "__base__/graphics/entity/fast-transport-belt-to-ground/fast-transport-belt-to-ground-structure.png",
         priority = "extra-high",
         shift = {0.26, 0},
         width = 57,
         height = 43,
         y = 43
+		}
       },
       direction_out =
       {
-        sheet = "__base__/graphics/entity/fast-transport-belt-to-ground/fast-transport-belt-to-ground-structure.png",
+	  sheet={
+        filename = "__base__/graphics/entity/fast-transport-belt-to-ground/fast-transport-belt-to-ground-structure.png",
         priority = "extra-high",
         shift = {0.26, 0},
         width = 57,
         height = 43
+		}
       }
     },
     ending_patch = ending_patch_prototype
@@ -488,20 +520,24 @@ data:extend({
     {
       direction_in =
       {
-        sheet = "__base__/graphics/entity/fast-transport-belt-to-ground/fast-transport-belt-to-ground-structure.png",
+	  sheet={
+        filename = "__base__/graphics/entity/fast-transport-belt-to-ground/fast-transport-belt-to-ground-structure.png",
         priority = "extra-high",
         shift = {0.26, 0},
         width = 57,
         height = 43,
         y = 43
+		}
       },
       direction_out =
       {
-        sheet = "__base__/graphics/entity/fast-transport-belt-to-ground/fast-transport-belt-to-ground-structure.png",
+	  sheet={
+        filename = "__base__/graphics/entity/fast-transport-belt-to-ground/fast-transport-belt-to-ground-structure.png",
         priority = "extra-high",
         shift = {0.26, 0},
         width = 57,
         height = 43
+		}
       }
     },
     ending_patch = ending_patch_prototype
@@ -545,20 +581,24 @@ data:extend({
     {
       direction_in =
       {
-        sheet = "__base__/graphics/entity/fast-transport-belt-to-ground/fast-transport-belt-to-ground-structure.png",
+	  sheet={
+        filename = "__base__/graphics/entity/fast-transport-belt-to-ground/fast-transport-belt-to-ground-structure.png",
         priority = "extra-high",
         shift = {0.26, 0},
         width = 57,
         height = 43,
         y = 43
+		}
       },
       direction_out =
       {
-        sheet = "__base__/graphics/entity/fast-transport-belt-to-ground/fast-transport-belt-to-ground-structure.png",
+	  sheet={
+        filename = "__base__/graphics/entity/fast-transport-belt-to-ground/fast-transport-belt-to-ground-structure.png",
         priority = "extra-high",
         shift = {0.26, 0},
         width = 57,
         height = 43
+		}
       }
     },
     ending_patch = ending_patch_prototype

@@ -92,8 +92,8 @@ data:extend({
     {
       filename = "__CartmenCompleteOverhaul__/graphics/entity/lead-ore/lead-ore.png",
       priority = "extra-high",
-      frame_width = 38,
-      frame_height = 38,
+      width = 38,
+      height = 38,
       frame_count = 4,
       direction_count = 8
     },
@@ -108,29 +108,29 @@ data:extend({
       {
         filename = "__CartmenCompleteOverhaul__/graphics/entity/lead-ore/lead-ore-particle-1.png",
         priority = "extra-high",
-        frame_width = 5,
-        frame_height = 5,
+        width = 5,
+        height = 5,
         frame_count = 1
       },
       {
         filename = "__CartmenCompleteOverhaul__/graphics/entity/lead-ore/lead-ore-particle-2.png",
         priority = "extra-high",
-        frame_width = 7,
-        frame_height = 5,
+        width = 7,
+        height = 5,
         frame_count = 1
       },
       {
         filename = "__CartmenCompleteOverhaul__/graphics/entity/lead-ore/lead-ore-particle-3.png",
         priority = "extra-high",
-        frame_width = 6,
-        frame_height = 7,
+        width = 6,
+        height = 7,
         frame_count = 1
       },
       {
         filename = "__CartmenCompleteOverhaul__/graphics/entity/lead-ore/lead-ore-particle-4.png",
         priority = "extra-high",
-        frame_width = 9,
-        frame_height = 8,
+        width = 9,
+        height = 8,
         frame_count = 1
       }
     },
@@ -138,29 +138,29 @@ data:extend({
       {
         filename = "__CartmenCompleteOverhaul__/graphics/entity/lead-ore/lead-ore-particle-shadow-1.png",
         priority = "extra-high",
-        frame_width = 5,
-        frame_height = 5,
+        width = 5,
+        height = 5,
         frame_count = 1
       },
       {
         filename = "__CartmenCompleteOverhaul__/graphics/entity/lead-ore/lead-ore-particle-shadow-2.png",
         priority = "extra-high",
-        frame_width = 7,
-        frame_height = 5,
+        width = 7,
+        height = 5,
         frame_count = 1
       },
       {
         filename = "__CartmenCompleteOverhaul__/graphics/entity/lead-ore/lead-ore-particle-shadow-3.png",
         priority = "extra-high",
-        frame_width = 6,
-        frame_height = 7,
+        width = 6,
+        height = 7,
         frame_count = 1
       },
       {
         filename = "__CartmenCompleteOverhaul__/graphics/entity/lead-ore/lead-ore-particle-shadow-4.png",
         priority = "extra-high",
-        frame_width = 9,
-        frame_height = 8,
+        width = 9,
+        height = 8,
         frame_count = 1
       }
     }
@@ -259,8 +259,8 @@ data:extend({
     {
       filename = "__CartmenCompleteOverhaul__/graphics/entity/tin-ore/tin-ore.png",
       priority = "extra-high",
-      frame_width = 38,
-      frame_height = 38,
+      width = 38,
+      height = 38,
       frame_count = 4,
       direction_count = 8
     },
@@ -275,29 +275,29 @@ data:extend({
       {
         filename = "__CartmenCompleteOverhaul__/graphics/entity/tin-ore/tin-ore-particle-1.png",
         priority = "extra-high",
-        frame_width = 5,
-        frame_height = 5,
+        width = 5,
+        height = 5,
         frame_count = 1
       },
       {
         filename = "__CartmenCompleteOverhaul__/graphics/entity/tin-ore/tin-ore-particle-2.png",
         priority = "extra-high",
-        frame_width = 7,
-        frame_height = 5,
+        width = 7,
+        height = 5,
         frame_count = 1
       },
       {
         filename = "__CartmenCompleteOverhaul__/graphics/entity/tin-ore/tin-ore-particle-3.png",
         priority = "extra-high",
-        frame_width = 6,
-        frame_height = 7,
+        width = 6,
+        height = 7,
         frame_count = 1
       },
       {
         filename = "__CartmenCompleteOverhaul__/graphics/entity/tin-ore/tin-ore-particle-4.png",
         priority = "extra-high",
-        frame_width = 9,
-        frame_height = 8,
+        width = 9,
+        height = 8,
         frame_count = 1
       }
     },
@@ -305,29 +305,29 @@ data:extend({
       {
         filename = "__CartmenCompleteOverhaul__/graphics/entity/tin-ore/tin-ore-particle-shadow-1.png",
         priority = "extra-high",
-        frame_width = 5,
-        frame_height = 5,
+        width = 5,
+        height = 5,
         frame_count = 1
       },
       {
         filename = "__CartmenCompleteOverhaul__/graphics/entity/tin-ore/tin-ore-particle-shadow-2.png",
         priority = "extra-high",
-        frame_width = 7,
-        frame_height = 5,
+        width = 7,
+        height = 5,
         frame_count = 1
       },
       {
         filename = "__CartmenCompleteOverhaul__/graphics/entity/tin-ore/tin-ore-particle-shadow-3.png",
         priority = "extra-high",
-        frame_width = 6,
-        frame_height = 7,
+        width = 6,
+        height = 7,
         frame_count = 1
       },
       {
         filename = "__CartmenCompleteOverhaul__/graphics/entity/tin-ore/tin-ore-particle-shadow-4.png",
         priority = "extra-high",
-        frame_width = 9,
-        frame_height = 8,
+        width = 9,
+        height = 8,
         frame_count = 1
       }
     }

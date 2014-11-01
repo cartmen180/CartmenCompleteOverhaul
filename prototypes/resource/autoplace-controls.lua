@@ -23,6 +23,18 @@ data:extend({
     richness = true,
     order = "c-c"
   },
+  {
+    type = "autoplace-control",
+    name = "ci-salt",
+    richness = true,
+    order = "c-d"
+  },
+  {
+    type = "autoplace-control",
+    name = "ci-titanium",
+    richness = true,
+    order = "c-e"
+  },
   
   {
     type = "noise-layer",
@@ -39,5 +51,13 @@ data:extend({
   {
     type = "noise-layer",
 	name = "quartz-ore",
+  },
+  {
+    type = "noise-layer",
+	name = "salt",
+  },
+  {
+    type = "noise-layer",
+	name = "titanium-ore",
   },
 })

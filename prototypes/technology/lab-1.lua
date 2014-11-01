@@ -23,8 +23,8 @@ data:extend({
     on_animation =
     {
       filename = "__base__/graphics/entity/lab/lab.png",
-      frame_width = 113,
-      frame_height = 91,
+      width = 113,
+      height = 91,
       frame_count = 33,
       line_length = 11,
       animation_speed = 1 / 3,
@@ -33,8 +33,8 @@ data:extend({
     off_animation =
     {
       filename = "__base__/graphics/entity/lab/lab.png",
-      frame_width = 113,
-      frame_height = 91,
+      width = 113,
+      height = 91,
       frame_count = 1,
       shift = {0.2, 0.15}
     },
@@ -49,8 +49,18 @@ data:extend({
     },
     energy_source =
     {
-      type = "electric",
-      usage_priority = "secondary-input"
+      type = "burner",
+      effectivity = 1,
+      fuel_inventory_size = 1,
+      emissions = 0.1 / 3,
+      smoke =
+      {
+        {
+          name = "smoke",
+          deviation = {0.1, 0.1},
+          frequency = 1
+        }
+      }
     },
     energy_usage = "120kW",
     inputs =

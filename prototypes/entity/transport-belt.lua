@@ -31,8 +31,8 @@ data:extend({
     {
       filename = "__CartmenCompleteOverhaul__/graphics/entity/faster-transport-belt/faster-transport-belt.png",
       priority = "extra-high",
-      frame_width = 40,
-      frame_height = 40,
+      width = 40,
+      height = 40,
       frame_count = 32,
       direction_count = 12
     },
@@ -87,8 +87,8 @@ data:extend({
         frame_count = 32,
         line_length = 16,
         priority = "extra-high",
-        frame_width = 80,
-        frame_height = 35,
+        width = 80,
+        height = 35,
         shift = {0.225, 0}
       },
       east =
@@ -97,8 +97,8 @@ data:extend({
         frame_count = 32,
         line_length = 16,
         priority = "extra-high",
-        frame_width = 46,
-        frame_height = 81,
+        width = 46,
+        height = 81,
         shift = {0.075, 0}
       },
       south =
@@ -107,8 +107,8 @@ data:extend({
         frame_count = 32,
         line_length = 16,
         priority = "extra-high",
-        frame_width = 82,
-        frame_height = 36,
+        width = 82,
+        height = 36,
         shift = {0.075, 0}
       },
       west =
@@ -117,8 +117,8 @@ data:extend({
         frame_count = 32,
         line_length = 16,
         priority = "extra-high",
-        frame_width = 47,
-        frame_height = 79,
+        width = 47,
+        height = 79,
         shift = {0.25, 0.05}
       },
     }
@@ -163,20 +163,24 @@ data:extend({
     {
       direction_in =
       {
-        sheet = "__CartmenCompleteOverhaul__/graphics/entity/faster-transport-belt/faster-transport-belt-to-ground-structure.png",
+	    sheet ={
+        filename = "__CartmenCompleteOverhaul__/graphics/entity/faster-transport-belt/faster-transport-belt-to-ground-structure.png",
         priority = "extra-high",
         shift = {0.26, 0},
         width = 57,
         height = 43,
         y = 43
+		}
       },
       direction_out =
       {
-        sheet = "__CartmenCompleteOverhaul__/graphics/entity/faster-transport-belt/faster-transport-belt-to-ground-structure.png",
+	    sheet={
+        filename = "__CartmenCompleteOverhaul__/graphics/entity/faster-transport-belt/faster-transport-belt-to-ground-structure.png",
         priority = "extra-high",
         shift = {0.26, 0},
         width = 57,
         height = 43
+		}
       }
     },
     ending_patch = ending_patch_prototype

@@ -16,4 +16,10 @@ data:extend({
 	flags = { "goes-to-main-inventory" },
 	stack_size = 200,
   },
+  
+  { type = "item", name = "titanium-ore",
+	icon = "__CartmenCompleteOverhaul__/graphics/icons/ore/titanium-ore.png",
+	flags = { "goes-to-main-inventory" },
+	stack_size = 200,
+  },
 })

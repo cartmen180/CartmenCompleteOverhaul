@@ -130,10 +130,13 @@ data:extend({
     insert_position = {1.35, 0},
     platform_picture =
     {
+	  sheet = 
+	  {
       priority = "extra-high",
       width = 46,
       height = 46,
-      sheet = "__base__/graphics/entity/basic-inserter/basic-inserter-platform.png"
+      filename = "__base__/graphics/entity/basic-inserter/basic-inserter-platform.png"
+	  }
     },
     rotation_speed = 0.014
   },
@@ -235,10 +238,13 @@ data:extend({
     insert_position = {-1.35, 0},
     platform_picture =
     {
+	  sheet = 
+	  {
       priority = "extra-high",
       width = 46,
       height = 46,
-      sheet = "__base__/graphics/entity/basic-inserter/basic-inserter-platform.png"
+      filename = "__base__/graphics/entity/basic-inserter/basic-inserter-platform.png"
+	  }
     },
     rotation_speed = 0.014
   },
@@ -340,10 +346,13 @@ data:extend({
     insert_position = {0, 0.65},
     platform_picture =
     {
+	  sheet = 
+	  {
       priority = "extra-high",
       width = 46,
       height = 46,
-      sheet = "__base__/graphics/entity/basic-inserter/basic-inserter-platform.png"
+      filename = "__base__/graphics/entity/basic-inserter/basic-inserter-platform.png"
+	  }
     },
     rotation_speed = 0.014
   },

@@ -58,8 +58,8 @@ data:extend({
     {
       filename = "__CartmenCompleteOverhaul__/graphics/entity/natural-gas/natural-gas.png",
       priority = "extra-high",
-      frame_width = 75,
-      frame_height = 61,
+      width = 75,
+      height = 61,
       frame_count = 4,
       direction_count = 1
     },
