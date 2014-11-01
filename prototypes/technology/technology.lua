@@ -47,8 +47,8 @@ data:extend({
 	},
 	unit =
 	{
-	  count = 10,
-	  ingredients = {{"science-pack-1",2}},
+	  count = 8,
+	  ingredients = {{"science-pack-1",1}},
 	  time = 20
 	},
 	upgrade = true,
@@ -82,7 +82,7 @@ data:extend({
 	},
 	unit =
 	{
-	  count = 15,
+	  count = 12,
 	  ingredients = {{"science-pack-1",1}},
 	  time = 25
 	},
@@ -213,8 +213,8 @@ data:extend({
 	},
 	unit =
 	{
-	  count = 25,
-	  ingredients = {{"science-pack-1",2}},
+	  count = 5,
+	  ingredients = {{"science-pack-1",1}},
 	  time = 30
 	},
 	order = "a-d-a",

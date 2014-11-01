@@ -381,6 +381,14 @@ data:extend({
     rotation_speed = 0.01
   },
   
+  { type = "recipe", name = "burner-inserter",
+    ingredients =
+    {
+      {"copper-parts", 1},
+	  {"iron-plate",1}
+    },
+    result = "burner-inserter"
+  },  
   { type = "recipe", name = "left-burner-inserter",
     ingredients =
     {

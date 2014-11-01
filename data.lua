@@ -12,6 +12,7 @@ require("prototypes.item.logistics")
 require("prototypes.item.assembling-machine")
 require("prototypes.item.chemical")
 require("prototypes.item.mining-drill")
+require("prototypes.item.entity")
 
 require("prototypes.recipe.hand-craft.parts")
 require("prototypes.recipe.hand-craft.mining-drill")
@@ -26,6 +27,7 @@ require("prototypes.recipe.power")
 require("prototypes.recipe.lamp")
 require("prototypes.recipe.transport-belt")
 require("prototypes.recipe.assembling-machine")
+require("prototypes.recipe.entity")
 
 require("prototypes.fluid.metals")
 require("prototypes.fluid.chemicals")
@@ -41,6 +43,7 @@ require("prototypes.entity.transport-belt")
 require("prototypes.entity.underground.belt")
 require("prototypes.entity.assembling-machine")
 require("prototypes.entity.mining-drill")
+require("prototypes.entity.entities")
 
 require("prototypes.resource.ores")
 require("prototypes.resource.natural-gas")
@@ -58,7 +61,7 @@ require("prototypes.technology.lab-1")
 require("prototypes.technology.science-packs")
 
 data.raw["player"]["player"].crafting_categories = {"crafting","hand-craft"}
-data.raw["assembling-machine"]["assembling-machine-1"].crafting_categories = {"crafting","crafting-2"}
+data.raw["assembling-machine"]["assembling-machine-1"].crafting_categories = {"hand-craft","crafting","crafting-2"}
 
 data.raw["recipe"]["iron-axe"].ingredients = {{"iron-plate",3},{"wooden-stick",1}}
 data.raw["recipe"]["steel-axe"].ingredients = {{"steel-plate",5},{"wooden-stick",1}}
@@ -69,3 +72,6 @@ data.raw["splitter"]["express-splitter"].speed = 0.125
 
 data.raw["item"]["basic-transport-belt-to-ground"].icon = "__CartmenCompleteOverhaul__/graphics/icons/logistics/basic-transport-belt-to-ground.png"
 data.raw["transport-belt-to-ground"]["basic-transport-belt-to-ground"].icon = "__CartmenCompleteOverhaul__/graphics/icons/logistics/basic-transport-belt-to-ground.png"
+
+ data.raw["recipe"]["offshore-pump"].ingredients = {{type="item",name="pipe",amount=1},{type="item",name="copper-gear-wheel",amount=1},{type="item",name="crude-circuit",amount=4}}
+ data.raw["recipe"]["steam-engine"].ingredients = {{"copper-parts",1},{"iron-plate",5},{"pipe",5}}
