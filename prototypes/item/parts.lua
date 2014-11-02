@@ -154,4 +154,29 @@ data:extend({
 	order = "a-c-g",
 	stack_size = 50,
   },
+  
+  { type = "item", name = "copper-pipe",
+	icon = "__CartmenCompleteOverhaul__/graphics/icons/entity/copper-pipe.png",
+	flags = { "goes-to-main-inventory" },
+	stack_size = 50,
+	place_result = "copper-pipe"
+  },
+  { type = "item", name = "steel-pipe",
+	icon = "__CartmenCompleteOverhaul__/graphics/icons/entity/steel-pipe.png",
+	flags = { "goes-to-main-inventory" },
+	stack_size = 50,
+	place_result = "steel-pipe"
+  },
+  { type = "item", name = "copper-pipe-to-ground",
+	icon = "__CartmenCompleteOverhaul__/graphics/icons/entity/copper-pipe-to-ground.png",
+	flags = { "goes-to-main-inventory" },
+	stack_size = 50,
+	place_result = "copper-pipe-to-ground"
+  },
+  { type = "item", name = "steel-pipe-to-ground",
+	icon = "__CartmenCompleteOverhaul__/graphics/icons/entity/steel-pipe-to-ground.png",
+	flags = { "goes-to-main-inventory" },
+	stack_size = 50,
+	place_result = "steel-pipe-to-ground"
+  },
 })

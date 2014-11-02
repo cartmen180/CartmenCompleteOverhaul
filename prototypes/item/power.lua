@@ -76,4 +76,62 @@ data:extend({
     flags = {"goes-to-quickbar"},
     stack_size = 200
   },
+  
+  { type = "item", name = "steam-engine",
+    icon = "__CartmenCompleteOverhaul__/graphics/icons/entity/steam-engine.png",
+    flags = {"goes-to-quickbar"},
+    place_result = "steam-engine",
+    stack_size = 10
+  },
+  { type = "item", name = "steam-engine-2",
+    icon = "__CartmenCompleteOverhaul__/graphics/icons/entity/steam-engine-2.png",
+    flags = {"goes-to-quickbar"},
+    place_result = "steam-engine-2",
+    stack_size = 10
+  },
+  { type = "item", name = "steam-engine-3",
+    icon = "__CartmenCompleteOverhaul__/graphics/icons/entity/steam-engine-2.png",
+    flags = {"goes-to-quickbar"},
+    place_result = "steam-engine-3",
+    stack_size = 10
+  },
+  
+  { type = "item", name = "boiler",
+    icon = "__CartmenCompleteOverhaul__/graphics/icons/entity/boiler.png",
+    flags = {"goes-to-quickbar"},
+    place_result = "boiler",
+    stack_size = 50
+  },
+  { type = "item", name = "boiler-2",
+    icon = "__CartmenCompleteOverhaul__/graphics/icons/entity/boiler-2.png",
+    flags = {"goes-to-quickbar"},
+    place_result = "boiler-2",
+    stack_size = 50
+  },
+  { type = "item", name = "boiler-3",
+    icon = "__CartmenCompleteOverhaul__/graphics/icons/entity/boiler-3.png",
+    flags = {"goes-to-quickbar"},
+    place_result = "boiler-3",
+    stack_size = 50
+  },
+  
+  { type = "item", name = "offshore-pump",
+    icon = "__CartmenCompleteOverhaul__/graphics/icons/entity/offshore-pump.png",
+    flags = {"goes-to-quickbar"},
+    place_result = "offshore-pump",
+    stack_size = 20
+  },
+  { type = "item", name = "offshore-pump-2",
+    icon = "__CartmenCompleteOverhaul__/graphics/icons/entity/offshore-pump-2.png",
+    flags = {"goes-to-quickbar"},
+    place_result = "offshore-pump-2",
+    stack_size = 20
+  },
+  { type = "item", name = "offshore-pump-3",
+    icon = "__CartmenCompleteOverhaul__/graphics/icons/entity/offshore-pump-2.png",
+    flags = {"goes-to-quickbar"},
+    place_result = "offshore-pump-3",
+    stack_size = 20
+  },
+  
 })

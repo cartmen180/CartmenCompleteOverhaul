@@ -49,6 +49,7 @@ data:extend({
   {type = "item-subgroup", name = "cartmen-belt-4", group = "cartmen-4", order = "b-d"},
   {type = "item-subgroup", name = "cartmen-inserter-1", group = "cartmen-4", order = "c-a"},
   {type = "item-subgroup", name = "cartmen-inserter-2", group = "cartmen-4", order = "c-b"},
+  {type = "item-subgroup", name = "cartmen-pipes", group = "cartmen-4", order = "d-a"},
   
   { type = "item-group", name = "cartmen-5",
 	order = "a-e",
@@ -60,5 +61,6 @@ data:extend({
   {type = "item-subgroup", name = "cartmen-assemblers", group = "cartmen-5", order = "c"},
   {type = "item-subgroup", name = "cartmen-science-pack-1", group = "cartmen-5", order = "d-a"},
   {type = "item-subgroup", name = "cartmen-science-pack-2", group = "cartmen-5", order = "d-b"},
+  {type = "item-subgroup", name = "cartmen-power", group = "cartmen-5", order = "e-a"},
   {type = "item-subgroup", name = "cartmen-lab", group = "cartmen-5", order = "d-z"},
 })

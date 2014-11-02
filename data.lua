@@ -28,6 +28,7 @@ require("prototypes.recipe.lamp")
 require("prototypes.recipe.transport-belt")
 require("prototypes.recipe.assembling-machine")
 require("prototypes.recipe.entity")
+require("prototypes.recipe.power-generation")
 
 require("prototypes.fluid.metals")
 require("prototypes.fluid.chemicals")
@@ -44,6 +45,8 @@ require("prototypes.entity.underground.belt")
 require("prototypes.entity.assembling-machine")
 require("prototypes.entity.mining-drill")
 require("prototypes.entity.entities")
+require("prototypes.entity.power-generation")
+require("prototypes.entity.pipe")
 
 require("prototypes.resource.ores")
 require("prototypes.resource.natural-gas")
@@ -72,6 +75,3 @@ data.raw["splitter"]["express-splitter"].speed = 0.125
 
 data.raw["item"]["basic-transport-belt-to-ground"].icon = "__CartmenCompleteOverhaul__/graphics/icons/logistics/basic-transport-belt-to-ground.png"
 data.raw["transport-belt-to-ground"]["basic-transport-belt-to-ground"].icon = "__CartmenCompleteOverhaul__/graphics/icons/logistics/basic-transport-belt-to-ground.png"
-
- data.raw["recipe"]["offshore-pump"].ingredients = {{type="item",name="pipe",amount=1},{type="item",name="copper-gear-wheel",amount=1},{type="item",name="crude-circuit",amount=4}}
- data.raw["recipe"]["steam-engine"].ingredients = {{"copper-parts",1},{"iron-plate",5},{"pipe",5}}
