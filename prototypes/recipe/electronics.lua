@@ -1,6 +1,6 @@
 data:extend({
   { type = "recipe", name = "crude-circuit",
-	category = "hand-craft",
+	category = "electronics-hand",
 	energy_required = 1.0,
 	icon = "__CartmenCompleteOverhaul__/graphics/icons/electronic/crude-circuit.png",
 	ingredients = {
@@ -15,6 +15,7 @@ data:extend({
 	order = "a[circuit]-a[crude]"
   },
   { type = "recipe", name = "electronic-circuit",
+    category = "electronics-hand",
     enabled = false,
 	energy_required = 2.0,
 	icon = "__base__/graphics/icons/electronic-circuit.png",
@@ -32,7 +33,7 @@ data:extend({
   },
   { type = "recipe", name = "electronic-circuit-2",
     enabled = false,
-    category = "advanced-crafting",
+    category = "electronics",
 	energy_required = 2.0,
 	icon = "__base__/graphics/icons/electronic-circuit.png",
 	ingredients = {
@@ -48,7 +49,7 @@ data:extend({
   },
   { type = "recipe", name = "advanced-circuit",
     enabled = false,
-    category = "advanced-crafting",
+    category = "electronics",
 	energy_required = 5.0,
 	icon = "__base__/graphics/icons/advanced-circuit.png",
 	ingredients = {
@@ -65,7 +66,7 @@ data:extend({
   },
   { type = "recipe", name = "processing-unit",
     enabled = false,
-    category = "advanced-crafting",
+    category = "electronics",
 	energy_required = 10,
 	icon = "__base__/graphics/icons/processing-unit.png",
 	ingredients = {
@@ -80,7 +81,7 @@ data:extend({
 	order = "a[circuit]-d[processing]"
   },
   { type = "recipe", name = "computing-unit",
-	category = "advanced-crafting",
+	category = "electronics",
 	enabled = false,
 	energy_required = 15,
 	icon = "__CartmenCompleteOverhaul__/graphics/icons/electronic/computing-unit.png",
@@ -98,7 +99,7 @@ data:extend({
   },
   
   { type = "recipe", name = "crude-solder",
-	category = "hand-craft",
+	category = "electronics-hand",
 	energy_required = 2,
 	icon = "__CartmenCompleteOverhaul__/graphics/icons/electronic/solder.png",
 	ingredients = {
@@ -112,7 +113,7 @@ data:extend({
 	order = "a"
   },
   { type = "recipe", name = "crude-circuit-board",
-	category = "hand-craft",
+	category = "electronics-hand",
 	energy_required = 1,
 	icon = "__CartmenCompleteOverhaul__/graphics/icons/electronic/crude-circuit-board.png",
 	ingredients = {
@@ -126,7 +127,7 @@ data:extend({
 	order = "b"
   },
   { type = "recipe", name = "crude-transistor",
-	category = "hand-craft",
+	category = "electronics-hand",
 	energy_required = 1,
 	icon = "__CartmenCompleteOverhaul__/graphics/icons/electronic/crude-transistor.png",
 	ingredients = {
@@ -143,7 +144,7 @@ data:extend({
   
   { type = "recipe", name = "solder",
     enabled = false,
-	category = "advanced-crafting",
+	category = "electronics",
 	energy_required = 1,
 	icon = "__CartmenCompleteOverhaul__/graphics/icons/electronic/solder.png",
 	ingredients = {
@@ -157,7 +158,7 @@ data:extend({
 	order = "d"
   },
   { type = "recipe", name = "transistor",
-	category = "advanced-crafting",
+	category = "electronics",
 	enabled = false,
 	energy_required = 3,
 	icon = "__CartmenCompleteOverhaul__/graphics/icons/electronic/transistor.png",
@@ -172,7 +173,7 @@ data:extend({
 	order = "e-a"
   },  
   { type = "recipe", name = "resistor",
-	category = "advanced-crafting",
+	category = "electronics",
 	enabled = false,
 	energy_required = 2.0,
 	icon = "__CartmenCompleteOverhaul__/graphics/icons/electronic/resistor.png",
@@ -187,14 +188,14 @@ data:extend({
 	order = "e-b"
   },  
   { type = "recipe", name = "standard-circuit-board",
-	category = "advanced-crafting",
+	category = "electronics",
 	enabled = false,
 	energy_required = 4,
 	icon = "__CartmenCompleteOverhaul__/graphics/icons/electronic/standard-circuit-board.png",
 	ingredients = {
 	{type="item",name="silicon-plate",amount=1},
 	{type="item",name="copper-cable",amount=3},
-	{type="item",name="solder",amount=1}
+	--{type="item",name="solder",amount=1}
     },
 	results = {
 	{type="item",name="standard-circuit-board",amount=1}
@@ -204,7 +205,7 @@ data:extend({
   },
   
   { type = "recipe", name = "integrated-circuit",
-	category = "advanced-crafting",
+	category = "electronics",
 	enabled = false,
 	energy_required = 15,
 	icon = "__CartmenCompleteOverhaul__/graphics/icons/electronic/chip.png",
@@ -233,7 +234,7 @@ data:extend({
 	order = "b"
   },  
   { type = "recipe", name = "processing-core",
-	category = "advanced-crafting",
+	category = "electronics",
 	enabled = false,
 	energy_required = 10,
 	icon = "__CartmenCompleteOverhaul__/graphics/icons/electronic/processing-core.png",

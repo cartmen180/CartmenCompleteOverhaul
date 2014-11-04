@@ -47,5 +47,21 @@ data:extend({
     type = "recipe-category",
 	name = "machine"
   },
+  {
+    type = "recipe-category",
+	name = "part-pack"
+  },
+  {
+    type = "recipe-category",
+	name = "electronics"
+  },
+  {
+    type = "recipe-category",
+	name = "electronics-hand"
+  },
   
+  {
+    type = "ammo-category",
+    name = "hollow-point"
+  },
 })

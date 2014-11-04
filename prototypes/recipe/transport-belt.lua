@@ -3,11 +3,11 @@ data:extend({
     enabled = "false",
     ingredients =
     {
-      {"iron-plate", 1},
+      {"iron-plate", 2},
       {"bronze-parts", 1}
     },
     result = "basic-transport-belt",
-    result_count = 2,
+    result_count = 4,
 	subgroup = "cartmen-belt-1",
 	order = "a",
   },
@@ -16,9 +16,10 @@ data:extend({
     ingredients =
     {
       {"iron-parts", 1},
-      {"basic-transport-belt", 1}
+      {"basic-transport-belt", 4}
     },
     result = "fast-transport-belt",
+	result_count = 4,
 	subgroup = "cartmen-belt-2",
 	order = "a",
   },
@@ -29,10 +30,11 @@ data:extend({
     ingredients =
     {
       {"steel-parts", 2},
-      {"fast-transport-belt", 1},
+      {"fast-transport-belt", 4},
 	  {type="fluid", name="lubricant", amount=2}
     },
     result = "faster-transport-belt",
+	result_count = 4,
 	subgroup = "cartmen-belt-3",
 	order = "a",
   },
@@ -42,10 +44,11 @@ data:extend({
     ingredients =
     {
       {"titanium-parts", 2},
-      {"faster-transport-belt", 1},
+      {"faster-transport-belt", 4},
       {type="fluid", name="lubricant", amount=5},
     },
     result = "express-transport-belt",
+	result_count = 4,
 	subgroup = "cartmen-belt-4",
 	order = "a",
   },

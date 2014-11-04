@@ -43,7 +43,8 @@ data:extend({
 	  {type="unlock-recipe",recipe="bronze-parts"},
 	  {type="unlock-recipe",recipe="bronze-gear-wheel"},
 	  {type="unlock-recipe",recipe="bronze-shaft"},
-	  {type="unlock-recipe",recipe="bronze-bolts-screws"}
+	  {type="unlock-recipe",recipe="bronze-bolts-screws"},
+	  {type="unlock-recipe",recipe="bronze-cable-die"}
 	},
 	unit =
 	{
@@ -78,7 +79,9 @@ data:extend({
 	  {type="unlock-recipe",recipe="iron-parts"},
 	  {type="unlock-recipe",recipe="iron-gear-wheel"},
 	  {type="unlock-recipe",recipe="iron-stick"},
-	  {type="unlock-recipe",recipe="iron-bolts-screws"}
+	  {type="unlock-recipe",recipe="iron-bolts-screws"},
+	  {type="unlock-recipe",recipe="pipe"},
+	  {type="unlock-recipe",recipe="pipe-to-ground"}
 	},
 	unit =
 	{
@@ -115,7 +118,11 @@ data:extend({
 	  {type="unlock-recipe",recipe="steel-shaft"},
 	  {type="unlock-recipe",recipe="steel-bolts-screws"},
 	  {type="unlock-recipe",recipe="steel-chest"},
-	  {type="unlock-recipe",recipe="steel-axe"}
+	  {type="unlock-recipe",recipe="steel-axe"},	  
+	  {type="unlock-recipe",recipe="steel-pipe"},
+	  {type="unlock-recipe",recipe="steel-pipe-to-ground"},
+	  {type="unlock-recipe",recipe="steel-cable-die"},
+	  {type="unlock-recipe",recipe="steel-extruder"}
 	},
 	unit =
 	{
@@ -132,7 +139,8 @@ data:extend({
 	  {type="unlock-recipe",recipe="titanium-parts"},
 	  {type="unlock-recipe",recipe="titanium-gear-wheel"},
 	  {type="unlock-recipe",recipe="titanium-shaft"},
-	  {type="unlock-recipe",recipe="titanium-bolts-screws"}
+	  {type="unlock-recipe",recipe="titanium-bolts-screws"},
+	  {type="unlock-recipe",recipe="titanium-cable-die"}
 	},
 	unit =
 	{
@@ -228,7 +236,7 @@ data:extend({
 	unit =
 	{
 	  count = 30,
-	  ingredients = {{"science-pack-1",3}},
+	  ingredients = {{"science-pack-1",2}},
 	  time = 60
 	},
 	order = "a-d-b",
@@ -641,7 +649,7 @@ data:extend({
     unit =
     {
       count = 40,
-      ingredients = {{"science-pack-1",10},{"science-pack-2",10}},
+      ingredients = {{"science-pack-1",3},{"science-pack-2",3}},
       time = 30
     },
 	upgrade = true,
@@ -730,7 +738,7 @@ data:extend({
     unit =
     {
       count = 40,
-      ingredients = {{"science-pack-1",5},{"science-pack-2",2}},
+      ingredients = {{"science-pack-1",3},{"science-pack-2",1}},
       time = 30
     },
 	upgrade = true,
@@ -811,6 +819,49 @@ data:extend({
       time = 30
     },
     order = "a-h-d",
+  },
+  
+  { type = "technology", name = "steam-energy", prerequisites = {"iron-working"},
+    icon = "__CartmenCompleteOverhaul__/graphics/icons/entity/steam-engine-2.png",
+    effects =
+    {
+	  {type="unlock-recipe",recipe="steam-engine-2"},
+	  {type="unlock-recipe",recipe="steam-engine-2-2"},
+	  {type="unlock-recipe",recipe="boiler-2"},
+	  {type="unlock-recipe",recipe="boiler-2-2"},
+      {type="unlock-recipe",recipe="offshore-pump-2"},
+	  {type="unlock-recipe",recipe="offshore-pump-2-2"}
+    },    
+    unit =
+    {
+      count = 50,
+      ingredients =
+      {{"science-pack-1",2},{"science-pack-2",1}},
+      time = 30
+    },
+	upgrade = true,
+    order = "a-h-c-a",
+  },
+  { type = "technology", name = "steam-energy-2", prerequisites = {"steam-energy","steel-working"},
+    icon = "__CartmenCompleteOverhaul__/graphics/icons/entity/steam-engine-2.png",
+    effects =
+    {
+	  {type="unlock-recipe",recipe="steam-engine-3"},
+	  {type="unlock-recipe",recipe="steam-engine-3-2"},
+	  {type="unlock-recipe",recipe="boiler-3"},
+	  {type="unlock-recipe",recipe="boiler-3-2"},
+      {type="unlock-recipe",recipe="offshore-pump-3"},
+	  {type="unlock-recipe",recipe="offshore-pump-3-2"}
+    },    
+    unit =
+    {
+      count = 100,
+      ingredients =
+      {{"science-pack-1",5},{"science-pack-2",5}},
+      time = 50
+    },
+	upgrade = true,
+    order = "a-h-c-a",
   },
   
   { type = "technology", name = "solar-energy", prerequisites = {"optics","advanced-electronics","steel-working"},
@@ -979,4 +1030,123 @@ data:extend({
     order = "c-e-c",
   },
   
+  { type = "technology", name = "military", --prerequisites = {""},
+    icon = "__base__/graphics/technology/military.png",
+    effects =
+    {
+      {type = "unlock-recipe",recipe = "submachine-gun"},
+	  {type = "unlock-recipe",recipe = "shotgun"},
+	  {type = "unlock-recipe",recipe = "shotgun-shell"},
+	  {type = "unlock-recipe",recipe = "fmj-magazine"}
+    },   
+    unit =
+    {
+      count = 5,
+      ingredients =
+      {{"science-pack-1",1}},
+      time = 30
+    },
+	upgrade = true,
+    order = "m-a-a",
+  },
+  { type = "technology", name = "military-2", prerequisites = {"military","steel-processing"},
+    icon = "__base__/graphics/technology/military.png",
+    effects =
+    {
+      {type = "unlock-recipe",recipe = "piercing-bullet-magazine"},
+	  {type = "unlock-recipe",recipe = "basic-grenade"},
+	  {type = "unlock-recipe",recipe = "rifle"},
+	  {type = "unlock-recipe",recipe = "hollow-point-magazine"}
+    },   
+    unit =
+    {
+      count = 20,
+      ingredients =
+      {{"science-pack-1",2}},
+      time = 40
+    },
+	upgrade = true,
+    order = "m-a-b",
+  },
+  
+  { type = "technology", name = "toolbelt",
+    icon = "__base__/graphics/technology/toolbelt.png",
+    effects =
+    {
+      {
+        type = "num-quick-bars",
+        modifier = 1
+      }
+    },
+    unit =
+    {
+      count = 40,
+      ingredients =
+      {
+        {"science-pack-1", 1},
+      },
+      time = 30
+    },
+    order = "c-k-m"
+  },
+  
+  { type = "technology", name = "railway",
+    icon = "__base__/graphics/technology/railway.png",
+    effects =
+    {
+      {
+        type = "unlock-recipe",
+        recipe = "straight-rail"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "curved-rail"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "diesel-locomotive"
+      },
+	  {
+        type = "unlock-recipe",
+        recipe = "cargo-wagon"
+      }
+    },
+    prerequisites = {"steel-processing","engine"},
+    unit =
+    {
+      count = 70,
+      ingredients =
+      {
+        {"science-pack-1", 2},
+      },
+      time = 20
+    },
+    order = "c-g-a",
+  },
+  { type = "technology", name = "automated-rail-transportation", prerequisites = {"railway"},
+    icon = "__base__/graphics/technology/automated-rail-transportation.png",
+    effects =
+    {
+      {
+        type = "unlock-recipe",
+        recipe = "train-stop"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "rail-signal"
+      }
+    },
+    
+    unit =
+    {
+      count = 40,
+      ingredients =
+      {
+        {"science-pack-1", 1},
+        {"science-pack-2", 1},
+      },
+      time = 20
+    },
+    order = "c-g-b",
+  },
 })

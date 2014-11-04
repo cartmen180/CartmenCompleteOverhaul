@@ -61,33 +61,6 @@ data:extend({
     },
     extension_speed = 0.04,
     fast_replaceable_group = "inserter",
-    working_sound =
-    {
-      match_progress_to_activity = true,
-      sound =
-      {
-        {
-          filename = "__base__/sound/inserter-long-handed-1.ogg",
-          volume = 0.75
-        },
-        {
-          filename = "__base__/sound/inserter-long-handed-2.ogg",
-          volume = 0.75
-        },
-        {
-          filename = "__base__/sound/inserter-long-handed-3.ogg",
-          volume = 0.75
-        },
-        {
-          filename = "__base__/sound/inserter-long-handed-4.ogg",
-          volume = 0.75
-        },
-        {
-          filename = "__base__/sound/inserter-long-handed-5.ogg",
-          volume = 0.75
-        }
-      }
-    },
     hand_base_picture =
     {
       filename = "__base__/graphics/entity/long-handed-inserter/long-handed-inserter-hand-base.png",
@@ -170,33 +143,6 @@ data:extend({
     },
     extension_speed = 0.04,
     fast_replaceable_group = "inserter",
-    working_sound =
-    {
-      match_progress_to_activity = true,
-      sound =
-      {
-        {
-          filename = "__base__/sound/inserter-long-handed-1.ogg",
-          volume = 0.75
-        },
-        {
-          filename = "__base__/sound/inserter-long-handed-2.ogg",
-          volume = 0.75
-        },
-        {
-          filename = "__base__/sound/inserter-long-handed-3.ogg",
-          volume = 0.75
-        },
-        {
-          filename = "__base__/sound/inserter-long-handed-4.ogg",
-          volume = 0.75
-        },
-        {
-          filename = "__base__/sound/inserter-long-handed-5.ogg",
-          volume = 0.75
-        }
-      }
-    },
     hand_base_picture =
     {
       filename = "__base__/graphics/entity/long-handed-inserter/long-handed-inserter-hand-base.png",
@@ -279,33 +225,6 @@ data:extend({
     },
     extension_speed = 0.04,
     fast_replaceable_group = "inserter",
-    working_sound =
-    {
-      match_progress_to_activity = true,
-      sound =
-      {
-        {
-          filename = "__base__/sound/inserter-long-handed-1.ogg",
-          volume = 0.75
-        },
-        {
-          filename = "__base__/sound/inserter-long-handed-2.ogg",
-          volume = 0.75
-        },
-        {
-          filename = "__base__/sound/inserter-long-handed-3.ogg",
-          volume = 0.75
-        },
-        {
-          filename = "__base__/sound/inserter-long-handed-4.ogg",
-          volume = 0.75
-        },
-        {
-          filename = "__base__/sound/inserter-long-handed-5.ogg",
-          volume = 0.75
-        }
-      }
-    },
     hand_base_picture =
     {
       filename = "__base__/graphics/entity/long-handed-inserter/long-handed-inserter-hand-base.png",

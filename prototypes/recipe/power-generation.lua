@@ -27,7 +27,7 @@ data:extend({
 	subgroup = "cartmen-power",
 	order = "a[boiler]-d[steel]"
   },
-  { type = "recipe", name = "boiler-3",
+  { type = "recipe", name = "boiler-3-2",
 	enabled = false,
     ingredients = {{"iron-parts", 1},{"pipe",1},{"stone-furnace", 1}},
     result = "boiler-3",

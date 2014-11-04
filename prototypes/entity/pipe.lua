@@ -363,7 +363,7 @@ data:extend({
     selection_box = {{-0.5, -0.5}, {0.5, 0.5}},
     fluid_box =
     {
-      base_area = 0.5,
+      base_area = 1,
       pipe_connections =
       {
         { position = {0, -1} },
@@ -405,7 +405,7 @@ data:extend({
     selection_box = {{-0.5, -0.5}, {0.5, 0.5}},
     fluid_box =
     {
-      base_area = 0.5,
+      base_area = 1,
       pipe_covers = pipecoverspictures(),
       pipe_connections =
       {
@@ -460,7 +460,7 @@ data:extend({
     icon = "__CartmenCompleteOverhaul__/graphics/icons/entity/steel-pipe.png",
     flags = {"placeable-neutral", "player-creation"},
     minable = {hardness = 0.2, mining_time = 0.5, result = "steel-pipe"},
-    max_health = 25,
+    max_health = 75,
     corpse = "small-remnants",
     resistances =
     {
@@ -503,7 +503,7 @@ data:extend({
     icon = "__CartmenCompleteOverhaul__/graphics/icons/entity/steel-pipe-to-ground.png",
     flags = {"placeable-neutral", "player-creation"},
     minable = {hardness = 0.2, mining_time = 0.5, result = "steel-pipe-to-ground"},
-    max_health = 25,
+    max_health = 75,
     corpse = "small-remnants",
     resistances =
     {

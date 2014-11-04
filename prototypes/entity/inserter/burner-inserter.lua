@@ -65,33 +65,6 @@ data:extend({
     },
     extension_speed = 0.02,
     fast_replaceable_group = "inserter",
-    working_sound =
-    {
-      match_progress_to_activity = true,
-      sound =
-      {
-        {
-          filename = "__base__/sound/inserter-basic-1.ogg",
-          volume = 0.75
-        },
-        {
-          filename = "__base__/sound/inserter-basic-2.ogg",
-          volume = 0.75
-        },
-        {
-          filename = "__base__/sound/inserter-basic-3.ogg",
-          volume = 0.75
-        },
-        {
-          filename = "__base__/sound/inserter-basic-4.ogg",
-          volume = 0.75
-        },
-        {
-          filename = "__base__/sound/inserter-basic-5.ogg",
-          volume = 0.75
-        }
-      }
-    },
     hand_base_picture =
     {
       filename = "__base__/graphics/entity/burner-inserter/burner-inserter-hand-base.png",
@@ -181,33 +154,6 @@ data:extend({
     },
     extension_speed = 0.02,
     fast_replaceable_group = "inserter",
-    working_sound =
-    {
-      match_progress_to_activity = true,
-      sound =
-      {
-        {
-          filename = "__base__/sound/inserter-basic-1.ogg",
-          volume = 0.75
-        },
-        {
-          filename = "__base__/sound/inserter-basic-2.ogg",
-          volume = 0.75
-        },
-        {
-          filename = "__base__/sound/inserter-basic-3.ogg",
-          volume = 0.75
-        },
-        {
-          filename = "__base__/sound/inserter-basic-4.ogg",
-          volume = 0.75
-        },
-        {
-          filename = "__base__/sound/inserter-basic-5.ogg",
-          volume = 0.75
-        }
-      }
-    },
     hand_base_picture =
     {
       filename = "__base__/graphics/entity/burner-inserter/burner-inserter-hand-base.png",
@@ -297,33 +243,6 @@ data:extend({
     },
     extension_speed = 0.02,
     fast_replaceable_group = "inserter",
-    working_sound =
-    {
-      match_progress_to_activity = true,
-      sound =
-      {
-        {
-          filename = "__base__/sound/inserter-basic-1.ogg",
-          volume = 0.75
-        },
-        {
-          filename = "__base__/sound/inserter-basic-2.ogg",
-          volume = 0.75
-        },
-        {
-          filename = "__base__/sound/inserter-basic-3.ogg",
-          volume = 0.75
-        },
-        {
-          filename = "__base__/sound/inserter-basic-4.ogg",
-          volume = 0.75
-        },
-        {
-          filename = "__base__/sound/inserter-basic-5.ogg",
-          volume = 0.75
-        }
-      }
-    },
     hand_base_picture =
     {
       filename = "__base__/graphics/entity/burner-inserter/burner-inserter-hand-base.png",

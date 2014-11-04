@@ -35,6 +35,18 @@ data:extend({
     richness = true,
     order = "c-e"
   },
+  {
+    type = "autoplace-control",
+    name = "ci-zinc",
+    richness = true,
+    order = "c-e"
+  },
+  {
+    type = "autoplace-control",
+    name = "ci-nickel",
+    richness = true,
+    order = "c-e"
+  },
   
   {
     type = "noise-layer",
@@ -59,5 +71,13 @@ data:extend({
   {
     type = "noise-layer",
 	name = "titanium-ore",
+  },
+  {
+    type = "noise-layer",
+	name = "zinc-ore",
+  },
+  {
+    type = "noise-layer",
+	name = "nickel-ore",
   },
 })

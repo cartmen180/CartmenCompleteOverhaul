@@ -17,7 +17,7 @@ data:extend({
     selection_box = {{-0.5, -0.5}, {0.5, 0.5}},
     fluid_box =
     {
-      base_area = 0.5,
+      base_area = 1,
       pipe_covers = pipecoverspictures(),
       pipe_connections =
       {
@@ -30,7 +30,7 @@ data:extend({
     energy_consumption = "270kW",
     burner =
     {
-      effectivity = 0.25,
+      effectivity = 0.5,
       fuel_inventory_size = 1,
       emissions = 0.1 / 7.5,
       smoke =
@@ -156,7 +156,7 @@ data:extend({
     energy_consumption = "390kW",
     burner =
     {
-      effectivity = 0.5,
+      effectivity = 0.75,
       fuel_inventory_size = 1,
       emissions = 0.1 / 6.5,
       smoke =
@@ -282,7 +282,7 @@ data:extend({
     energy_consumption = "500kW",
     burner =
     {
-      effectivity = 0.8,
+      effectivity = 0.9,
       fuel_inventory_size = 2,
       emissions = 0.1 / 5.5,
       smoke =
@@ -398,7 +398,7 @@ data:extend({
     selection_box = {{-1.5, -2.5}, {1.5, 2.5}},
     fluid_box =
     {
-      base_area = 0.5,
+      base_area = 1,
       pipe_covers = pipecoverspictures(),
       pipe_connections =
       {
@@ -621,7 +621,7 @@ data:extend({
     selection_box = {{-1, -1.49}, {1, 0.49}},
     fluid_box =
     {
-      base_area = 0.5,
+      base_area = 1,
       pipe_covers = pipecoverspictures(),
       pipe_connections =
       {

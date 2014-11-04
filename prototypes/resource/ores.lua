@@ -22,4 +22,16 @@ data:extend({
 	flags = { "goes-to-main-inventory" },
 	stack_size = 200,
   },
+  
+  { type = "item", name = "zinc-ore",
+	icon = "__CartmenCompleteOverhaul__/graphics/icons/ore/zinc-ore.png",
+	flags = { "goes-to-main-inventory" },
+	stack_size = 200,
+  },
+  
+  { type = "item", name = "nickel-ore",
+	icon = "__CartmenCompleteOverhaul__/graphics/icons/ore/nickel-ore.png",
+	flags = { "goes-to-main-inventory" },
+	stack_size = 200,
+  },
 })

@@ -45,33 +45,6 @@ data:extend({
         percent = 90
       }
     },
-    working_sound =
-    {
-      match_progress_to_activity = true,
-      sound =
-      {
-        {
-          filename = "__base__/sound/inserter-fast-1.ogg",
-          volume = 0.75
-        },
-        {
-          filename = "__base__/sound/inserter-fast-2.ogg",
-          volume = 0.75
-        },
-        {
-          filename = "__base__/sound/inserter-fast-3.ogg",
-          volume = 0.75
-        },
-        {
-          filename = "__base__/sound/inserter-fast-4.ogg",
-          volume = 0.75
-        },
-        {
-          filename = "__base__/sound/inserter-fast-5.ogg",
-          volume = 0.75
-        }
-      }
-    },
     collision_box = {{-0.15, -0.15}, {0.15, 0.15}},
     selection_box = {{-0.4, -0.35}, {0.4, 0.45}},
     pickup_position = {0, -1},
@@ -156,33 +129,6 @@ data:extend({
         percent = 90
       }
     },
-    working_sound =
-    {
-      match_progress_to_activity = true,
-      sound =
-      {
-        {
-          filename = "__base__/sound/inserter-fast-1.ogg",
-          volume = 0.75
-        },
-        {
-          filename = "__base__/sound/inserter-fast-2.ogg",
-          volume = 0.75
-        },
-        {
-          filename = "__base__/sound/inserter-fast-3.ogg",
-          volume = 0.75
-        },
-        {
-          filename = "__base__/sound/inserter-fast-4.ogg",
-          volume = 0.75
-        },
-        {
-          filename = "__base__/sound/inserter-fast-5.ogg",
-          volume = 0.75
-        }
-      }
-    },
     collision_box = {{-0.15, -0.15}, {0.15, 0.15}},
     selection_box = {{-0.4, -0.35}, {0.4, 0.45}},
     pickup_position = {0, -1},
@@ -265,33 +211,6 @@ data:extend({
       {
         type = "fire",
         percent = 90
-      }
-    },
-    working_sound =
-    {
-      match_progress_to_activity = true,
-      sound =
-      {
-        {
-          filename = "__base__/sound/inserter-fast-1.ogg",
-          volume = 0.75
-        },
-        {
-          filename = "__base__/sound/inserter-fast-2.ogg",
-          volume = 0.75
-        },
-        {
-          filename = "__base__/sound/inserter-fast-3.ogg",
-          volume = 0.75
-        },
-        {
-          filename = "__base__/sound/inserter-fast-4.ogg",
-          volume = 0.75
-        },
-        {
-          filename = "__base__/sound/inserter-fast-5.ogg",
-          volume = 0.75
-        }
       }
     },
     collision_box = {{-0.15, -0.15}, {0.15, 0.15}},
