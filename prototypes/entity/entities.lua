@@ -487,7 +487,7 @@ data:extend({
     allowed_effects = {"consumption", "speed", "productivity", "pollution"}
   },
   
-  { type = "assembling-machine", name = "mill",
+  --[[{ type = "assembling-machine", name = "mill",
     icon = "__CartmenCompleteOverhaul__/graphics/icons/entity/crusher-icon.png",
     flags = {"placeable-neutral", "placeable-player", "player-creation"},
     minable = {hardness = 0.2, mining_time = 0.5, result = "mill"},
@@ -574,7 +574,7 @@ data:extend({
       idle_sound = { filename = "__base__/sound/idle1.ogg", volume = 0.6 },
       apparent_volume = 1.5,
     },
-    crafting_categories = {"mill"},
+    crafting_categories = {"crush"},
     crafting_speed = 0.75,
     energy_source =
     {
@@ -598,7 +598,7 @@ data:extend({
     module_slots = 0,
 	result_inventory_size = 3,
     allowed_effects = {"consumption", "speed", "productivity", "pollution"}
-  },
+  },]]
   { type = "assembling-machine", name = "mill-2",
     icon = "__CartmenCompleteOverhaul__/graphics/icons/entity/crusher-icon.png",
     flags = {"placeable-neutral", "placeable-player", "player-creation"},
@@ -686,7 +686,7 @@ data:extend({
       idle_sound = { filename = "__base__/sound/idle1.ogg", volume = 0.6 },
       apparent_volume = 1.5,
     },
-    crafting_categories = {"mill","mill-2"},
+    crafting_categories = {"crush"},
     crafting_speed = 1.25,
     energy_source =
     {

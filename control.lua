@@ -7,3 +7,5 @@ game.oninit(function()
   character.insert{name="stone-furnace", count=2}
   character.insert{name="burner-mining-drill-2", count=2}
 end)
+
+game.mapsettings.enemy_evolution.time_factor=	0

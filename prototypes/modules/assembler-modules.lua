@@ -2,114 +2,14 @@ function cablelimit()
 return{"copper-cable",
 }end
 
-data:extend({
-  { type = "module", name = "bronze-cable-die",
-	icon = "__CartmenCompleteOverhaul__/graphics/icons/module/bronze-cable-die.png",
-	flags = { "goes-to-main-inventory" },
-	stack_size = 100,
-	limitation = cablelimit(),
-	limitation_message_key = "Only usable with cable recipe",
-	effect = { productivity = {bonus = 0.1}, speed = {bonus = 0.1}, consumption = {bonus = 0.15}}
-  },
-  { type = "recipe", name = "bronze-cable-die",
-    enabled = "false",
-    ingredients =
-    {
-      {"bronze-plate", 5},
-      {"bronze-parts", 5}
-    },
-    energy_required = 15,
-    result = "bronze-cable-die",
-	subgroup = "cartmen-assembler-modules",
-	order = "a-a"
-  },
-  
-  { type = "module", name = "steel-cable-die",
-	icon = "__CartmenCompleteOverhaul__/graphics/icons/module/steel-cable-die.png",
-	flags = { "goes-to-main-inventory" },
-	stack_size = 100,
-	limitation = cablelimit(),
-	limitation_message_key = "Only usable with cable recipe",
-	effect = { productivity = {bonus = 0.2}, speed = {bonus = 0.2}, consumption = {bonus = 0.15}}
-  },
-  { type = "recipe", name = "steel-cable-die",
-    enabled = "false",
-    ingredients =
-    {
-      {"steel-plate", 5},
-      {"steel-parts", 5}
-    },
-    energy_required = 15,
-    result = "steel-cable-die",
-	subgroup = "cartmen-assembler-modules",
-	order = "a-b"
-  },
-  
-  { type = "module", name = "titanium-cable-die",
-	icon = "__CartmenCompleteOverhaul__/graphics/icons/module/titanium-cable-die.png",
-	flags = { "goes-to-main-inventory" },
-	stack_size = 100,
-	limitation = cablelimit(),
-	limitation_message_key = "Only usable with cable recipe",
-	effect = { productivity = {bonus = 0.3}, speed = {bonus = 0.3}, consumption = {bonus = 0.15}}
-  },
-  { type = "recipe", name = "titanium-cable-die",
-    enabled = "false",
-    ingredients =
-    {
-      {"titanium-plate", 5},
-      {"titanium-parts", 5}
-    },
-    energy_required = 15,
-    result = "titanium-cable-die",
-	subgroup = "cartmen-assembler-modules",
-	order = "a-c"
-  },
-  
-  { type = "module", name = "high-temp-oven",
-	icon = "__CartmenCompleteOverhaul__/graphics/icons/module/high-temp-oven.png",
-	flags = { "goes-to-main-inventory" },
-	stack_size = 100,
-	limitation = "copper-cable",
-	limitation_message_key = "Only usable with cable recipe",
-	effect = { speed = {bonus = 1}, consumption = {bonus = 0.5}}
-  },
-  { type = "recipe", name = "high-temp-oven",
-    --enabled = "false",
-    ingredients =
-    {
-      {"steel-furnace", 1},
-      {"circuit-pack-2", 5},
-	  {"steel-parts", 2}
-    },
-    energy_required = 15,
-    result = "high-temp-oven",
-	subgroup = "cartmen-assembler-modules",
-	order = "b-a"
-  },
-  
-  { type = "module", name = "steel-extruder",
-	icon = "__CartmenCompleteOverhaul__/graphics/icons/module/extruder.png",
-	flags = { "goes-to-main-inventory" },
-	stack_size = 100,
-	limitation = "insulated-wire",
-	limitation_message_key = "Only usable with cable insulation",
-	effect = { speed = {bonus = 0.5}, consumption = {bonus = 0.25}}
-  },
-  { type = "recipe", name = "steel-extruder",
-    --enabled = "false",
-    ingredients =
-    {
-      {"steel-plate", 5},
-      {"steel-parts", 5}
-    },
-    energy_required = 15,
-    result = "steel-extruder",
-	subgroup = "cartmen-assembler-modules",
-	order = "c-a"
-  },
-})
-  
+function dielimitation()
+return{ "standard-circuit-board",
+		"crude-circuit-board",
+		"wood",
+		"silicon-wafer",
+}
+end
+
 function partpacks()
 return{
 	"copper-parts",
@@ -132,10 +32,135 @@ return{
 	"titanium-gear-wheel",
 	"titanium-shaft",
 	"titanium-bolts-screws",
+	"science-pack-1",
+	"science-pack-2",
 }
 end
 
+function orecrusher()
+return{	"bronze-alloy",
+		--"crushed-iron-ore",
+		--"crushed-copper-ore",
+		--"crushed-tin-ore",
+		--"crushed-lead-ore",
+		--"crushed-zinc-ore",
+		--"crushed-nickel-ore",
+		--"crushed-titanium-ore",
+		--"crushed-aluminium-ore",
+		--"crushed-tungsten-ore",
+}end
+
+function insulatedwire()
+return{	"insulated-cable",
+		"green-wire",
+		"red-wire",
+}end
+
 data:extend({
+  { type = "module", name = "bronze-cable-die",
+	icon = "__CartmenCompleteOverhaul__/graphics/icons/module/bronze-cable-die.png",
+	flags = { "goes-to-main-inventory" },
+	stack_size = 100,
+	limitation = cablelimit(),
+	limitation_message_key = "Only usable with cable recipe",
+	effect = { productivity = {bonus = 0.1}, speed = {bonus = 1/7}, consumption = {bonus = 0.15}}
+  },
+  { type = "recipe", name = "bronze-cable-die",
+    enabled = "false",
+    ingredients =
+    {
+      {"bronze-plate", 5},
+      {"bronze-parts", 5}
+    },
+    energy_required = 15,
+    result = "bronze-cable-die",
+	subgroup = "cartmen-assembler-modules",
+	order = "a-a"
+  },
+  { type = "module", name = "steel-cable-die",
+	icon = "__CartmenCompleteOverhaul__/graphics/icons/module/steel-cable-die.png",
+	flags = { "goes-to-main-inventory" },
+	stack_size = 100,
+	limitation = cablelimit(),
+	limitation_message_key = "Only usable with cable recipe",
+	effect = { productivity = {bonus = 0.15}, speed = {bonus = 1/5}, consumption = {bonus = 0.15}}
+  },
+  { type = "recipe", name = "steel-cable-die",
+    enabled = "false",
+    ingredients =
+    {
+      {"steel-plate", 5},
+      {"steel-parts", 5}
+    },
+    energy_required = 15,
+    result = "steel-cable-die",
+	subgroup = "cartmen-assembler-modules",
+	order = "a-b"
+  },
+  { type = "module", name = "titanium-cable-die",
+	icon = "__CartmenCompleteOverhaul__/graphics/icons/module/titanium-cable-die.png",
+	flags = { "goes-to-main-inventory" },
+	stack_size = 100,
+	limitation = cablelimit(),
+	limitation_message_key = "Only usable with cable recipe",
+	effect = { productivity = {bonus = 0.2}, speed = {bonus = 1/3}, consumption = {bonus = 0.15}}
+  },
+  { type = "recipe", name = "titanium-cable-die",
+    enabled = "false",
+    ingredients =
+    {
+      {"titanium-plate", 5},
+      {"titanium-parts", 5}
+    },
+    energy_required = 15,
+    result = "titanium-cable-die",
+	subgroup = "cartmen-assembler-modules",
+	order = "a-c"
+  },
+  
+  { type = "module", name = "high-temp-oven",
+	icon = "__CartmenCompleteOverhaul__/graphics/icons/module/high-temp-oven.png",
+	flags = { "goes-to-main-inventory" },
+	stack_size = 100,
+	limitation = cablelimit(),
+	limitation_message_key = "Only usable with cable recipe",
+	effect = { speed = {bonus = 1}, consumption = {bonus = 0.5}}
+  },
+  { type = "recipe", name = "high-temp-oven",
+    --enabled = "false",
+    ingredients =
+    {
+      {"steel-furnace", 1},
+      {"circuit-pack-2", 5},
+	  {"steel-parts", 2}
+    },
+    energy_required = 15,
+    result = "high-temp-oven",
+	subgroup = "cartmen-assembler-modules",
+	order = "b-a"
+  },
+  
+  { type = "module", name = "steel-extruder",
+	icon = "__CartmenCompleteOverhaul__/graphics/icons/module/extruder.png",
+	flags = { "goes-to-main-inventory" },
+	stack_size = 100,
+	limitation = insulatedwire(),
+	limitation_message_key = "Only usable with cable insulation",
+	effect = { speed = {bonus = 0.5}, consumption = {bonus = 0.15}}
+  },
+  { type = "recipe", name = "steel-extruder",
+    --enabled = "false",
+    ingredients =
+    {
+      {"steel-plate", 5},
+      {"steel-parts", 5}
+    },
+    energy_required = 15,
+    result = "steel-extruder",
+	subgroup = "cartmen-assembler-modules",
+	order = "c-a"
+  },
+  
   { type = "module", name = "assembling-robot-1",
 	icon = "__CartmenCompleteOverhaul__/graphics/icons/module/assembling-robot-1.png",
 	flags = { "goes-to-main-inventory" },
@@ -156,7 +181,6 @@ data:extend({
 	subgroup = "cartmen-assembler-modules-2",
 	order = "a-a"
   },
-  
   { type = "module", name = "assembling-robot-2",
 	icon = "__CartmenCompleteOverhaul__/graphics/icons/module/assembling-robot-2.png",
 	flags = { "goes-to-main-inventory" },
@@ -178,7 +202,6 @@ data:extend({
 	subgroup = "cartmen-assembler-modules-2",
 	order = "a-b"
   },
-  
   { type = "module", name = "assembling-robot-3",
 	icon = "__CartmenCompleteOverhaul__/graphics/icons/module/assembling-robot-3.png",
 	flags = { "goes-to-main-inventory" },
@@ -201,7 +224,6 @@ data:extend({
 	subgroup = "cartmen-assembler-modules-2",
 	order = "a-c"
   },
-  
   { type = "module", name = "assembling-robot-4",
 	icon = "__CartmenCompleteOverhaul__/graphics/icons/module/assembling-robot-4.png",
 	flags = { "goes-to-main-inventory" },
@@ -224,7 +246,6 @@ data:extend({
 	subgroup = "cartmen-assembler-modules-2",
 	order = "a-d"
   },
-  
   { type = "module", name = "assembling-robot-5",
 	icon = "__CartmenCompleteOverhaul__/graphics/icons/module/assembling-robot-5.png",
 	flags = { "goes-to-main-inventory" },
@@ -258,23 +279,92 @@ data:extend({
     --enabled = "false",
     ingredients =
     {
-	  {"solar-cell", 10},
-      {"steel-parts", 5}
+	  {"solar-panel", 1},
+      {"steel-parts", 2},
+	  {"circuit-pack-2", 2}
     },
-    energy_required = 75,
+    energy_required = 30,
     result = "solar-panel-module",
 	subgroup = "cartmen-assembler-modules",
 	order = "d-b"
   },
-})
-
-function dielimitation()
-return{ "standard-circuit-board",
-		"crude-circuit-board",
-}
-end
-
-data:extend({  
+  { type = "module", name = "solar-panel-module-2",
+	icon = "__CartmenCompleteOverhaul__/graphics/icons/module/solar-panel-module-2.png",
+	flags = { "goes-to-main-inventory" },
+	stack_size = 100,
+	effect = { consumption = {bonus = -0.2}}
+  },
+  { type = "recipe", name = "solar-panel-module-2",
+    --enabled = "false",
+    ingredients =
+    {
+	  {"solar-panel-module", 2},
+      {"steel-parts", 5},
+	  {"circuit-pack-2", 4}
+    },
+    energy_required = 40,
+    result = "solar-panel-module-2",
+	subgroup = "cartmen-assembler-modules",
+	order = "d-c"
+  },
+  { type = "module", name = "solar-panel-module-3",
+	icon = "__CartmenCompleteOverhaul__/graphics/icons/module/solar-panel-module-3.png",
+	flags = { "goes-to-main-inventory" },
+	stack_size = 100,
+	effect = { consumption = {bonus = -0.3}}
+  },
+  { type = "recipe", name = "solar-panel-module-3",
+    --enabled = "false",
+    ingredients =
+    {
+	  {"solar-panel-module-2", 2},
+      {"steel-parts", 5},
+	  {"circuit-pack-3", 4}
+    },
+    energy_required = 50,
+    result = "solar-panel-module-3",
+	subgroup = "cartmen-assembler-modules",
+	order = "d-d"
+  },
+  { type = "module", name = "solar-panel-module-4",
+	icon = "__CartmenCompleteOverhaul__/graphics/icons/module/solar-panel-module-4.png",
+	flags = { "goes-to-main-inventory" },
+	stack_size = 100,
+	effect = { consumption = {bonus = -0.4}}
+  },
+  { type = "recipe", name = "solar-panel-module-4",
+    --enabled = "false",
+    ingredients =
+    {
+	  {"solar-panel-module-3", 2},
+      {"titanium-parts", 5},
+	  {"circuit-pack-4", 4}
+    },
+    energy_required = 60,
+    result = "solar-panel-module-4",
+	subgroup = "cartmen-assembler-modules",
+	order = "d-e"
+  },
+  { type = "module", name = "solar-panel-module-5",
+	icon = "__CartmenCompleteOverhaul__/graphics/icons/module/solar-panel-module-5.png",
+	flags = { "goes-to-main-inventory" },
+	stack_size = 100,
+	effect = { consumption = {bonus = -0.5}}
+  },
+  { type = "recipe", name = "solar-panel-module-5",
+    --enabled = "false",
+    ingredients =
+    {
+	  {"solar-panel-module-4", 2},
+      {"titanium-parts", 5},
+	  {"circuit-pack-5", 4}
+    },
+    energy_required = 90,
+    result = "solar-panel-module-5",
+	subgroup = "cartmen-assembler-modules",
+	order = "d-f"
+  },
+  
   { type = "module", name = "bronze-die",
 	icon = "__CartmenCompleteOverhaul__/graphics/icons/module/bronze-die.png",
 	flags = { "goes-to-main-inventory" },
@@ -294,8 +384,7 @@ data:extend({
     result = "bronze-die",
 	subgroup = "cartmen-assembler-modules",
 	order = "e-a"
-  },
-  
+  },  
   { type = "module", name = "steel-die",
 	icon = "__CartmenCompleteOverhaul__/graphics/icons/module/steel-die.png",
 	flags = { "goes-to-main-inventory" },
@@ -336,12 +425,12 @@ data:extend({
 	subgroup = "cartmen-assembler-modules",
 	order = "e-c"
   },
-  
+
   { type = "module", name = "ore-crusher",
 	icon = "__CartmenCompleteOverhaul__/graphics/icons/module/ore-crusher.png",
 	flags = { "goes-to-main-inventory" },
 	stack_size = 100,
-	limitation = "bronze-ore",
+	limitation = orecrusher(),
 	limitation_message_key = "Only usable for bronze ore",
 	effect = { productivity = {bonus = 0.25}, speed = {bonus = 0.50}, consumption = {bonus = 1.5}}
   },

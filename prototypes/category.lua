@@ -29,14 +29,6 @@ data:extend({
   },
   {
     type = "recipe-category",
-	name = "mill"
-  },
-  {
-    type = "recipe-category",
-	name = "mill-2"
-  },
-  {
-    type = "recipe-category",
 	name = "flotation"
   },
   {
@@ -58,6 +50,10 @@ data:extend({
   {
     type = "recipe-category",
 	name = "electronics-hand"
+  },
+  {
+    type = "recipe-category",
+	name = "crush"
   },
   
   {

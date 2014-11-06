@@ -33,4 +33,10 @@ data:extend({
     flags = {"goes-to-main-inventory"},
     stack_size = 200
   },
+  
+  { type = "item", name = "coal-coke",
+    icon = "__CartmenCompleteOverhaul__/graphics/icons/ore/coke.png",
+    flags = {"goes-to-main-inventory"},
+    stack_size = 200
+  },
 })

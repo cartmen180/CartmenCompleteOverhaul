@@ -39,13 +39,19 @@ data:extend({
     type = "autoplace-control",
     name = "ci-zinc",
     richness = true,
-    order = "c-e"
+    order = "c-f"
   },
   {
     type = "autoplace-control",
     name = "ci-nickel",
     richness = true,
-    order = "c-e"
+    order = "c-g"
+  },
+  {
+    type = "autoplace-control",
+    name = "ci-limestone",
+    richness = true,
+    order = "c-h"
   },
   
   {
@@ -79,5 +85,9 @@ data:extend({
   {
     type = "noise-layer",
 	name = "nickel-ore",
+  },
+  {
+    type = "noise-layer",
+	name = "limestone",
   },
 })

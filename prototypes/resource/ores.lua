@@ -34,4 +34,10 @@ data:extend({
 	flags = { "goes-to-main-inventory" },
 	stack_size = 200,
   },
+  
+  { type = "item", name = "limestone",
+	icon = "__CartmenCompleteOverhaul__/graphics/icons/ore/limestone.png",
+	flags = { "goes-to-main-inventory" },
+	stack_size = 200,
+  },
 })

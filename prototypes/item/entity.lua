@@ -31,12 +31,12 @@ data:extend({
 	place_result = "casting-facility-2",
   },
   
-  { type = "item", name = "mill",
+  --[[{ type = "item", name = "mill",
 	icon = "__CartmenCompleteOverhaul__/graphics/icons/entity/crusher-icon.png",
 	flags = { "goes-to-quickbar" },	
 	stack_size = 50,
 	place_result = "mill",
-  },
+  },]]
   { type = "item", name = "mill-2",
 	icon = "__CartmenCompleteOverhaul__/graphics/icons/entity/crusher-icon.png",
 	flags = { "goes-to-quickbar" },

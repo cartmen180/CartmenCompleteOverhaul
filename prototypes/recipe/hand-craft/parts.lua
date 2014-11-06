@@ -11,7 +11,7 @@ data:extend({
   { type = "recipe", name = "copper-cable",
     category = "electronics-hand",
 	energy_required = 1,
-	icon = "__CartmenCompleteOverhaul__/graphics/icons/copper-cable-1.png",
+	icon = "__base__/graphics/icons/copper-cable.png",
 	ingredients = {
 	{type="item",name="copper-plate",amount=1}
     },

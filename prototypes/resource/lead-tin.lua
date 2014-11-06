@@ -17,7 +17,7 @@ data:extend({
       control = "ci-lead",
       sharpness = 1,
       richness_multiplier = 11000,
-      richness_base = 350,
+      richness_base = 400,
       size_control_multiplier = 0.06,
       peaks = {
         {
@@ -50,7 +50,7 @@ data:extend({
           starting_area_weight_range = 0,
           starting_area_weight_max_range = 2,
         },
-		{
+		--[[{
           influence = -0.1,
           max_influence = 0,
           noise_layer = "copper-ore",
@@ -77,7 +77,7 @@ data:extend({
           noise_layer = "stone",
           noise_octaves_difference = -2.3,
           noise_persistence = 0.45,
-        },
+        },]]
         {
           influence = -0.1,
           max_influence = 0,
@@ -184,7 +184,7 @@ data:extend({
       control = "ci-tin",
       sharpness = 1,
       richness_multiplier = 11000,
-      richness_base = 350,
+      richness_base = 400,
       size_control_multiplier = 0.06,
       peaks = {
         {
@@ -217,7 +217,7 @@ data:extend({
           starting_area_weight_range = 0,
           starting_area_weight_max_range = 2,
         },
-		{
+		--[[{
           influence = -0.1,
           max_influence = 0,
           noise_layer = "iron-ore",
@@ -244,7 +244,7 @@ data:extend({
           noise_layer = "coal",
           noise_octaves_difference = -2.3,
           noise_persistence = 0.45,
-        },
+        },]]
         {
           influence = -0.1,
           max_influence = 0,

@@ -30,7 +30,7 @@ data:extend({
           influence = 0.65,
           noise_layer = "titanium-ore",
           noise_octaves_difference = -1.9,
-          noise_persistence = 0.3,
+          noise_persistence = 0.5,
           starting_area_weight_optimal = 0,
           starting_area_weight_range = 0,
           starting_area_weight_max_range = 2,
@@ -41,15 +41,15 @@ data:extend({
           starting_area_weight_range = 0,
           starting_area_weight_max_range = 2,
         },
-        {
+        --[[{
           influence = 0.55,
           noise_layer = "titanium-ore",
-          noise_octaves_difference = -2.3,
+          noise_octaves_difference = -3,
           noise_persistence = 0.4,
           starting_area_weight_optimal = 1,
           starting_area_weight_range = 0,
           starting_area_weight_max_range = 2,
-        },
+        },]]
         {
           influence = -0.1,
           max_influence = 0,

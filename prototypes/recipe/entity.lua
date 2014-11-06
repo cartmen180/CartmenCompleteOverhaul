@@ -78,7 +78,7 @@ data:extend({
 	order = "c-b",
   },
   
-  { type = "recipe", name = "mill",
+  --[[{ type = "recipe", name = "mill",
     category = "crafting",
 	--enabled = false,
 	energy_required = 5,
@@ -93,15 +93,16 @@ data:extend({
 	},
 	subgroup = "cartmen-production",
 	order = "b-a",
-  },
+  },]]
   { type = "recipe", name = "mill-2",
     category = "crafting",
 	--enabled = false,
 	energy_required = 5,
 	icon = "__CartmenCompleteOverhaul__/graphics/icons/entity/crusher-icon.png",
 	ingredients = {
-	{type="item",name="steel-parts",amount=5},
-	{type="item",name="mill",amount=1}
+	{type="item",name="steel-parts",amount=6},
+	--{type="item",name="mill",amount=1}
+	{type="item",name="steel-plate",amount=8},
 	},
 	results = {
 	{type="item",name="mill-2",amount=1}

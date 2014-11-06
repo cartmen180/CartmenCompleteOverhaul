@@ -66,6 +66,9 @@ require("prototypes.resource.quartz")
 require("prototypes.resource.salt")
 require("prototypes.resource.titanium")
 require("prototypes.resource.nickel-zinc")
+require("prototypes.resource.limestone")
+require("prototypes.resource.iron-processing")
+require("prototypes.resource.nickel-zinc-processing")
 
 require("prototypes.technology.technology")
 require("prototypes.technology.circuit-packs")
@@ -78,7 +81,9 @@ data.raw["item"]["iron-ore"].stack_size = 200
 data.raw["item"]["copper-ore"].stack_size = 200
 data.raw["item"]["coal"].stack_size = 200
 data.raw["item"]["stone"].stack_size = 200
-
+data.raw["item"]["stone-brick"].stack_size = 200
+data.raw["item"]["raw-wood"].stack_size = 200
+data.raw["item"]["wood"].stack_size = 200
 data.raw["item"]["iron-plate"].stack_size = 200
 data.raw["item"]["copper-plate"].stack_size = 200
 
