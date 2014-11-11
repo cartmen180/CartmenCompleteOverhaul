@@ -26,7 +26,7 @@ data:extend({
   },
   
   { type = "recipe", name = "chemical-pack-1",
-    category = "chemistry",
+    category = "crafting-with-fluid",
 	energy_required = 1,
 	icon = "__CartmenCompleteOverhaul__/graphics/icons/chemical-pack-1.png",
 	ingredients = {

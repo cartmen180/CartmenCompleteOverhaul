@@ -15,6 +15,7 @@ require("prototypes.item.mining-drill")
 require("prototypes.item.entity")
 require("prototypes.item.ammo")
 require("prototypes.item.weapon")
+require("prototypes.item.turret")
 
 require("prototypes.recipe.hand-craft.parts")
 require("prototypes.recipe.hand-craft.mining-drill")
@@ -33,6 +34,7 @@ require("prototypes.recipe.entity")
 require("prototypes.recipe.power-generation")
 require("prototypes.recipe.ammo")
 require("prototypes.recipe.weapons")
+require("prototypes.recipe.turret")
 
 require("prototypes.fluid.metals")
 require("prototypes.fluid.chemicals")
@@ -51,6 +53,7 @@ require("prototypes.entity.mining-drill")
 require("prototypes.entity.entities")
 require("prototypes.entity.power-generation")
 require("prototypes.entity.pipe")
+require("prototypes.entity.turrets")
 
 require("prototypes.entity.machines.parts-assembler")
 require("prototypes.entity.machines.electronics-assembler")
@@ -67,8 +70,14 @@ require("prototypes.resource.salt")
 require("prototypes.resource.titanium")
 require("prototypes.resource.nickel-zinc")
 require("prototypes.resource.limestone")
+require("prototypes.resource.wolfraam")
+require("prototypes.resource.bauxite")
+
 require("prototypes.resource.iron-processing")
 require("prototypes.resource.nickel-zinc-processing")
+require("prototypes.resource.bauxite-processing")
+require("prototypes.resource.copper-processing")
+require("prototypes.resource.tungsten-processing")
 
 require("prototypes.technology.technology")
 require("prototypes.technology.circuit-packs")
@@ -76,6 +85,7 @@ require("prototypes.technology.module")
 require("prototypes.technology.chemical-packs")
 require("prototypes.technology.lab-1")
 require("prototypes.technology.science-packs")
+require("prototypes.technology.military")
 
 data.raw["item"]["iron-ore"].stack_size = 200
 data.raw["item"]["copper-ore"].stack_size = 200
@@ -101,3 +111,10 @@ data.raw["item"]["basic-transport-belt-to-ground"].icon = "__CartmenCompleteOver
 data.raw["transport-belt-to-ground"]["basic-transport-belt-to-ground"].icon = "__CartmenCompleteOverhaul__/graphics/icons/logistics/basic-transport-belt-to-ground.png"
 
 data.raw["technology"]["rail-signals"] = nil
+data.raw["technology"]["combat-robotics"] = nil
+data.raw["technology"]["combat-robotics-2"] = nil
+data.raw["technology"]["combat-robotics-3"] = nil
+
+data.raw["recipe"]["long-handed-inserter"].enabled = true
+data.raw["recipe"]["fast-inserter"].enabled = true
+data.raw["recipe"]["smart-inserter"].enabled = true

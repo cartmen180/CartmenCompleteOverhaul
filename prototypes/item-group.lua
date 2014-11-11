@@ -5,7 +5,10 @@ data:extend({
 	icon = "__CartmenCompleteOverhaul__/graphics/icons/cartmen-1.png",
   },
   {type = "item-subgroup", name = "cartmen-iron", group = "cartmen-1", order = "a"},
+  {type = "item-subgroup", name = "cartmen-copper", group = "cartmen-1", order = "b"},
   {type = "item-subgroup", name = "cartmen-zinc&nickel", group = "cartmen-1", order = "f"},
+  {type = "item-subgroup", name = "cartmen-bauxite", group = "cartmen-1", order = "g"},
+  {type = "item-subgroup", name = "cartmen-tungsten", group = "cartmen-1", order = "h"},
   
   { type = "item-group", name = "cartmen-2",
 	order = "a-b",

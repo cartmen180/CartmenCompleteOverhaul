@@ -1,24 +1,4 @@
-data:extend({
-   { type = "recipe", name = "iron-plate",
-    icon = "__base__/graphics/icons/iron-plate.png",
-	category = "smelting",
-	energy_required = 3.5,
-	ingredients = {{"iron-ore", 1}},
-	results = {{"iron-plate", 1}},
-	subgroup = "cartmen-plates",
-	order = "a[plate]-d[iron]",
-  },
-  
-  { type = "recipe", name = "copper-plate",
-    icon = "__base__/graphics/icons/copper-plate.png",
-	category = "smelting",
-	energy_required = 3.5,
-	ingredients = {{"copper-ore", 1}},
-	results = {{"copper-plate", 1}},
-	subgroup = "cartmen-plates",
-	order = "a[plate]-a[copper]",
-  },
-   
+data:extend({   
   { type = "recipe", name = "tin-plate",
     icon = "__CartmenCompleteOverhaul__/graphics/icons/plate/tin-plate.png",
 	category = "smelting",
@@ -37,16 +17,5 @@ data:extend({
 	results = {{"lead-plate", 1}},
 	subgroup = "cartmen-plates",
 	order = "a[plate]-e[lead]",
-  },
-  
-  { type = "recipe", name = "steel-plate",
-    icon = "__base__/graphics/icons/steel-plate.png",
-	enabled = false,
-	category = "smelting",
-	energy_required = 17.5,
-	ingredients = {{"iron-plate", 3}},
-	results = {{"steel-plate", 1}},
-	subgroup = "cartmen-plates",
-	order = "a[plate]-f[steel]",
   },
 })

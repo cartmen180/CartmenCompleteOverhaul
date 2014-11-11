@@ -21,6 +21,17 @@ data:extend({
 	order = "a-a",
   },
   
+  { type = "recipe", name = "sodium-hydroxide-solution",
+    icon = "__CartmenCompleteOverhaul__/graphics/icons/fluid/sodium-hydroxide.png",
+	category = "chemistry",
+	enabled = false,
+	energy_required = 2.0,
+	ingredients = {{type="fluid",name="water",amount=5},{type="item",name="sodium-hydroxide",amount=2}},
+	results = {{type="fluid",name="sodium-hydroxide-solution",amount=1}},
+	subgroup = "cartmen-basic-chemicals",
+	order = "a-b",
+  },
+  
   { type = "recipe", name = "hydrochloric-acid",
     icon = "__CartmenCompleteOverhaul__/graphics/icons/fluid/hydrochloric-acid.png",
 	category = "chemistry",

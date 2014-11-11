@@ -60,4 +60,12 @@ data:extend({
     type = "ammo-category",
     name = "hollow-point"
   },
+  {
+    type = "ammo-category",
+    name = "50cal"
+  },
+  {
+    type = "ammo-category",
+    name = "lmg"
+  },
 })

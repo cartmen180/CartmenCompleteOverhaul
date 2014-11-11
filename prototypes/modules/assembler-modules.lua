@@ -39,14 +39,14 @@ end
 
 function orecrusher()
 return{	"bronze-alloy",
-		--"crushed-iron-ore",
-		--"crushed-copper-ore",
+		"iron-processing-1",
+		"copper-processing-1",
 		--"crushed-tin-ore",
 		--"crushed-lead-ore",
 		--"crushed-zinc-ore",
 		--"crushed-nickel-ore",
 		--"crushed-titanium-ore",
-		--"crushed-aluminium-ore",
+		"bauxite-processing-1",
 		--"crushed-tungsten-ore",
 }end
 
@@ -149,7 +149,7 @@ data:extend({
 	effect = { speed = {bonus = 0.5}, consumption = {bonus = 0.15}}
   },
   { type = "recipe", name = "steel-extruder",
-    --enabled = "false",
+    enabled = "false",
     ingredients =
     {
       {"steel-plate", 5},
@@ -170,7 +170,7 @@ data:extend({
 	effect = { speed = {bonus = (1/3)}, consumption = {bonus = ((1/3)/3)}}
   },
   { type = "recipe", name = "assembling-robot-1",
-    --enabled = "false",
+    enabled = "false",
     ingredients =
     {
       {"circuit-pack-1", 2},
@@ -190,7 +190,7 @@ data:extend({
 	effect = { speed = {bonus = (2/5)}, consumption = {bonus = ((2/5)/3)}}
   },
   { type = "recipe", name = "assembling-robot-2",
-    --enabled = "false",
+    enabled = "false",
     ingredients =
     {
 	  {"assembling-robot-1", 2},
@@ -211,7 +211,7 @@ data:extend({
 	effect = { speed = {bonus = (1/2)}, consumption = {bonus = ((1/2)/3)}}
   },
   { type = "recipe", name = "assembling-robot-3",
-    --enabled = "false",
+    enabled = "false",
     ingredients =
     {
 	  {"assembling-robot-1", 1},
@@ -233,7 +233,7 @@ data:extend({
 	effect = { speed = {bonus = (2/3)}, consumption = {bonus = ((2/3)/3)}}
   },
   { type = "recipe", name = "assembling-robot-4",
-    --enabled = "false",
+    enabled = "false",
     ingredients =
     {
 	  {"assembling-robot-1", 1},
@@ -255,7 +255,7 @@ data:extend({
 	effect = { speed = {bonus = (4/5)}, consumption = {bonus = ((4/5)/3)}}
   },
   { type = "recipe", name = "assembling-robot-5",
-    --enabled = "false",
+    enabled = "false",
     ingredients =
     {
 	  {"assembling-robot-1", 1},
@@ -276,7 +276,7 @@ data:extend({
 	effect = { consumption = {bonus = -0.1}}
   },
   { type = "recipe", name = "solar-panel-module",
-    --enabled = "false",
+    enabled = "false",
     ingredients =
     {
 	  {"solar-panel", 1},
@@ -295,7 +295,7 @@ data:extend({
 	effect = { consumption = {bonus = -0.2}}
   },
   { type = "recipe", name = "solar-panel-module-2",
-    --enabled = "false",
+    enabled = "false",
     ingredients =
     {
 	  {"solar-panel-module", 2},
@@ -314,7 +314,7 @@ data:extend({
 	effect = { consumption = {bonus = -0.3}}
   },
   { type = "recipe", name = "solar-panel-module-3",
-    --enabled = "false",
+    enabled = "false",
     ingredients =
     {
 	  {"solar-panel-module-2", 2},
@@ -333,7 +333,7 @@ data:extend({
 	effect = { consumption = {bonus = -0.4}}
   },
   { type = "recipe", name = "solar-panel-module-4",
-    --enabled = "false",
+    enabled = "false",
     ingredients =
     {
 	  {"solar-panel-module-3", 2},
@@ -352,7 +352,7 @@ data:extend({
 	effect = { consumption = {bonus = -0.5}}
   },
   { type = "recipe", name = "solar-panel-module-5",
-    --enabled = "false",
+    enabled = "false",
     ingredients =
     {
 	  {"solar-panel-module-4", 2},
@@ -374,7 +374,7 @@ data:extend({
 	effect = { productivity = {bonus = 0.2}, speed = {bonus = 0.4}, consumption = {bonus = 0.1}}
   },
   { type = "recipe", name = "bronze-die",
-    --enabled = "false",
+    enabled = "false",
     ingredients =
     {
       {"bronze-plate", 5},
@@ -394,7 +394,7 @@ data:extend({
 	effect = { productivity = {bonus = 0.3}, speed = {bonus = 0.4}, consumption = {bonus = 0.1}}
   },
   { type = "recipe", name = "steel-die",
-    --enabled = "false",
+    enabled = "false",
     ingredients =
     {
       {"steel-plate", 5},
@@ -414,7 +414,7 @@ data:extend({
 	effect = { productivity = {bonus = 0.4}, speed = {bonus = 0.4}, consumption = {bonus = 0.1}}
   },
   { type = "recipe", name = "titanium-die",
-    --enabled = "false",
+    enabled = "false",
     ingredients =
     {
       {"titanium-plate", 5},
@@ -426,24 +426,64 @@ data:extend({
 	order = "e-c"
   },
 
-  { type = "module", name = "ore-crusher",
+  { type = "module", name = "bronze-ore-crusher",
 	icon = "__CartmenCompleteOverhaul__/graphics/icons/module/ore-crusher.png",
 	flags = { "goes-to-main-inventory" },
 	stack_size = 100,
 	limitation = orecrusher(),
-	limitation_message_key = "Only usable for bronze ore",
-	effect = { productivity = {bonus = 0.25}, speed = {bonus = 0.50}, consumption = {bonus = 1.5}}
+	limitation_message_key = "Only usable in ore crushing",
+	effect = { productivity = {bonus = 0.05}, speed = {bonus = 0.25}, consumption = {bonus = .5}}
   },
-  { type = "recipe", name = "ore-crusher",
-    --enabled = "false",
+  { type = "recipe", name = "bronze-ore-crusher",
+    enabled = "false",
     ingredients =
     {
       {"bronze-drill", 2},
       {"bronze-parts", 4}
     },
-    energy_required = 30,
-    result = "ore-crusher",
+    energy_required = 15,
+    result = "bronze-ore-crusher",
 	subgroup = "cartmen-assembler-modules",
-	order = "d-b"
+	order = "a-b[ore-crusher]-a[bronze]"
+  },
+  { type = "module", name = "steel-ore-crusher",
+	icon = "__CartmenCompleteOverhaul__/graphics/icons/module/ore-crusher.png",
+	flags = { "goes-to-main-inventory" },
+	stack_size = 100,
+	limitation = orecrusher(),
+	limitation_message_key = "Only usable in ore crushing",
+	effect = { productivity = {bonus = 0.07}, speed = {bonus = 0.5}, consumption = {bonus = .7}}
+  },
+  { type = "recipe", name = "steel-ore-crusher",
+    enabled = "false",
+    ingredients =
+    {
+      {"steel-drill", 2},
+      {"steel-parts", 4}
+    },
+    energy_required = 30,
+    result = "steel-ore-crusher",
+	subgroup = "cartmen-assembler-modules",
+	order = "a-b[ore-crusher]-b[steel]"
+  },
+  { type = "module", name = "titanium-ore-crusher",
+	icon = "__CartmenCompleteOverhaul__/graphics/icons/module/ore-crusher.png",
+	flags = { "goes-to-main-inventory" },
+	stack_size = 100,
+	limitation = orecrusher(),
+	limitation_message_key = "Only usable in ore crushing",
+	effect = { productivity = {bonus = 0.1}, speed = {bonus = 0.7}, consumption = {bonus = 1}}
+  },
+  { type = "recipe", name = "titanium-ore-crusher",
+    enabled = "false",
+    ingredients =
+    {
+      {"titanium-drill", 2},
+      {"titanium-parts", 4}
+    },
+    energy_required = 60,
+    result = "titanium-ore-crusher",
+	subgroup = "cartmen-assembler-modules",
+	order = "a-b[ore-crusher]-c[titanium]"
   },
 })

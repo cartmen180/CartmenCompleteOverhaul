@@ -40,4 +40,16 @@ data:extend({
 	flags = { "goes-to-main-inventory" },
 	stack_size = 200,
   },
+  
+  { type = "item", name = "tungsten-ore",
+	icon = "__CartmenCompleteOverhaul__/graphics/icons/ore/tungsten-ore.png",
+	flags = { "goes-to-main-inventory" },
+	stack_size = 200,
+  },
+  
+  { type = "item", name = "bauxite-ore",
+	icon = "__CartmenCompleteOverhaul__/graphics/icons/ore/bauxite-ore.png",
+	flags = { "goes-to-main-inventory" },
+	stack_size = 200,
+  },
 })

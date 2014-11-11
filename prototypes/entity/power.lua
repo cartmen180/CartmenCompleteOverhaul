@@ -1,4 +1,26 @@
 data:extend({
+  { type = "solar-panel", name = "solar-panel",
+    icon = "__base__/graphics/icons/solar-panel.png",
+    flags = {"placeable-neutral", "player-creation"},
+    minable = {hardness = 0.2, mining_time = 0.5, result = "solar-panel"},
+    max_health = 100,
+    corpse = "big-remnants",
+    collision_box = {{-1.4, -1.4}, {1.4, 1.4}},
+    selection_box = {{-1.5, -1.5}, {1.5, 1.5}},
+    energy_source =
+    {
+      type = "electric",
+      usage_priority = "primary-output"
+    },
+    picture =
+    {
+      filename = "__CartmenCompleteOverhaul__/graphics/entity/solar-panel/solar-panel-2.png",
+      priority = "high",
+      width = 104,
+      height = 96
+    },
+    production = "30kW"
+  },
   { type = "solar-panel", name = "solar-panel-2",
     icon = "__CartmenCompleteOverhaul__/graphics/icons/entity/solar-panel-2.png",
     flags = {"placeable-neutral", "player-creation"},
@@ -19,7 +41,7 @@ data:extend({
       width = 104,
       height = 96
     },
-    production = "90kW"
+    production = "45kW"
   },
   { type = "solar-panel", name = "solar-panel-3",
     icon = "__CartmenCompleteOverhaul__/graphics/icons/entity/solar-panel-3.png",
@@ -41,7 +63,7 @@ data:extend({
       width = 104,
       height = 96
     },
-    production = "150kW"
+    production = "75kW"
   },
   { type = "solar-panel", name = "solar-panel-4",
     icon = "__CartmenCompleteOverhaul__/graphics/icons/entity/solar-panel-4.png",
@@ -63,7 +85,7 @@ data:extend({
       width = 104,
       height = 96
     },
-    production = "240kW"
+    production = "125kW"
   },
   { type = "solar-panel", name = "solar-panel-5",
     icon = "__CartmenCompleteOverhaul__/graphics/icons/entity/solar-panel-5.png",
@@ -85,7 +107,7 @@ data:extend({
       width = 104,
       height = 96
     },
-    production = "360kW"
+    production = "200kW"
   },
 
   { type = "accumulator", name = "basic-accumulator-2",
@@ -99,7 +121,7 @@ data:extend({
     energy_source =
     {
       type = "electric",
-      buffer_capacity = "7.5MJ",
+      buffer_capacity = "10MJ",
       usage_priority = "terciary",
       input_flow_limit = "450kW",
       output_flow_limit = "450kW"
@@ -161,7 +183,7 @@ data:extend({
     energy_source =
     {
       type = "electric",
-      buffer_capacity = "10MJ",
+      buffer_capacity = "20MJ",
       usage_priority = "terciary",
       input_flow_limit = "600kW",
       output_flow_limit = "600kW"

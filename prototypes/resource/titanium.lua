@@ -36,21 +36,6 @@ data:extend({
           starting_area_weight_max_range = 2,
         },
         {
-          influence = 0.3,
-          starting_area_weight_optimal = 1,
-          starting_area_weight_range = 0,
-          starting_area_weight_max_range = 2,
-        },
-        --[[{
-          influence = 0.55,
-          noise_layer = "titanium-ore",
-          noise_octaves_difference = -3,
-          noise_persistence = 0.4,
-          starting_area_weight_optimal = 1,
-          starting_area_weight_range = 0,
-          starting_area_weight_max_range = 2,
-        },]]
-        {
           influence = -0.1,
           max_influence = 0,
           noise_layer = "iron-ore",

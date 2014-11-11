@@ -81,7 +81,7 @@ data:extend({
   
   { type = "recipe", name = "electronics-assembler",
 	category = "crafting","advanced-crafting",
-	--enabled = "false",
+	enabled = "false",
 	energy_required = 5,
 	icon = "__CartmenCompleteOverhaul__/graphics/icons/entity/electronics-assembler.png",
 	ingredients = {

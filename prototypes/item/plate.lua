@@ -27,4 +27,16 @@ data:extend({
 	flags = { "goes-to-main-inventory" },
 	stack_size = 200,
   },
+  
+  { type = "item", name = "tungsten-carbide",
+	icon = "__CartmenCompleteOverhaul__/graphics/icons/plate/tungsten-carbide.png",
+	flags = { "goes-to-main-inventory" },
+	stack_size = 200,
+  },
+  
+  { type = "item", name = "aluminium-plate",
+	icon = "__CartmenCompleteOverhaul__/graphics/icons/plate/aluminium-plate.png",
+	flags = { "goes-to-main-inventory" },
+	stack_size = 200,
+  },
 })

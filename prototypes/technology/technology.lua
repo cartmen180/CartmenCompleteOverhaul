@@ -19,6 +19,45 @@ data:extend({
 	upgrade = true,
 	order = "a-a-a",
   },]]
+  { type = "technology", name = "copper-processing", prerequisites = {"steel-processing"},
+	icon = "__CartmenCompleteOverhaul__/graphics/icons/fluid/liquid-copper.png",
+	effects = 
+	{
+	  {type="unlock-recipe",recipe="copper-flotation"},
+	  {type="unlock-recipe",recipe="copper-smelting-2"},
+	  {type="unlock-recipe",recipe="copper-smelting-3"},
+	  {type="unlock-recipe",recipe="copper-casting-2"}
+	},
+	unit =
+	{
+	  count = 25,
+	  ingredients = {
+	  {"science-pack-1",2},{"science-pack-3",2}
+	  },
+	  time = 30
+	},
+	upgrade = true,
+	order = "d[resource-processing]-a[ore]-b[copper]-a",
+  },
+  { type = "technology", name = "copper-processing-2", prerequisites = {"copper-processing"},
+	icon = "__CartmenCompleteOverhaul__/graphics/icons/fluid/liquid-copper.png",
+	effects = 
+	{
+	  {type="unlock-recipe",recipe="copper-refining"},
+	  {type="unlock-recipe",recipe="copper-electro-refining"}
+	},
+	unit =
+	{
+	  count = 100,
+	  ingredients = {
+	  {"science-pack-1",3},{"science-pack-2",2},{"science-pack-3",3}
+	  },
+	  time = 40
+	},
+	upgrade = true,
+	order = "d[resource-processing]-a[ore]-b[copper]-b",
+  },
+  
   { type = "technology", name = "copper-working-2", prerequisites = {--[["copper-working"]]"steel-working"},
 	icon = "__CartmenCompleteOverhaul__/graphics/icons/part/copper-parts.png",
 	effects = 
@@ -30,7 +69,7 @@ data:extend({
 	unit =
 	{
 	  count = 25,
-	  ingredients = {{"copper-parts",5}},
+	  ingredients = {{"science-pack-1",3}},
 	  time = 60
 	},
 	upgrade = true,
@@ -44,7 +83,12 @@ data:extend({
 	  {type="unlock-recipe",recipe="bronze-gear-wheel"},
 	  {type="unlock-recipe",recipe="bronze-shaft"},
 	  {type="unlock-recipe",recipe="bronze-bolts-screws"},
-	  {type="unlock-recipe",recipe="bronze-cable-die"}
+	  {type="unlock-recipe",recipe="bronze-cable-die"},
+	  {type="unlock-recipe",recipe="bronze-die"},
+	  {type="unlock-recipe",recipe="bronze-drill"},
+	  {type="unlock-recipe",recipe="bronze-ore-crusher"},
+	  {type = "unlock-recipe",recipe = "electronics-assembler"},
+	  {type = "unlock-recipe",recipe = "parts-assembler"}
 	},
 	unit =
 	{
@@ -122,7 +166,10 @@ data:extend({
 	  {type="unlock-recipe",recipe="steel-pipe"},
 	  {type="unlock-recipe",recipe="steel-pipe-to-ground"},
 	  {type="unlock-recipe",recipe="steel-cable-die"},
-	  {type="unlock-recipe",recipe="steel-extruder"}
+	  {type="unlock-recipe",recipe="steel-extruder"},
+	  {type="unlock-recipe",recipe="steel-die"},
+	  {type="unlock-recipe",recipe="steel-drill"},
+	  {type="unlock-recipe",recipe="steel-ore-crusher"},
 	},
 	unit =
 	{
@@ -140,7 +187,10 @@ data:extend({
 	  {type="unlock-recipe",recipe="titanium-gear-wheel"},
 	  {type="unlock-recipe",recipe="titanium-shaft"},
 	  {type="unlock-recipe",recipe="titanium-bolts-screws"},
-	  {type="unlock-recipe",recipe="titanium-cable-die"}
+	  {type="unlock-recipe",recipe="titanium-cable-die"},
+	  {type="unlock-recipe",recipe="titanium-die"},
+	  {type="unlock-recipe",recipe="titanium-drill"},
+	  {type="unlock-recipe",recipe="titanium-ore-crusher"},
 	},
 	unit =
 	{
@@ -190,7 +240,7 @@ data:extend({
 	unit =
 	{
 	  count = 20,
-	  ingredients = {{"science-pack-1",10},{"science-pack-2",10}},
+	  ingredients = {{"science-pack-1",8},{"science-pack-2",8},{"science-pack-3",4}},
 	  time = 30
 	},
 	order = "a-c-b",
@@ -205,7 +255,7 @@ data:extend({
 	unit =
 	{
 	  count = 50,
-	  ingredients = {{"science-pack-1",25},{"science-pack-2",25}},
+	  ingredients = {{"science-pack-1",10},{"science-pack-2",10},{"science-pack-3",5}},
 	  time = 45
 	},
 	order = "a-c-c",
@@ -255,8 +305,39 @@ data:extend({
 	},
 	order = "a-d-c",
   },
+  { type = "technology", name = "tungsten-processing", prerequisites = {"basic-chemistry-3"},
+	icon = "__CartmenCompleteOverhaul__/graphics/icons/chemical/tungsten-powder.png",
+	effects = 
+	{
+	  {type="unlock-recipe",recipe="tungsten-processing-1"},
+	  {type="unlock-recipe",recipe="tungsten-processing-2"},
+	  {type="unlock-recipe",recipe="tungsten-processing-3"},
+	  {type="unlock-recipe",recipe="tungsten-processing-4"}
+	},
+	unit =
+	{
+	  count = 50,
+	  ingredients = {{"science-pack-1",2},{"science-pack-2",1},{"science-pack-3",2}},
+	  time = 70
+	},
+	order = "a-d-d-a",
+  },
+  { type = "technology", name = "tungsten-carbide", prerequisites = {"tungsten-processing"},
+	icon = "__CartmenCompleteOverhaul__/graphics/icons/plate/tungsten-carbide.png",
+	effects = 
+	{
+	  {type="unlock-recipe",recipe="tungsten-carbide"}
+	},
+	unit =
+	{
+	  count = 40,
+	  ingredients = {{"science-pack-1",5},{"science-pack-2",2},{"science-pack-3",3}},
+	  time = 90
+	},
+	order = "a-d-d-b",
+  },
 
-  { type = "technology", name = "oil-processing", prerequisites = {"steel-working"},
+  { type = "technology", name = "oil-processing", prerequisites = {"steel-working","basic-chemistry"},
     icon = "__base__/graphics/technology/oil-gathering.png",    
     effects =
     {
@@ -312,7 +393,7 @@ data:extend({
     unit =
     {
       count = 50,
-      ingredients = {{"science-pack-1",5},{"science-pack-2",5},{"science-pack-3",5}},
+      ingredients = {{"science-pack-1",2},{"science-pack-2",2},{"science-pack-3",2}},
       time = 30
     },
     order = "d[resource-processing]-c[oil-processing]-a"
@@ -423,11 +504,12 @@ data:extend({
     order = "b-d-d",
   },
   
-  { type = "technology", name = "basic-chemistry", --prerequisites = {"oil-processing"},
-    icon = "__CartmenCompleteOverhaul__/graphics/icons/ore/salt.png",
+  { type = "technology", name = "basic-chemistry", prerequisites = {"automation-2"},
+    icon = "__CartmenCompleteOverhaul__/graphics/icons/fluid/hydrogen.png",
     effects =
     {
       {type="unlock-recipe",recipe="salt-electrolysis"},
+	  {type="unlock-recipe",recipe="sodium-hydroxide-solution"},
 	  {type="unlock-recipe",recipe="carbon-monoxide"},
 	  {type="unlock-recipe",recipe="chemical-pack-2"}
     },
@@ -436,7 +518,7 @@ data:extend({
       count = 15,
       ingredients =
       {
-        {"science-pack-3", 5},
+        {"science-pack-3", 2},
       },
       time = 30
     },
@@ -628,7 +710,8 @@ data:extend({
     effects =
     {
       {type = "unlock-recipe",recipe = "assembling-machine-1"},
-	  {type = "unlock-recipe",recipe = "assembling-machine-1-2"}
+	  {type = "unlock-recipe",recipe = "assembling-machine-1-2"},
+	  {type = "unlock-recipe",recipe = "assembling-robot-1"}
     },
     unit =
     {
@@ -644,7 +727,8 @@ data:extend({
     effects =
     {
       {type = "unlock-recipe",recipe = "assembling-machine-2"},
-	  {type = "unlock-recipe",recipe = "assembling-machine-2-2"}
+	  {type = "unlock-recipe",recipe = "assembling-machine-2-2"},
+	  {type = "unlock-recipe",recipe = "assembling-robot-2"}
     },
     unit =
     {
@@ -660,7 +744,8 @@ data:extend({
     effects =
     {
       {type = "unlock-recipe",recipe = "assembling-machine-3"},
-	  {type = "unlock-recipe",recipe = "assembling-machine-3-2"}
+	  {type = "unlock-recipe",recipe = "assembling-machine-3-2"},
+	  {type = "unlock-recipe",recipe = "assembling-robot-3"}
     },
     unit =
     {
@@ -676,6 +761,7 @@ data:extend({
     effects =
     {
       {type = "unlock-recipe",recipe = "assembling-machine-4"},
+	  {type = "unlock-recipe",recipe = "assembling-robot-4"}
     },
     unit =
     {
@@ -691,6 +777,7 @@ data:extend({
     effects =
     {
       {type = "unlock-recipe",recipe = "assembling-machine-5"},
+	  {type = "unlock-recipe",recipe = "assembling-robot-5"}
     },
     unit =
     {
@@ -702,7 +789,7 @@ data:extend({
     order = "a-e-c",
   },
   
-  { type = "technology", name = "logistics", prerequisites = {"iron-working"},
+  { type = "technology", name = "logistics", prerequisites = {"bronze-working"},
     icon = "__base__/graphics/technology/logistics.png",
     effects =
     {
@@ -717,7 +804,7 @@ data:extend({
     unit =
     {
       count = 20,
-      ingredients = {{"science-pack-1",2}},
+      ingredients = {{"science-pack-1",1}},
       time = 15
     },
 	upgrade = true,
@@ -870,7 +957,8 @@ data:extend({
     {
 	  {type="unlock-recipe",recipe="solar-cell"},
 	  {type="unlock-recipe",recipe="silicon-nitride"},
-      {type="unlock-recipe",recipe="solar-panel"}
+      {type="unlock-recipe",recipe="solar-panel"},
+	  {type="unlock-recipe",recipe="solar-panel-module"}
     },    
     unit =
     {
@@ -886,7 +974,8 @@ data:extend({
     icon = "__base__/graphics/technology/solar-energy.png",
     effects =
     {
-      {type = "unlock-recipe",recipe = "solar-panel-2"}
+      {type = "unlock-recipe",recipe = "solar-panel-2"},
+	  {type="unlock-recipe",recipe="solar-panel-module-2"}
     },    
     unit =
     {
@@ -902,7 +991,8 @@ data:extend({
     icon = "__base__/graphics/technology/solar-energy.png",
     effects =
     {
-      {type = "unlock-recipe",recipe = "solar-panel-3"}
+      {type = "unlock-recipe",recipe = "solar-panel-3"},
+	  {type="unlock-recipe",recipe="solar-panel-module-3"}
     },    
     unit =
     {
@@ -918,7 +1008,8 @@ data:extend({
     icon = "__base__/graphics/technology/solar-energy.png",
     effects =
     {
-      {type = "unlock-recipe",recipe = "solar-panel-4"}
+      {type = "unlock-recipe",recipe = "solar-panel-4"},
+	  {type="unlock-recipe",recipe="solar-panel-module-4"}
     },    
     unit =
     {
@@ -934,7 +1025,8 @@ data:extend({
     icon = "__base__/graphics/technology/solar-energy.png",
     effects =
     {
-      {type = "unlock-recipe",recipe = "solar-panel-5"}
+      {type = "unlock-recipe",recipe = "solar-panel-5"},
+	  {type="unlock-recipe",recipe="solar-panel-module-5"}
     },    
     unit =
     {
@@ -1029,46 +1121,7 @@ data:extend({
 	upgrade = true,
     order = "c-e-c",
   },
-  
-  { type = "technology", name = "military", --prerequisites = {""},
-    icon = "__base__/graphics/technology/military.png",
-    effects =
-    {
-      {type = "unlock-recipe",recipe = "submachine-gun"},
-	  {type = "unlock-recipe",recipe = "shotgun"},
-	  {type = "unlock-recipe",recipe = "shotgun-shell"},
-	  {type = "unlock-recipe",recipe = "fmj-magazine"}
-    },   
-    unit =
-    {
-      count = 5,
-      ingredients =
-      {{"science-pack-1",1}},
-      time = 30
-    },
-	upgrade = true,
-    order = "m-a-a",
-  },
-  { type = "technology", name = "military-2", prerequisites = {"military","steel-processing"},
-    icon = "__base__/graphics/technology/military.png",
-    effects =
-    {
-      {type = "unlock-recipe",recipe = "piercing-bullet-magazine"},
-	  {type = "unlock-recipe",recipe = "basic-grenade"},
-	  {type = "unlock-recipe",recipe = "rifle"},
-	  {type = "unlock-recipe",recipe = "hollow-point-magazine"}
-    },   
-    unit =
-    {
-      count = 20,
-      ingredients =
-      {{"science-pack-1",2}},
-      time = 40
-    },
-	upgrade = true,
-    order = "m-a-b",
-  },
-  
+    
   { type = "technology", name = "toolbelt",
     icon = "__base__/graphics/technology/toolbelt.png",
     effects =
@@ -1080,10 +1133,10 @@ data:extend({
     },
     unit =
     {
-      count = 40,
+      count = 20,
       ingredients =
       {
-        {"science-pack-1", 1},
+        {"science-pack-1", 1},{"science-pack-2", 1},{"science-pack-3", 1}
       },
       time = 30
     },

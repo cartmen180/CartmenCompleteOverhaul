@@ -53,6 +53,18 @@ data:extend({
     richness = true,
     order = "c-h"
   },
+  {
+    type = "autoplace-control",
+    name = "ci-tungsten",
+    richness = true,
+    order = "c-h"
+  },
+  {
+    type = "autoplace-control",
+    name = "ci-bauxite",
+    richness = true,
+    order = "c-h"
+  },
   
   {
     type = "noise-layer",
@@ -89,5 +101,13 @@ data:extend({
   {
     type = "noise-layer",
 	name = "limestone",
+  },
+  {
+    type = "noise-layer",
+	name = "tungsten-ore",
+  },
+  {
+    type = "noise-layer",
+	name = "bauxite-ore",
   },
 })

@@ -78,13 +78,13 @@ data:extend({
 	order = "c-b",
   },
   
-  --[[{ type = "recipe", name = "mill",
+  { type = "recipe", name = "mill",
     category = "crafting",
 	--enabled = false,
 	energy_required = 5,
 	icon = "__CartmenCompleteOverhaul__/graphics/icons/entity/crusher-icon.png",
 	ingredients = {
-	{type="item",name="copper-parts",amount=5},
+	{type="item",name="bronze-parts",amount=5},
 	{type="item",name="stone-brick",amount=6},
 	{type="item",name="iron-plate",amount=10}
 	},
@@ -93,7 +93,7 @@ data:extend({
 	},
 	subgroup = "cartmen-production",
 	order = "b-a",
-  },]]
+  },
   { type = "recipe", name = "mill-2",
     category = "crafting",
 	--enabled = false,
@@ -101,7 +101,7 @@ data:extend({
 	icon = "__CartmenCompleteOverhaul__/graphics/icons/entity/crusher-icon.png",
 	ingredients = {
 	{type="item",name="steel-parts",amount=6},
-	--{type="item",name="mill",amount=1}
+	{type="item",name="mill",amount=1},
 	{type="item",name="steel-plate",amount=8},
 	},
 	results = {
@@ -126,56 +126,5 @@ data:extend({
 	},
 	subgroup = "cartmen-production",
 	order = "d",
-  },
-  
-  --[[{ type = "recipe", name = "burner-mining-drill-2",
-    category = "crafting",
-	enabled = false,
-	energy_required = 5,
-	icon = "__base__/graphics/icons/burner-mining-drill.png",
-	ingredients = {
-	{type="item",name="stone-furnace",amount=1},
-	{type="item",name="iron-gear-wheel",amount=2},
-	{type="item",name="iron-plate",amount=2}
-	},
-	results = {
-	{type="item",name="burner-mining-drill-2",amount=1}
-	},
-	subgroup = "extraction-machine",
-	order = "a[items]-a1[burner-mining-drill]",
-  },
-  
-  { type = "recipe", name = "burner-mining-drill-3",
-    category = "crafting",
-	enabled = false,
-	energy_required = 5,
-	icon = "__base__/graphics/icons/burner-mining-drill.png",
-	ingredients = {
-	{type="item",name="burner-mining-drill",amount=1},
-	{type="item",name="crude-circuit",amount=1}
-	},
-	results = {
-	{type="item",name="burner-mining-drill-3",amount=1}
-	},
-	subgroup = "extraction-machine",
-	order = "a[items]-a3[burner-mining-drill]",
-  },
-  
-  { type = "recipe", name = "burner-mining-drill-4",
-    category = "crafting",
-	enabled = false,
-	energy_required = 3,
-	icon = "__base__/graphics/icons/burner-mining-drill.png",
-	ingredients = {
-	{type="item",name="steel-drill-head",amount=2},
-	{type="item",name="electronic-circuit",amount=1},
-	{type="item",name="burner-mining-drill-3",amount=1},
-	},
-	results = {
-	{type="item",name="burner-mining-drill-4",amount=1}
-	},
-	subgroup = "extraction-machine",
-	order = "a[items]-a4[burner-mining-drill]",
-  },]]
-  
+  },  
 })

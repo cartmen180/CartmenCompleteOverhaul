@@ -487,7 +487,7 @@ data:extend({
     allowed_effects = {"consumption", "speed", "productivity", "pollution"}
   },
   
-  --[[{ type = "assembling-machine", name = "mill",
+  { type = "assembling-machine", name = "mill",
     icon = "__CartmenCompleteOverhaul__/graphics/icons/entity/crusher-icon.png",
     flags = {"placeable-neutral", "placeable-player", "player-creation"},
     minable = {hardness = 0.2, mining_time = 0.5, result = "mill"},
@@ -575,30 +575,19 @@ data:extend({
       apparent_volume = 1.5,
     },
     crafting_categories = {"crush"},
-    crafting_speed = 0.75,
+    crafting_speed = 1,
     energy_source =
     {
-      type = "burner",
-      effectivity = 1,
-      emissions = 0.02,
-      fuel_inventory_size = 1,
-      smoke =
-      {
-        {
-          name = "smoke",
-          deviation = {0.1, 0.1},
-          frequency = 0.5,
-          position = {0, 0},
-          starting_vertical_speed = 0.05
-        }
-      }
+      type = "electric",
+      usage_priority = "secondary-input",
+      emissions = 0.04 / 2.5
     },
     energy_usage = "150kW",
     ingredient_count = 1,
-    module_slots = 0,
-	result_inventory_size = 3,
+    module_slots = 2,
+	result_inventory_size = 2,
     allowed_effects = {"consumption", "speed", "productivity", "pollution"}
-  },]]
+  },
   { type = "assembling-machine", name = "mill-2",
     icon = "__CartmenCompleteOverhaul__/graphics/icons/entity/crusher-icon.png",
     flags = {"placeable-neutral", "placeable-player", "player-creation"},
@@ -687,16 +676,16 @@ data:extend({
       apparent_volume = 1.5,
     },
     crafting_categories = {"crush"},
-    crafting_speed = 1.25,
+    crafting_speed = 1.5,
     energy_source =
     {
       type = "electric",
       usage_priority = "secondary-input",
       emissions = 0.04 / 2.5
     },
-    energy_usage = "150kW",
+    energy_usage = "100kW",
     ingredient_count = 2,
-    module_slots = 2,
+    module_slots = 3,
 	result_inventory_size = 3,
     allowed_effects = {"consumption", "speed", "productivity", "pollution"}
   },
