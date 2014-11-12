@@ -54,6 +54,7 @@ require("prototypes.entity.entities")
 require("prototypes.entity.power-generation")
 require("prototypes.entity.pipe")
 require("prototypes.entity.turrets")
+require("prototypes.entity.electric-distribution")
 
 require("prototypes.entity.machines.parts-assembler")
 require("prototypes.entity.machines.electronics-assembler")
