@@ -14,7 +14,7 @@ data:extend({
     },
     energy_required = 15,
     result = "bronze-drill",
-	subgroup = "cartmen-assembler-modules",
+	subgroup = "cartmen-miner-modules",
 	order = "a-a[drill]-a[bronze]"
   },
   { type = "module", name = "steel-drill",
@@ -32,7 +32,7 @@ data:extend({
     },
     energy_required = 30,
     result = "steel-drill",
-	subgroup = "cartmen-assembler-modules",
+	subgroup = "cartmen-miner-modules",
 	order = "a-a[drill]-b[steel]"
   },
   { type = "module", name = "titanium-drill",
@@ -50,7 +50,7 @@ data:extend({
     },
     energy_required = 60,
     result = "titanium-drill",
-	subgroup = "cartmen-assembler-modules",
+	subgroup = "cartmen-miner-modules",
 	order = "a-a[drill]-c[titanium]"
   },
 })

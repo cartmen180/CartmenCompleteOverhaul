@@ -92,7 +92,7 @@ data:extend({
 	{type="item",name="parts-assembler",amount=1}
 	},
 	subgroup = "cartmen-machine-1",
-	order = "a[cable-insulator]"
+	order = "a[tier1]-a[parts]"
   }, 
   
   { type = "item", name = "parts-assembler",

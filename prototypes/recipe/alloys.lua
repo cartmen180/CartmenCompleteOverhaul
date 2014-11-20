@@ -26,7 +26,7 @@ data:extend({
 	energy_required = 2.0,
 	ingredients = {{"titanium-sponge", 1},{type="fluid",name="liquid-steel",amount=5}},
 	results = {{"titanium-plate", 2}},
-	subgroup = "cartmen-plates",
-	order = "a[plate]-f[titanium-plate]",
+	subgroup = "cartmen-titanium",
+	order = "f",
   },
 })

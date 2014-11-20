@@ -25,6 +25,10 @@ data:extend({
   },
   {
     type = "recipe-category",
+	name = "recycler"
+  },
+  {
+    type = "recipe-category",
 	name = "casting"
   },
   {

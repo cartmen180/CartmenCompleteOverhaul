@@ -35,6 +35,7 @@ require("prototypes.recipe.power-generation")
 require("prototypes.recipe.ammo")
 require("prototypes.recipe.weapons")
 require("prototypes.recipe.turret")
+require("prototypes.recipe.recycling")
 
 require("prototypes.fluid.metals")
 require("prototypes.fluid.chemicals")
@@ -58,6 +59,7 @@ require("prototypes.entity.electric-distribution")
 
 require("prototypes.entity.machines.parts-assembler")
 require("prototypes.entity.machines.electronics-assembler")
+require("prototypes.entity.machines.recycler")
 
 require("prototypes.modules.assembler-modules")
 require("prototypes.modules.miner-modules")
@@ -79,6 +81,7 @@ require("prototypes.resource.nickel-zinc-processing")
 require("prototypes.resource.bauxite-processing")
 require("prototypes.resource.copper-processing")
 require("prototypes.resource.tungsten-processing")
+require("prototypes.resource.titanium-processing")
 
 require("prototypes.technology.technology")
 require("prototypes.technology.circuit-packs")

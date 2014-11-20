@@ -1,3 +1,13 @@
+function recycler()
+return{	"r-burner-inserter",
+		"r-basic-inserter",
+		"r-solar-panel",
+		"r-solar-panel-2",
+		"r-solar-panel-3",
+		"r-solar-panel-4",
+		"r-solar-panel-5",
+}end
+
 function cablelimit()
 return{"copper-cable",
 }end
@@ -444,7 +454,7 @@ data:extend({
     energy_required = 15,
     result = "bronze-ore-crusher",
 	subgroup = "cartmen-assembler-modules",
-	order = "a-b[ore-crusher]-a[bronze]"
+	order = "c-b[ore-crusher]-a[bronze]"
   },
   { type = "module", name = "steel-ore-crusher",
 	icon = "__CartmenCompleteOverhaul__/graphics/icons/module/ore-crusher.png",
@@ -464,7 +474,7 @@ data:extend({
     energy_required = 30,
     result = "steel-ore-crusher",
 	subgroup = "cartmen-assembler-modules",
-	order = "a-b[ore-crusher]-b[steel]"
+	order = "c-b[ore-crusher]-b[steel]"
   },
   { type = "module", name = "titanium-ore-crusher",
 	icon = "__CartmenCompleteOverhaul__/graphics/icons/module/ore-crusher.png",
@@ -484,6 +494,27 @@ data:extend({
     energy_required = 60,
     result = "titanium-ore-crusher",
 	subgroup = "cartmen-assembler-modules",
-	order = "a-b[ore-crusher]-c[titanium]"
+	order = "c-b[ore-crusher]-c[titanium]"
+  },
+  
+  { type = "module", name = "electro-magnet",
+	icon = "__CartmenCompleteOverhaul__/graphics/icons/module/magnet.png",
+	flags = { "goes-to-main-inventory" },
+	stack_size = 100,
+	limitation = recycler(),
+	limitation_message_key = "Only usable for recycling",
+	effect = { speed = {bonus = 0.15}, consumption = {bonus = 0.2}}
+  },
+  { type = "recipe", name = "electro-magnet",
+    enabled = "true",
+    ingredients =
+    {
+      {"iron-plate", 12},
+	  {"copper-cable", 20}
+    },
+    energy_required = 60,
+    result = "electro-magnet",
+	subgroup = "cartmen-assembler-modules",
+	order = "f[recycle]-a[magnet]"
   },
 })

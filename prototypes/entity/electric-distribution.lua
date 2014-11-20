@@ -659,7 +659,7 @@ data:extend({
   
   { type = "item", name = "small-electric-substation",
     icon = "__base__/graphics/icons/small-electric-pole.png",
-	flags = "goes-to-quickbar",
+	flags = {"goes-to-quickbar"},
 	stack_size = 50,
 	place_result = "small-electric-substation"
   },

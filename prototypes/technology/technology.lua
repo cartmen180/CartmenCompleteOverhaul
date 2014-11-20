@@ -295,7 +295,12 @@ data:extend({
 	icon = "__CartmenCompleteOverhaul__/graphics/icons/plate/titanium-plate.png",
 	effects = 
 	{
-	  {type="unlock-recipe",recipe="titanium-alloy"}
+	  {type="unlock-recipe",recipe="titanium-processing-1"},
+	  {type="unlock-recipe",recipe="titanium-extracting"},
+	  {type="unlock-recipe",recipe="titanium-purification"},
+	  {type="unlock-recipe",recipe="titanium-sponging"},
+	  {type="unlock-recipe",recipe="titanium-alloy"},
+	  {type="unlock-recipe",recipe="magnesium-chloride-processing"}
 	},
 	unit =
 	{
@@ -803,7 +808,7 @@ data:extend({
     },
     unit =
     {
-      count = 20,
+      count = 10,
       ingredients = {{"science-pack-1",1}},
       time = 15
     },

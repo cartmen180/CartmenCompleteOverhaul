@@ -276,6 +276,15 @@ data:extend({
     rotation_speed = 0.014
   },
 
+  { type = "recipe", name = "basic-inserter",
+    ingredients =
+    {
+      {"bronze-parts", 1},
+	  {"circuit-pack-2", 1},
+	  {"iron-plate",2}
+    },
+    result = "basic-inserter"
+  },
   { type = "recipe", name = "left-basic-inserter",
     ingredients =
     {
